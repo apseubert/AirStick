@@ -1,0 +1,2423 @@
+     VMA      LMA     Size Align Out     In      Symbol
+       0        0        0     1 __ER_IROM3_BASE__ = ORIGIN ( LR_IROM3 )
+       0        0        0     1 __ER_IROM3_LENGTH__ = LENGTH ( LR_IROM3 )
+ 7fc0000  7fc0000       a0     4 ER_IROM1
+ 7fc0000  7fc0000       a0     4         lto.tmp:(.vectors)
+ 7fc0000  7fc0000       a0     1                 __interrupt_vector
+ 7fc00c0  7fc00c0       50     1 ER_IROM2
+ 7fc00c0  7fc00c0       50     1         lto.tmp:(.patch_table)
+ 7fc00c0  7fc00c0       50     1                 patch_table
+ 7fc0110  7fc0110      400     1 LR_TRNG_ZI
+ 7fc0110  7fc0110      400     1         lto.tmp:(trng_buffer_area_zi)
+ 7fc0110  7fc0110      400     1                 rfadc_data_buffer
+ 7fc0510  7fc0510     74b4     4 ER_IROM3
+ 7fc0510  7fc0510       1e     4         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(arch_asm.o):(.text)
+ 7fc0510  7fc0510        0     1                 $t
+ 7fc0511  7fc0511        0     1                 loop
+ 7fc0511  7fc0511       1e     1                 arch_asm_delay_us
+ 7fc052d  7fc052d        0     1                 exit
+ 7fc0530  7fc0530        0     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o):(.text)
+ 7fc0530  7fc0530       48     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o):(.text._start)
+ 7fc0530  7fc0530        0     1                 $t.0
+ 7fc0531  7fc0531       48     1                 _start
+ 7fc0560  7fc0560        0     1                 $d.1
+ 7fc0578  7fc0578      114     4         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(rf_calibration.o):(.text)
+ 7fc0578  7fc0578        0     1                 $t
+ 7fc0579  7fc0579       54     1                 rf_calibration_585
+ 7fc05cd  7fc05cd       70     1                 enable_rf_diag_irq
+ 7fc063d  7fc063d       36     1                 set_gauss_modgain
+ 7fc0672  7fc0672        0     1                 $d
+ 7fc068c  7fc068c     1794     4         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(patch.o):(.text)
+ 7fc068c  7fc068c        0     1                 $t
+ 7fc068d  7fc068d       34     1                 PATCHED_atts_mtu_exc_req
+ 7fc06c1  7fc06c1       42     1                 PATCHED_smpc_is_sec_mode_reached
+ 7fc0703  7fc0703       4a     1                 PATCHED_smpc_check_key_distrib
+ 7fc074d  7fc074d       78     1                 PATCHED_llcp_length_req_handler
+ 7fc07c5  7fc07c5       88     1                 PATCHED_llcp_length_rsp_handler
+ 7fc084d  7fc084d       b6     1                 JT_llc_le_length_effective_func
+ 7fc0903  7fc0903       30     1                 PATCHED_smpc_construct_id_addr_info_pdu
+ 7fc0933  7fc0933       14     1                 PATCHED_llc_util_gen_skdx
+ 7fc0947  7fc0947       8e     1                 PATCHED_llm_adv_report_set
+ 7fc0970  7fc0970        0     1                 $d
+ 7fc097a  7fc097a        0     1                 $t
+ 7fc09d5  7fc09d5      168     1                 PATCHED_lld_evt_move_to_master
+ 7fc0ac0  7fc0ac0        0     1                 $d
+ 7fc0ae0  7fc0ae0        0     1                 $t
+ 7fc0b3d  7fc0b3d       f4     1                 PATCHED_gapm_adv_sanity
+ 7fc0bbc  7fc0bbc        0     1                 $d
+ 7fc0bdc  7fc0bdc        0     1                 $t
+ 7fc0c31  7fc0c31       26     1                 PATCHED_gapm_get_ad_type_flag
+ 7fc0eb5  7fc0eb5       4e     1                 PATCHED_gapm_reset_cmd_handler
+ 7fc0f03  7fc0f03       6e     1                 PATCHED_hci_command_handler
+ 7fc0f3e  7fc0f3e        0     1                 $d
+ 7fc0f6c  7fc0f6c        0     1                 $t
+ 7fc0f71  7fc0f71      114     1                 l2cc_handle_invalid_pdu
+ 7fc1085  7fc1085      26c     1                 PATCHED_hci_acl_data_rx_handler
+ 7fc12f1  7fc12f1      32c     1                 JT_l2cc_pdu_unpack_func
+ 7fc1374  7fc1374        0     1                 $d
+ 7fc1390  7fc1390        0     1                 $t
+ 7fc161d  7fc161d       46     1                 JT_l2cc_pdu_recv_ind_handler_func
+ 7fc1663  7fc1663       6e     1                 PATCHED_llc_ch_map_req_ind
+ 7fc16d1  7fc16d1      132     1                 PATCHED_smpc_recv_pair_rand_pdu
+ 7fc179e  7fc179e        0     1                 $d
+ 7fc17c0  7fc17c0        0     1                 $t
+ 7fc1803  7fc1803       6a     1                 PATCHED_smpc_recv_public_key_exchange_pdu
+ 7fc186d  7fc186d       92     1                 PATCHED_llc_data_ind_handler
+ 7fc18ff  7fc18ff      270     1                 PATCHED_llm_con_req_ind
+ 7fc1b6f  7fc1b6f       aa     1                 PATCHED_hci_le_ltk_request_evt_handler
+ 7fc1bf6  7fc1bf6        0     1                 $d
+ 7fc1c18  7fc1c18        0     1                 $t
+ 7fc1c19  7fc1c19        4     1                 PATCHED_l2cc_data_send_rsp_handler
+ 7fc1c1d  7fc1c1d       9a     1                 PATCHED_smpc_pdu_send
+ 7fc1cb7  7fc1cb7       80     1                 JT_smpc_pdu_recv_func
+ 7fc1d37  7fc1d37       74     1                 PATCHED_smpc_recv_pair_req_pdu
+ 7fc1dab  7fc1dab       46     1                 PATCHED_smpc_recv_pair_fail_pdu
+ 7fc1df1  7fc1df1        c     1                 patch_data1
+ 7fc1dfd  7fc1dfd        2     1                 patch_data2
+ 7fc1dff  7fc1dff        2     1                 patch_global_vars_init
+ 7fc1e00  7fc1e00        0     1                 $d
+ 7fc1e20  7fc1e20      124     4         ./sdk_arch/chacha20.o:(.text)
+ 7fc1e20  7fc1e20        0     1                 $t.0
+ 7fc1e21  7fc1e21       24     1                 csprng_seed
+ 7fc1e40  7fc1e40        0     1                 $d.1
+ 7fc1e44  7fc1e44        0     1                 $t.2
+ 7fc1e45  7fc1e45      100     1                 csprng_get_next_uint32
+ 7fc1f38  7fc1f38        0     1                 $d.3
+ 7fc1f44  7fc1f44       6c     4         ./sdk_arch/jump_table.o:(.text)
+ 7fc1f44  7fc1f44        0     1                 $t.0
+ 7fc1f45  7fc1f45        2     1                 dummyf
+ 7fc1f47  7fc1f47        2     1                 crypto_init_func
+ 7fc1f49  7fc1f49       1a     1                 ba431_get_rand_func
+ 7fc1f63  7fc1f63        a     1                 dia_rand_func
+ 7fc1f6d  7fc1f6d       1c     1                 dia_srand_func
+ 7fc1f89  7fc1f89        2     1                 dbg_init_func_empty
+ 7fc1f8b  7fc1f8b        2     1                 dbg_platform_reset_complete_func_empty
+ 7fc1f8d  7fc1f8d       24     1                 platform_reset_func
+ 7fc1fa4  7fc1fa4        0     1                 $d.1
+ 7fc1fb0  7fc1fb0       e8     4         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(smpc_util.o):(.text)
+ 7fc1fb0  7fc1fb0        0     1                 $t
+ 7fc1fb1  7fc1fb1       88     1                 PATCHED_smpc_dhkey_calc_start
+ 7fc2039  7fc2039       52     1                 JT_llm_p256_start_func
+ 7fc208a  7fc208a        0     1                 $d
+ 7fc2098  7fc2098        0     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_misc_init.c.o):(.text)
+ 7fc2098  7fc2098       4c     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_misc_init.c.o):(.text.__libc_init_array)
+ 7fc2098  7fc2098        0     1                 $t.0
+ 7fc2099  7fc2099       4c     1                 __libc_init_array
+ 7fc20d0  7fc20d0        0     1                 $d.1
+ 7fc20e4  7fc20e4        0     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_string_memcmp.c.o):(.text)
+ 7fc20e4  7fc20e4       20     2         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_string_memcmp.c.o):(.text.memcmp)
+ 7fc20e4  7fc20e4        0     1                 $t.0
+ 7fc2104  7fc2104        0     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_picolib_machine_arm_tls.c.o):(.text)
+ 7fc2104  7fc2104       14     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_picolib_machine_arm_tls.c.o):(.text._set_tls)
+ 7fc2104  7fc2104        0     1                 $t.0
+ 7fc2105  7fc2105       14     1                 _set_tls
+ 7fc2110  7fc2110        0     1                 $d.1
+ 7fc2118  7fc2118        0     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memcpy.c.o):(.text)
+ 7fc2118  7fc2118       14     2         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memcpy.c.o):(.text.memcpy)
+ 7fc2118  7fc2118        0     1                 $t.0
+ 7fc2119  7fc2119       14     1                 memcpy
+ 7fc212c  7fc212c        0     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memset.c.o):(.text)
+ 7fc212c  7fc212c        e     2         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memset.c.o):(.text.memset)
+ 7fc212c  7fc212c        0     1                 $t.0
+ 7fc212d  7fc212d        e     1                 memset
+ 7fc213c  7fc213c       18     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libclang_rt.builtins.a(aeabi_uidivmod.S.obj):(.text)
+ 7fc213c  7fc213c        0     1                 $t.0
+ 7fc2154  7fc2154      1a2     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libclang_rt.builtins.a(udivsi3.S.obj):(.text)
+ 7fc2154  7fc2154        0     1                 $t.0
+ 7fc2155  7fc2155      1a2     1                 __udivsi3
+ 7fc22f8  7fc22f8        0     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libclang_rt.builtins.a(aeabi_div0.c.obj):(.text)
+ 7fc22f8  7fc22f8        2     2         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libclang_rt.builtins.a(aeabi_div0.c.obj):(.text.__aeabi_idiv0)
+ 7fc22f8  7fc22f8        0     1                 $t.0
+ 7fc22f9  7fc22f9        2     1                 __aeabi_idiv0
+ 7fc22fa  7fc22fa        2     2         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libclang_rt.builtins.a(aeabi_div0.c.obj):(.text.__aeabi_ldiv0)
+ 7fc22fa  7fc22fa        0     1                 $t.1
+ 7fc22fb  7fc22fb        2     1                 __aeabi_ldiv0
+ 7fc22fc  7fc22fc        0     4         lto.tmp:(.text)
+ 7fc22fc  7fc22fc      158     4         lto.tmp:(.text.periph_init)
+ 7fc22fc  7fc22fc        0     1                 $t.0
+ 7fc22fd  7fc22fd      158     1                 periph_init
+ 7fc241c  7fc241c        0     1                 $d.1
+ 7fc2454  7fc2454      11c     4         lto.tmp:(.text.app_button_enable)
+ 7fc2454  7fc2454        0     1                 $t.2
+ 7fc2455  7fc2455      11c     1                 app_button_enable
+ 7fc253c  7fc253c        0     1                 $d.3
+ 7fc2570  7fc2570       12     2         lto.tmp:(.text.app_wakeup_cb)
+ 7fc2570  7fc2570        0     1                 $t.4
+ 7fc2571  7fc2571       12     1                 app_wakeup_cb
+ 7fc2584  7fc2584       58     4         lto.tmp:(.text.app_button_press_cb)
+ 7fc2584  7fc2584        0     1                 $t.5
+ 7fc2585  7fc2585       58     1                 app_button_press_cb
+ 7fc25cc  7fc25cc        0     1                 $d.6
+ 7fc25dc  7fc25dc       2a     2         lto.tmp:(.text.on_suotar_status_change)
+ 7fc25dc  7fc25dc        0     1                 $t.7
+ 7fc25dd  7fc25dd       2a     1                 on_suotar_status_change
+ 7fc2608  7fc2608       24     4         lto.tmp:(.text.user_catch_rest_hndl)
+ 7fc2608  7fc2608        0     1                 $t.8
+ 7fc2609  7fc2609       24     1                 user_catch_rest_hndl
+ 7fc2628  7fc2628        0     1                 $d.9
+ 7fc262c  7fc262c      168     4         lto.tmp:(.text.bass_init)
+ 7fc262c  7fc262c        0     1                 $t.10
+ 7fc262d  7fc262d      168     1                 bass_init
+ 7fc2784  7fc2784        0     1                 $d.11
+ 7fc2794  7fc2794       1c     2         lto.tmp:(.text.bass_destroy)
+ 7fc2794  7fc2794        0     1                 $t.12
+ 7fc2795  7fc2795       1c     1                 bass_destroy
+ 7fc27b0  7fc27b0       10     2         lto.tmp:(.text.bass_create)
+ 7fc27b0  7fc27b0        0     1                 $t.13
+ 7fc27b1  7fc27b1       10     1                 bass_create
+ 7fc27c0  7fc27c0       10     2         lto.tmp:(.text.bass_cleanup)
+ 7fc27c0  7fc27c0        0     1                 $t.14
+ 7fc27c1  7fc27c1       10     1                 bass_cleanup
+ 7fc27d0  7fc27d0       68     2         lto.tmp:(.text.bass_get_att_idx)
+ 7fc27d0  7fc27d0        0     1                 $t.15
+ 7fc27d1  7fc27d1       68     1                 bass_get_att_idx
+ 7fc2838  7fc2838       ec     4         lto.tmp:(.text.bass_exe_operation)
+ 7fc2838  7fc2838        0     1                 $t.16
+ 7fc2839  7fc2839       ec     1                 bass_exe_operation
+ 7fc2918  7fc2918        0     1                 $d.17
+ 7fc2924  7fc2924       70     4         lto.tmp:(.text.bass_notify_batt_lvl)
+ 7fc2924  7fc2924        0     1                 $t.18
+ 7fc2925  7fc2925       70     1                 bass_notify_batt_lvl
+ 7fc2990  7fc2990        0     1                 $d.19
+ 7fc2994  7fc2994       88     4         lto.tmp:(.text.bass_enable_req_handler)
+ 7fc2994  7fc2994        0     1                 $t.20
+ 7fc2995  7fc2995       88     1                 bass_enable_req_handler
+ 7fc2a14  7fc2a14        0     1                 $d.21
+ 7fc2a1c  7fc2a1c       74     4         lto.tmp:(.text.bass_batt_level_upd_req_handler)
+ 7fc2a1c  7fc2a1c        0     1                 $t.22
+ 7fc2a1d  7fc2a1d       74     1                 bass_batt_level_upd_req_handler
+ 7fc2a8c  7fc2a8c        0     1                 $d.23
+ 7fc2a90  7fc2a90       54     4         lto.tmp:(.text.gattc_att_info_req_ind_handler)
+ 7fc2a90  7fc2a90        0     1                 $t.24
+ 7fc2a91  7fc2a91       54     1                 gattc_att_info_req_ind_handler
+ 7fc2ae0  7fc2ae0        0     1                 $d.25
+ 7fc2ae4  7fc2ae4       e0     4         lto.tmp:(.text.gattc_write_req_ind_handler)
+ 7fc2ae4  7fc2ae4        0     1                 $t.26
+ 7fc2ae5  7fc2ae5       e0     1                 gattc_write_req_ind_handler
+ 7fc2bb8  7fc2bb8        0     1                 $d.27
+ 7fc2bc4  7fc2bc4       d4     4         lto.tmp:(.text.gattc_read_req_ind_handler)
+ 7fc2bc4  7fc2bc4        0     1                 $t.28
+ 7fc2bc5  7fc2bc5       d4     1                 gattc_read_req_ind_handler
+ 7fc2c90  7fc2c90        0     1                 $d.29
+ 7fc2c98  7fc2c98       10     2         lto.tmp:(.text.gattc_cmp_evt_handler)
+ 7fc2c98  7fc2c98        0     1                 $t.30
+ 7fc2c99  7fc2c99       10     1                 gattc_cmp_evt_handler
+ 7fc2ca8  7fc2ca8       d8     4         lto.tmp:(.text.diss_init)
+ 7fc2ca8  7fc2ca8        0     1                 $t.31
+ 7fc2ca9  7fc2ca9       d8     1                 diss_init
+ 7fc2d74  7fc2d74        0     1                 $d.32
+ 7fc2d80  7fc2d80       26     2         lto.tmp:(.text.diss_destroy)
+ 7fc2d80  7fc2d80        0     1                 $t.33
+ 7fc2d81  7fc2d81       26     1                 diss_destroy
+ 7fc2da6  7fc2da6        2     2         lto.tmp:(.text.diss_create)
+ 7fc2da6  7fc2da6        0     1                 $t.34
+ 7fc2da7  7fc2da7        2     1                 diss_create
+ 7fc2da8  7fc2da8        2     2         lto.tmp:(.text.diss_cleanup)
+ 7fc2da8  7fc2da8        0     1                 $t.35
+ 7fc2da9  7fc2da9        2     1                 diss_cleanup
+ 7fc2daa  7fc2daa       28     2         lto.tmp:(.text.diss_handle_to_value)
+ 7fc2daa  7fc2daa        0     1                 $t.36
+ 7fc2dab  7fc2dab       28     1                 diss_handle_to_value
+ 7fc2dd2  7fc2dd2       2e     2         lto.tmp:(.text.diss_value_to_handle)
+ 7fc2dd2  7fc2dd2        0     1                 $t.37
+ 7fc2dd3  7fc2dd3       2e     1                 diss_value_to_handle
+ 7fc2e00  7fc2e00       c4     4         lto.tmp:(.text.diss_set_value_req_handler)
+ 7fc2e00  7fc2e00        0     1                 $t.38
+ 7fc2e01  7fc2e01       c4     1                 diss_set_value_req_handler
+ 7fc2ec0  7fc2ec0        0     1                 $d.39
+ 7fc2ec4  7fc2ec4       e8     4         lto.tmp:(.text.gattc_read_req_ind_handler.5)
+ 7fc2ec4  7fc2ec4        0     1                 $t.40
+ 7fc2ec5  7fc2ec5       e8     1                 gattc_read_req_ind_handler.5
+ 7fc2fa0  7fc2fa0        0     1                 $d.41
+ 7fc2fac  7fc2fac       98     4         lto.tmp:(.text.diss_value_cfm_handler)
+ 7fc2fac  7fc2fac        0     1                 $t.42
+ 7fc2fad  7fc2fad       98     1                 diss_value_cfm_handler
+ 7fc3040  7fc3040        0     1                 $d.43
+ 7fc3044  7fc3044       64     4         lto.tmp:(.text.prf_init_func)
+ 7fc3044  7fc3044        0     1                 $t.44
+ 7fc3045  7fc3045       64     1                 prf_init_func
+ 7fc30a4  7fc30a4        0     1                 $d.45
+ 7fc30a8  7fc30a8       38     4         lto.tmp:(.text.prf_itf_get)
+ 7fc30a8  7fc30a8        0     1                 $t.46
+ 7fc30a9  7fc30a9       38     1                 prf_itf_get
+ 7fc30d0  7fc30d0        0     1                 $d.47
+ 7fc30e0  7fc30e0       84     4         lto.tmp:(.text.prf_add_profile_func)
+ 7fc30e0  7fc30e0        0     1                 $t.48
+ 7fc30e1  7fc30e1       84     1                 prf_add_profile_func
+ 7fc3160  7fc3160        0     1                 $d.49
+ 7fc3164  7fc3164       2c     4         lto.tmp:(.text.prf_create_func)
+ 7fc3164  7fc3164        0     1                 $t.50
+ 7fc3165  7fc3165       2c     1                 prf_create_func
+ 7fc318c  7fc318c        0     1                 $d.51
+ 7fc3190  7fc3190       30     4         lto.tmp:(.text.prf_cleanup_func)
+ 7fc3190  7fc3190        0     1                 $t.52
+ 7fc3191  7fc3191       30     1                 prf_cleanup_func
+ 7fc31bc  7fc31bc        0     1                 $d.53
+ 7fc31c0  7fc31c0       2c     4         lto.tmp:(.text.prf_env_get)
+ 7fc31c0  7fc31c0        0     1                 $t.54
+ 7fc31c1  7fc31c1       2c     1                 prf_env_get
+ 7fc31e8  7fc31e8        0     1                 $d.55
+ 7fc31ec  7fc31ec       34     4         lto.tmp:(.text.prf_get_id_from_task_func)
+ 7fc31ec  7fc31ec        0     1                 $t.56
+ 7fc31ed  7fc31ed       34     1                 prf_get_id_from_task_func
+ 7fc321c  7fc321c        0     1                 $d.57
+ 7fc3220  7fc3220       34     4         lto.tmp:(.text.prf_get_task_from_id_func)
+ 7fc3220  7fc3220        0     1                 $t.58
+ 7fc3221  7fc3221       34     1                 prf_get_task_from_id_func
+ 7fc3250  7fc3250        0     1                 $d.59
+ 7fc3254  7fc3254      114     4         lto.tmp:(.text.proxr_init)
+ 7fc3254  7fc3254        0     1                 $t.60
+ 7fc3255  7fc3255      114     1                 proxr_init
+ 7fc3354  7fc3354        0     1                 $d.61
+ 7fc3368  7fc3368       10     2         lto.tmp:(.text.proxr_destroy)
+ 7fc3368  7fc3368        0     1                 $t.62
+ 7fc3369  7fc3369       10     1                 proxr_destroy
+ 7fc3378  7fc3378        a     2         lto.tmp:(.text.proxr_create)
+ 7fc3378  7fc3378        0     1                 $t.63
+ 7fc3379  7fc3379        a     1                 proxr_create
+ 7fc3384  7fc3384       54     4         lto.tmp:(.text.proxr_cleanup)
+ 7fc3384  7fc3384        0     1                 $t.64
+ 7fc3385  7fc3385       54     1                 proxr_cleanup
+ 7fc33d4  7fc33d4        0     1                 $d.65
+ 7fc33d8  7fc33d8       b4     4         lto.tmp:(.text.gattc_write_req_ind_handler.18)
+ 7fc33d8  7fc33d8        0     1                 $t.66
+ 7fc33d9  7fc33d9       b4     1                 gattc_write_req_ind_handler.18
+ 7fc3484  7fc3484        0     1                 $d.67
+ 7fc348c  7fc348c       9c     4         lto.tmp:(.text.gattc_read_req_ind_handler.19)
+ 7fc348c  7fc348c        0     1                 $t.68
+ 7fc348d  7fc348d       9c     1                 gattc_read_req_ind_handler.19
+ 7fc3524  7fc3524        0     1                 $d.69
+ 7fc3528  7fc3528       80     4         lto.tmp:(.text.gapm_dev_adv_tx_power_ind_handler)
+ 7fc3528  7fc3528        0     1                 $t.70
+ 7fc3529  7fc3529       80     1                 gapm_dev_adv_tx_power_ind_handler
+ 7fc359c  7fc359c        0     1                 $d.71
+ 7fc35a8  7fc35a8       58     4         lto.tmp:(.text.gapm_cmp_evt_handler)
+ 7fc35a8  7fc35a8        0     1                 $t.72
+ 7fc35a9  7fc35a9       58     1                 gapm_cmp_evt_handler
+ 7fc35fc  7fc35fc        0     1                 $d.73
+ 7fc3600  7fc3600      4e4     4         lto.tmp:(.text.suotar_init)
+ 7fc3600  7fc3600        0     1                 $t.74
+ 7fc3601  7fc3601      4e4     1                 suotar_init
+ 7fc39a4  7fc39a4        0     1                 $d.75
+ 7fc3ae4  7fc3ae4       10     2         lto.tmp:(.text.suotar_destroy)
+ 7fc3ae4  7fc3ae4        0     1                 $t.76
+ 7fc3ae5  7fc3ae5       10     1                 suotar_destroy
+ 7fc3af4  7fc3af4        2     2         lto.tmp:(.text.suotar_create)
+ 7fc3af4  7fc3af4        0     1                 $t.77
+ 7fc3af5  7fc3af5        2     1                 suotar_create
+ 7fc3af6  7fc3af6       20     2         lto.tmp:(.text.suotar_cleanup)
+ 7fc3af6  7fc3af6        0     1                 $t.78
+ 7fc3af7  7fc3af7       20     1                 suotar_cleanup
+ 7fc3b18  7fc3b18       b0     4         lto.tmp:(.text.gattc_read_req_ind_handler.24)
+ 7fc3b18  7fc3b18        0     1                 $t.79
+ 7fc3b19  7fc3b19       b0     1                 gattc_read_req_ind_handler.24
+ 7fc3bc4  7fc3bc4        0     1                 $d.80
+ 7fc3bc8  7fc3bc8      214     4         lto.tmp:(.text.gattc_write_req_ind_handler.25)
+ 7fc3bc8  7fc3bc8        0     1                 $t.81
+ 7fc3bc9  7fc3bc9      214     1                 gattc_write_req_ind_handler.25
+ 7fc3c2c  7fc3c2c        0     1                 $d.82
+ 7fc3c38  7fc3c38        0     1                 $t.83
+ 7fc3dc8  7fc3dc8        0     1                 $d.84
+ 7fc3ddc  7fc3ddc       2a     2         lto.tmp:(.text.suotar_mem_info_update_req_handler)
+ 7fc3ddc  7fc3ddc        0     1                 $t.85
+ 7fc3ddd  7fc3ddd       2a     1                 suotar_mem_info_update_req_handler
+ 7fc3e06  7fc3e06       74     2         lto.tmp:(.text.suotar_status_update_req_handler)
+ 7fc3e06  7fc3e06        0     1                 $t.86
+ 7fc3e07  7fc3e07       74     1                 suotar_status_update_req_handler
+ 7fc3e7c  7fc3e7c       74     4         lto.tmp:(.text.adc_init)
+ 7fc3e7c  7fc3e7c        0     1                 $t.87
+ 7fc3e7d  7fc3e7d       74     1                 adc_init
+ 7fc3edc  7fc3edc        0     1                 $d.88
+ 7fc3ef0  7fc3ef0       28     4         lto.tmp:(.text.adc_get_sample)
+ 7fc3ef0  7fc3ef0        0     1                 $t.89
+ 7fc3ef1  7fc3ef1       28     1                 adc_get_sample
+ 7fc3f10  7fc3f10        0     1                 $d.90
+ 7fc3f18  7fc3f18       6c     4         lto.tmp:(.text.adc_get_vbat_sample)
+ 7fc3f18  7fc3f18        0     1                 $t.91
+ 7fc3f19  7fc3f19       6c     1                 adc_get_vbat_sample
+ 7fc3f78  7fc3f78        0     1                 $d.92
+ 7fc3f84  7fc3f84        c     4         lto.tmp:(.text.ADC_Handler)
+ 7fc3f84  7fc3f84        0     1                 $t.93
+ 7fc3f85  7fc3f85        c     1                 ADC_Handler
+ 7fc3f8c  7fc3f8c        0     1                 $d.94
+ 7fc3f90  7fc3f90      110     4         lto.tmp:(.text.battery_get_lvl)
+ 7fc3f90  7fc3f90        0     1                 $t.95
+ 7fc3f91  7fc3f91      110     1                 battery_get_lvl
+ 7fc4084  7fc4084        0     1                 $d.96
+ 7fc40a0  7fc40a0       78     4         lto.tmp:(.text.GPIO_ConfigurePin)
+ 7fc40a0  7fc40a0        0     1                 $t.97
+ 7fc40a1  7fc40a1       78     1                 GPIO_ConfigurePin
+ 7fc4110  7fc4110        0     1                 $d.98
+ 7fc4118  7fc4118       44     4         lto.tmp:(.text.GPIO_SetActive)
+ 7fc4118  7fc4118        0     1                 $t.99
+ 7fc4119  7fc4119       44     1                 GPIO_SetActive
+ 7fc4154  7fc4154        0     1                 $d.100
+ 7fc415c  7fc415c       44     4         lto.tmp:(.text.GPIO_SetInactive)
+ 7fc415c  7fc415c        0     1                 $t.101
+ 7fc415d  7fc415d       44     1                 GPIO_SetInactive
+ 7fc4198  7fc4198        0     1                 $d.102
+ 7fc41a0  7fc41a0       48     4         lto.tmp:(.text.GPIOn_Handler)
+ 7fc41a0  7fc41a0        0     1                 $t.103
+ 7fc41a1  7fc41a1       48     1                 GPIOn_Handler
+ 7fc41dc  7fc41dc        0     1                 $d.104
+ 7fc41e8  7fc41e8        a     2         lto.tmp:(.text.GPIO0_Handler)
+ 7fc41e8  7fc41e8        0     1                 $t.105
+ 7fc41e9  7fc41e9        a     1                 GPIO0_Handler
+ 7fc41f2  7fc41f2        a     2         lto.tmp:(.text.GPIO1_Handler)
+ 7fc41f2  7fc41f2        0     1                 $t.106
+ 7fc41f3  7fc41f3        a     1                 GPIO1_Handler
+ 7fc41fc  7fc41fc        a     2         lto.tmp:(.text.GPIO2_Handler)
+ 7fc41fc  7fc41fc        0     1                 $t.107
+ 7fc41fd  7fc41fd        a     1                 GPIO2_Handler
+ 7fc4206  7fc4206        a     2         lto.tmp:(.text.GPIO3_Handler)
+ 7fc4206  7fc4206        0     1                 $t.108
+ 7fc4207  7fc4207        a     1                 GPIO3_Handler
+ 7fc4210  7fc4210        a     2         lto.tmp:(.text.GPIO4_Handler)
+ 7fc4210  7fc4210        0     1                 $t.109
+ 7fc4211  7fc4211        a     1                 GPIO4_Handler
+ 7fc421c  7fc421c       14     4         lto.tmp:(.text.I2C_Handler)
+ 7fc421c  7fc421c        0     1                 $t.110
+ 7fc421d  7fc421d       14     1                 I2C_Handler
+ 7fc4228  7fc4228        0     1                 $d.111
+ 7fc4230  7fc4230       14     4         lto.tmp:(.text.spi_cs_high)
+ 7fc4230  7fc4230        0     1                 $t.112
+ 7fc4231  7fc4231       14     1                 spi_cs_high
+ 7fc4240  7fc4240        0     1                 $d.113
+ 7fc4244  7fc4244       28     4         lto.tmp:(.text.spi_set_bitmode)
+ 7fc4244  7fc4244        0     1                 $t.114
+ 7fc4245  7fc4245       28     1                 spi_set_bitmode
+ 7fc4264  7fc4264        0     1                 $d.115
+ 7fc426c  7fc426c       14     4         lto.tmp:(.text.spi_cs_low)
+ 7fc426c  7fc426c        0     1                 $t.116
+ 7fc426d  7fc426d       14     1                 spi_cs_low
+ 7fc427c  7fc427c        0     1                 $d.117
+ 7fc4280  7fc4280       3c     4         lto.tmp:(.text.spi_access)
+ 7fc4280  7fc4280        0     1                 $t.118
+ 7fc4281  7fc4281       3c     1                 spi_access
+ 7fc42b8  7fc42b8        0     1                 $d.119
+ 7fc42bc  7fc42bc       18     2         lto.tmp:(.text.spi_transaction)
+ 7fc42bc  7fc42bc        0     1                 $t.120
+ 7fc42bd  7fc42bd       18     1                 spi_transaction
+ 7fc42d4  7fc42d4       12     2         lto.tmp:(.text.spi_flash_is_busy)
+ 7fc42d4  7fc42d4        0     1                 $t.121
+ 7fc42d5  7fc42d5       12     1                 spi_flash_is_busy
+ 7fc42e6  7fc42e6       14     2         lto.tmp:(.text.spi_flash_read_status_reg)
+ 7fc42e6  7fc42e6        0     1                 $t.122
+ 7fc42e7  7fc42e7       14     1                 spi_flash_read_status_reg
+ 7fc42fc  7fc42fc       28     4         lto.tmp:(.text.spi_flash_wait_till_ready)
+ 7fc42fc  7fc42fc        0     1                 $t.123
+ 7fc42fd  7fc42fd       28     1                 spi_flash_wait_till_ready
+ 7fc4320  7fc4320        0     1                 $d.124
+ 7fc4324  7fc4324       18     2         lto.tmp:(.text.spi_flash_release_from_power_down)
+ 7fc4324  7fc4324        0     1                 $t.125
+ 7fc4325  7fc4325       18     1                 spi_flash_release_from_power_down
+ 7fc433c  7fc433c       80     4         lto.tmp:(.text.spi_flash_auto_detect)
+ 7fc433c  7fc433c        0     1                 $t.126
+ 7fc433d  7fc433d       80     1                 spi_flash_auto_detect
+ 7fc43b0  7fc43b0        0     1                 $d.127
+ 7fc43bc  7fc43bc       36     2         lto.tmp:(.text.spi_flash_write_enable)
+ 7fc43bc  7fc43bc        0     1                 $t.128
+ 7fc43bd  7fc43bd       36     1                 spi_flash_write_enable
+ 7fc43f4  7fc43f4       44     4         lto.tmp:(.text.UART2_Handler)
+ 7fc43f4  7fc43f4        0     1                 $t.129
+ 7fc43f5  7fc43f5       44     1                 UART2_Handler
+ 7fc4434  7fc4434        0     1                 $d.130
+ 7fc4438  7fc4438       10     4         lto.tmp:(.text.uart_rx_isr)
+ 7fc4438  7fc4438        0     1                 $t.131
+ 7fc4439  7fc4439       10     1                 uart_rx_isr
+ 7fc4444  7fc4444        0     1                 $d.132
+ 7fc4448  7fc4448       74     4         lto.tmp:(.text.WKUP_QUADEC_Handler)
+ 7fc4448  7fc4448        0     1                 $t.133
+ 7fc4449  7fc4449       74     1                 WKUP_QUADEC_Handler
+ 7fc44b0  7fc44b0        0     1                 $d.134
+ 7fc44bc  7fc44bc       6c     4         lto.tmp:(.text.HardFault_HandlerC)
+ 7fc44bc  7fc44bc        0     1                 $t.135
+ 7fc44bd  7fc44bd       6c     1                 HardFault_HandlerC
+ 7fc4518  7fc4518        0     1                 $d.136
+ 7fc4528  7fc4528       9c     4         lto.tmp:(.text.NMI_HandlerC)
+ 7fc4528  7fc4528        0     1                 $t.137
+ 7fc4529  7fc4529       9c     1                 NMI_HandlerC
+ 7fc45ac  7fc45ac        0     1                 $d.138
+ 7fc45c4  7fc45c4       a0     4         lto.tmp:(.text.Reset_Handler)
+ 7fc45c4  7fc45c4        0     1                 $t.139
+ 7fc45c5  7fc45c5       a0     1                 Reset_Handler
+ 7fc4648  7fc4648        0     1                 $d.140
+ 7fc4664  7fc4664       20     4         lto.tmp:(.text.NMI_Handler)
+ 7fc4664  7fc4664        0     1                 $t.141
+ 7fc4665  7fc4665       1a     1                 NMI_Handler
+ 7fc4674  7fc4674        0     1                 NMI_stacking_used_MSP
+ 7fc4680  7fc4680        0     1                 $d.320
+ 7fc4684  7fc4684       20     4         lto.tmp:(.text.HardFault_Handler)
+ 7fc4684  7fc4684        0     1                 $t.142
+ 7fc4685  7fc4685       1a     1                 HardFault_Handler
+ 7fc4694  7fc4694        0     1                 HardFault_stacking_used_MSP
+ 7fc46a0  7fc46a0        0     1                 $d.321
+ 7fc46a4  7fc46a4        2     2         lto.tmp:(.text.Default_Handler)
+ 7fc46a4  7fc46a4        0     1                 $t.143
+ 7fc46a5  7fc46a5        2     1                 Default_Handler
+ 7fc46a8  7fc46a8       50     4         lto.tmp:(.text.rf_regs)
+ 7fc46a8  7fc46a8        0     1                 $t.144
+ 7fc46a9  7fc46a9       50     1                 rf_regs
+ 7fc46d8  7fc46d8        0     1                 $d.145
+ 7fc46f8  7fc46f8       a8     4         lto.tmp:(.text.rf_init_func)
+ 7fc46f8  7fc46f8        0     1                 $t.146
+ 7fc46f9  7fc46f9       a8     1                 rf_init_func
+ 7fc4770  7fc4770        0     1                 $d.147
+ 7fc47a0  7fc47a0        4     2         lto.tmp:(.text.rf_reg_rd)
+ 7fc47a0  7fc47a0        0     1                 $t.148
+ 7fc47a1  7fc47a1        4     1                 rf_reg_rd
+ 7fc47a4  7fc47a4        2     2         lto.tmp:(.text.rf_reg_wr)
+ 7fc47a4  7fc47a4        0     1                 $t.149
+ 7fc47a5  7fc47a5        2     1                 rf_reg_wr
+ 7fc47a6  7fc47a6        4     2         lto.tmp:(.text.rf_txpwr_dbm_get)
+ 7fc47a6  7fc47a6        0     1                 $t.150
+ 7fc47a7  7fc47a7        4     1                 rf_txpwr_dbm_get
+ 7fc47ac  7fc47ac       10     4         lto.tmp:(.text.rf_sleep)
+ 7fc47ac  7fc47ac        0     1                 $t.151
+ 7fc47ad  7fc47ad       10     1                 rf_sleep
+ 7fc47b8  7fc47b8        0     1                 $d.152
+ 7fc47bc  7fc47bc        2     2         lto.tmp:(.text.rf_reset)
+ 7fc47bc  7fc47bc        0     1                 $t.153
+ 7fc47bd  7fc47bd        2     1                 rf_reset
+ 7fc47be  7fc47be        2     2         lto.tmp:(.text.RADIOCNTL_Handler)
+ 7fc47be  7fc47be        0     1                 $t.154
+ 7fc47bf  7fc47bf        2     1                 RADIOCNTL_Handler
+ 7fc47c0  7fc47c0        2     2         lto.tmp:(.text.rf_force_agc_enable)
+ 7fc47c0  7fc47c0        0     1                 $t.155
+ 7fc47c1  7fc47c1        2     1                 rf_force_agc_enable
+ 7fc47c2  7fc47c2        8     2         lto.tmp:(.text.rf_rssi_convert)
+ 7fc47c2  7fc47c2        0     1                 $t.156
+ 7fc47c3  7fc47c3        8     1                 rf_rssi_convert
+ 7fc47cc  7fc47cc       4c     4         lto.tmp:(.text.rf_reinit_func)
+ 7fc47cc  7fc47cc        0     1                 $t.157
+ 7fc47cd  7fc47cd       4c     1                 rf_reinit_func
+ 7fc4814  7fc4814        0     1                 $d.158
+ 7fc4818  7fc4818       80     4         lto.tmp:(.text.lld_sleep_compensate_func)
+ 7fc4818  7fc4818        0     1                 $t.159
+ 7fc4819  7fc4819       80     1                 lld_sleep_compensate_func
+ 7fc4884  7fc4884        0     1                 $d.160
+ 7fc4898  7fc4898      17c     4         lto.tmp:(.text.BLE_WAKEUP_LP_Handler)
+ 7fc4898  7fc4898        0     1                 $t.161
+ 7fc4899  7fc4899      17c     1                 BLE_WAKEUP_LP_Handler
+ 7fc49f4  7fc49f4        0     1                 $d.162
+ 7fc4a14  7fc4a14       f8     4         lto.tmp:(.text.rwble_isr)
+ 7fc4a14  7fc4a14        0     1                 $t.163
+ 7fc4a15  7fc4a15       f8     1                 rwble_isr
+ 7fc4af8  7fc4af8        0     1                 $d.164
+ 7fc4b0c  7fc4b0c      a90     4         lto.tmp:(.text.main)
+ 7fc4b0c  7fc4b0c        0     1                 $t.165
+ 7fc4b0d  7fc4b0d      a90     1                 main
+ 7fc4cd8  7fc4cd8        0     1                 $d.166
+ 7fc4cec  7fc4cec        0     1                 $t.167
+ 7fc5054  7fc5054        0     1                 $d.168
+ 7fc5110  7fc5110        0     1                 $t.169
+ 7fc5460  7fc5460        0     1                 $d.170
+ 7fc5478  7fc5478        0     1                 $t.171
+ 7fc552c  7fc552c        0     1                 $d.172
+ 7fc559c  7fc559c       34     4         lto.tmp:(.text.arch_ble_force_wakeup)
+ 7fc559c  7fc559c        0     1                 $t.173
+ 7fc559d  7fc559d       34     1                 arch_ble_force_wakeup
+ 7fc55c8  7fc55c8        0     1                 $d.174
+ 7fc55d0  7fc55d0       3c     4         lto.tmp:(.text.set_sleep_delay)
+ 7fc55d0  7fc55d0        0     1                 $t.175
+ 7fc55d1  7fc55d1       3c     1                 set_sleep_delay
+ 7fc5604  7fc5604        0     1                 $d.176
+ 7fc560c  7fc560c       50     4         lto.tmp:(.text.get_rc16m_count)
+ 7fc560c  7fc560c        0     1                 $t.177
+ 7fc560d  7fc560d       50     1                 get_rc16m_count
+ 7fc5654  7fc5654        0     1                 $d.178
+ 7fc565c  7fc565c        8     2         lto.tmp:(.text.lld_sleep_us_2_lpcycles_sel_func)
+ 7fc565c  7fc565c        0     1                 $t.179
+ 7fc565d  7fc565d        8     1                 lld_sleep_us_2_lpcycles_sel_func
+ 7fc5664  7fc5664        8     2         lto.tmp:(.text.lld_sleep_lpcycles_2_us_sel_func)
+ 7fc5664  7fc5664        0     1                 $t.180
+ 7fc5665  7fc5665        8     1                 lld_sleep_lpcycles_2_us_sel_func
+ 7fc566c  7fc566c       24     4         lto.tmp:(.text.lld_sleep_init_func)
+ 7fc566c  7fc566c        0     1                 $t.181
+ 7fc566d  7fc566d       24     1                 lld_sleep_init_func
+ 7fc5688  7fc5688        0     1                 $d.182
+ 7fc5690  7fc5690       b0     4         lto.tmp:(.text.nvds_get_func)
+ 7fc5690  7fc5690        0     1                 $t.183
+ 7fc5691  7fc5691       b0     1                 nvds_get_func
+ 7fc56a8  7fc56a8        0     1                 $d.184
+ 7fc56ae  7fc56ae        0     1                 $t.185
+ 7fc5734  7fc5734        0     1                 $d.186
+ 7fc5740  7fc5740        4     2         lto.tmp:(.text.nvds_init_func)
+ 7fc5740  7fc5740        0     1                 $t.187
+ 7fc5741  7fc5741        4     1                 nvds_init_func
+ 7fc5744  7fc5744        4     2         lto.tmp:(.text.nvds_del_func)
+ 7fc5744  7fc5744        0     1                 $t.188
+ 7fc5745  7fc5745        4     1                 nvds_del_func
+ 7fc5748  7fc5748        4     2         lto.tmp:(.text.nvds_put_func)
+ 7fc5748  7fc5748        0     1                 $t.189
+ 7fc5749  7fc5749        4     1                 nvds_put_func
+ 7fc574c  7fc574c       40     4         lto.tmp:(.text.app_db_init_next)
+ 7fc574c  7fc574c        0     1                 $t.190
+ 7fc574d  7fc574d       40     1                 app_db_init_next
+ 7fc5784  7fc5784        0     1                 $d.191
+ 7fc578c  7fc578c       38     4         lto.tmp:(.text.app_easy_gap_disconnect)
+ 7fc578c  7fc578c        0     1                 $t.192
+ 7fc578d  7fc578d       38     1                 app_easy_gap_disconnect
+ 7fc57bc  7fc57bc        0     1                 $d.193
+ 7fc57c4  7fc57c4       28     4         lto.tmp:(.text.app_easy_gap_advertise_stop_handler)
+ 7fc57c4  7fc57c4        0     1                 $t.194
+ 7fc57c5  7fc57c5       28     1                 app_easy_gap_advertise_stop_handler
+ 7fc57e4  7fc57e4        0     1                 $d.195
+ 7fc57ec  7fc57ec       24     4         lto.tmp:(.text.app_timer_set)
+ 7fc57ec  7fc57ec        0     1                 $t.196
+ 7fc57ed  7fc57ed       24     1                 app_timer_set
+ 7fc5808  7fc5808        0     1                 $d.197
+ 7fc5810  7fc5810       28     4         lto.tmp:(.text.get_user_prf_srv_perm)
+ 7fc5810  7fc5810        0     1                 $t.198
+ 7fc5811  7fc5811       28     1                 get_user_prf_srv_perm
+ 7fc5834  7fc5834        0     1                 $d.199
+ 7fc5838  7fc5838       4c     4         lto.tmp:(.text.app_bass_create_db)
+ 7fc5838  7fc5838        0     1                 $t.200
+ 7fc5839  7fc5839       4c     1                 app_bass_create_db
+ 7fc587c  7fc587c        0     1                 $d.201
+ 7fc5884  7fc5884       40     4         lto.tmp:(.text.app_bass_enable)
+ 7fc5884  7fc5884        0     1                 $t.202
+ 7fc5885  7fc5885       40     1                 app_bass_enable
+ 7fc58c0  7fc58c0        0     1                 $d.203
+ 7fc58c4  7fc58c4       20     4         lto.tmp:(.text.app_bass_process_handler)
+ 7fc58c4  7fc58c4        0     1                 $t.204
+ 7fc58c5  7fc58c5       20     1                 app_bass_process_handler
+ 7fc58e0  7fc58e0        0     1                 $d.205
+ 7fc58e4  7fc58e4        4     2         lto.tmp:(.text.bass_enable_rsp_handler)
+ 7fc58e4  7fc58e4        0     1                 $t.206
+ 7fc58e5  7fc58e5        4     1                 bass_enable_rsp_handler
+ 7fc58e8  7fc58e8        4     2         lto.tmp:(.text.bass_batt_level_upd_rsp_handler)
+ 7fc58e8  7fc58e8        0     1                 $t.207
+ 7fc58e9  7fc58e9        4     1                 bass_batt_level_upd_rsp_handler
+ 7fc58ec  7fc58ec        4     2         lto.tmp:(.text.bass_batt_level_ntf_cfg_ind_handler)
+ 7fc58ec  7fc58ec        0     1                 $t.208
+ 7fc58ed  7fc58ed        4     1                 bass_batt_level_ntf_cfg_ind_handler
+ 7fc58f0  7fc58f0       50     4         lto.tmp:(.text.app_bass_timer_handler)
+ 7fc58f0  7fc58f0        0     1                 $t.209
+ 7fc58f1  7fc58f1       50     1                 app_bass_timer_handler
+ 7fc5934  7fc5934        0     1                 $d.210
+ 7fc5940  7fc5940        4     2         lto.tmp:(.text.app_bass_alert_timer_handler)
+ 7fc5940  7fc5940        0     1                 $t.211
+ 7fc5941  7fc5941        4     1                 app_bass_alert_timer_handler
+ 7fc5944  7fc5944       d0     4         lto.tmp:(.text.default_advertise_operation)
+ 7fc5944  7fc5944        0     1                 $t.212
+ 7fc5945  7fc5945       d0     1                 default_advertise_operation
+ 7fc59f0  7fc59f0        0     1                 $d.213
+ 7fc5a14  7fc5a14       38     4         lto.tmp:(.text.app_diss_create_db)
+ 7fc5a14  7fc5a14        0     1                 $t.214
+ 7fc5a15  7fc5a15       38     1                 app_diss_create_db
+ 7fc5a48  7fc5a48        0     1                 $d.215
+ 7fc5a4c  7fc5a4c       20     4         lto.tmp:(.text.app_diss_process_handler)
+ 7fc5a4c  7fc5a4c        0     1                 $t.216
+ 7fc5a4d  7fc5a4d       20     1                 app_diss_process_handler
+ 7fc5a68  7fc5a68        0     1                 $d.217
+ 7fc5a6c  7fc5a6c       9c     4         lto.tmp:(.text.diss_value_req_ind_handler)
+ 7fc5a6c  7fc5a6c        0     1                 $t.218
+ 7fc5a6d  7fc5a6d       9c     1                 diss_value_req_ind_handler
+ 7fc5a88  7fc5a88        0     1                 $d.219
+ 7fc5a92  7fc5a92        0     1                 $t.220
+ 7fc5ae8  7fc5ae8        0     1                 $d.221
+ 7fc5b08  7fc5b08       3c     4         lto.tmp:(.text.app_msg_utils_api_process_handler)
+ 7fc5b08  7fc5b08        0     1                 $t.222
+ 7fc5b09  7fc5b09       3c     1                 app_msg_utils_api_process_handler
+ 7fc5b3c  7fc5b3c        0     1                 $d.223
+ 7fc5b44  7fc5b44       54     4         lto.tmp:(.text.app_easy_security_tk_exch)
+ 7fc5b44  7fc5b44        0     1                 $t.224
+ 7fc5b45  7fc5b45       54     1                 app_easy_security_tk_exch
+ 7fc5b90  7fc5b90        0     1                 $d.225
+ 7fc5b98  7fc5b98       34     4         lto.tmp:(.text.ltk_exch_create_msg)
+ 7fc5b98  7fc5b98        0     1                 $t.226
+ 7fc5b99  7fc5b99       34     1                 ltk_exch_create_msg
+ 7fc5bc4  7fc5bc4        0     1                 $d.227
+ 7fc5bcc  7fc5bcc       fc     4         lto.tmp:(.text.app_timer_api_process_handler)
+ 7fc5bcc  7fc5bcc        0     1                 $t.228
+ 7fc5bcd  7fc5bcd       fc     1                 app_timer_api_process_handler
+ 7fc5cac  7fc5cac        0     1                 $d.229
+ 7fc5cc8  7fc5cc8        2     2         lto.tmp:(.text.timer_canceled_handler)
+ 7fc5cc8  7fc5cc8        0     1                 $t.230
+ 7fc5cc9  7fc5cc9        2     1                 timer_canceled_handler
+ 7fc5cca  7fc5cca        2     2         lto.tmp:(.text.timer_modified_handler)
+ 7fc5cca  7fc5cca        0     1                 $t.231
+ 7fc5ccb  7fc5ccb        2     1                 timer_modified_handler
+ 7fc5ccc  7fc5ccc       58     4         lto.tmp:(.text.create_timer)
+ 7fc5ccc  7fc5ccc        0     1                 $t.232
+ 7fc5ccd  7fc5ccd       58     1                 create_timer
+ 7fc5d14  7fc5d14        0     1                 $d.233
+ 7fc5d24  7fc5d24       58     4         lto.tmp:(.text.app_easy_timer_cancel)
+ 7fc5d24  7fc5d24        0     1                 $t.234
+ 7fc5d25  7fc5d25       58     1                 app_easy_timer_cancel
+ 7fc5d70  7fc5d70        0     1                 $d.235
+ 7fc5d7c  7fc5d7c       48     4         lto.tmp:(.text.app_entry_point_handler)
+ 7fc5d7c  7fc5d7c        0     1                 $t.236
+ 7fc5d7d  7fc5d7d       48     1                 app_entry_point_handler
+ 7fc5dc0  7fc5dc0        0     1                 $d.237
+ 7fc5dc4  7fc5dc4       5c     4         lto.tmp:(.text.app_std_process_event)
+ 7fc5dc4  7fc5dc4        0     1                 $t.238
+ 7fc5dc5  7fc5dc5       5c     1                 app_std_process_event
+ 7fc5e1c  7fc5e1c        0     1                 $d.239
+ 7fc5e20  7fc5e20       34     4         lto.tmp:(.text.app_proxr_create_db)
+ 7fc5e20  7fc5e20        0     1                 $t.240
+ 7fc5e21  7fc5e21       34     1                 app_proxr_create_db
+ 7fc5e50  7fc5e50        0     1                 $d.241
+ 7fc5e54  7fc5e54       24     4         lto.tmp:(.text.app_proxr_alert_stop)
+ 7fc5e54  7fc5e54        0     1                 $t.242
+ 7fc5e55  7fc5e55       24     1                 app_proxr_alert_stop
+ 7fc5e70  7fc5e70        0     1                 $d.243
+ 7fc5e78  7fc5e78       20     4         lto.tmp:(.text.app_proxr_process_handler)
+ 7fc5e78  7fc5e78        0     1                 $t.244
+ 7fc5e79  7fc5e79       20     1                 app_proxr_process_handler
+ 7fc5e94  7fc5e94        0     1                 $d.245
+ 7fc5e98  7fc5e98       38     4         lto.tmp:(.text.app_proxr_timer_handler)
+ 7fc5e98  7fc5e98        0     1                 $t.246
+ 7fc5e99  7fc5e99       38     1                 app_proxr_timer_handler
+ 7fc5ec8  7fc5ec8        0     1                 $d.247
+ 7fc5ed0  7fc5ed0       40     4         lto.tmp:(.text.proxr_alert_ind_handler)
+ 7fc5ed0  7fc5ed0        0     1                 $t.248
+ 7fc5ed1  7fc5ed1       40     1                 proxr_alert_ind_handler
+ 7fc5f08  7fc5f08        0     1                 $d.249
+ 7fc5f10  7fc5f10       20     4         lto.tmp:(.text.app_sec_process_handler)
+ 7fc5f10  7fc5f10        0     1                 $t.250
+ 7fc5f11  7fc5f11       20     1                 app_sec_process_handler
+ 7fc5f2c  7fc5f2c        0     1                 $d.251
+ 7fc5f30  7fc5f30      13c     4         lto.tmp:(.text.gapc_bond_req_ind_handler)
+ 7fc5f30  7fc5f30        0     1                 $t.252
+ 7fc5f31  7fc5f31      13c     1                 gapc_bond_req_ind_handler
+ 7fc5f44  7fc5f44        0     1                 $d.253
+ 7fc5f4c  7fc5f4c        0     1                 $t.254
+ 7fc5fb8  7fc5fb8        0     1                 $d.255
+ 7fc5fbc  7fc5fbc        0     1                 $t.256
+ 7fc6054  7fc6054        0     1                 $d.257
+ 7fc606c  7fc606c       f8     4         lto.tmp:(.text.gapc_bond_ind_handler)
+ 7fc606c  7fc606c        0     1                 $t.258
+ 7fc606d  7fc606d       f8     1                 gapc_bond_ind_handler
+ 7fc6080  7fc6080        0     1                 $d.259
+ 7fc6086  7fc6086        0     1                 $t.260
+ 7fc615c  7fc615c        0     1                 $d.261
+ 7fc6164  7fc6164        4     2         lto.tmp:(.text.gapc_encrypt_req_ind_handler)
+ 7fc6164  7fc6164        0     1                 $t.262
+ 7fc6165  7fc6165        4     1                 gapc_encrypt_req_ind_handler
+ 7fc6168  7fc6168       18     4         lto.tmp:(.text.gapc_encrypt_ind_handler)
+ 7fc6168  7fc6168        0     1                 $t.263
+ 7fc6169  7fc6169       18     1                 gapc_encrypt_ind_handler
+ 7fc617c  7fc617c        0     1                 $d.264
+ 7fc6180  7fc6180        4     2         lto.tmp:(.text.gapm_addr_solved_ind_handler)
+ 7fc6180  7fc6180        0     1                 $t.265
+ 7fc6181  7fc6181        4     1                 gapm_addr_solved_ind_handler
+ 7fc6184  7fc6184        4     2         lto.tmp:(.text.gapm_ral_size_ind_handler)
+ 7fc6184  7fc6184        0     1                 $t.266
+ 7fc6185  7fc6185        4     1                 gapm_ral_size_ind_handler
+ 7fc6188  7fc6188        4     2         lto.tmp:(.text.gapm_ral_addr_ind_handler)
+ 7fc6188  7fc6188        0     1                 $t.267
+ 7fc6189  7fc6189        4     1                 gapm_ral_addr_ind_handler
+ 7fc618c  7fc618c       34     4         lto.tmp:(.text.app_suotar_create_db)
+ 7fc618c  7fc618c        0     1                 $t.268
+ 7fc618d  7fc618d       34     1                 app_suotar_create_db
+ 7fc61bc  7fc61bc        0     1                 $d.269
+ 7fc61c0  7fc61c0       24     4         lto.tmp:(.text.suotar_send_status_update_req)
+ 7fc61c0  7fc61c0        0     1                 $t.270
+ 7fc61c1  7fc61c1       24     1                 suotar_send_status_update_req
+ 7fc61e0  7fc61e0        0     1                 $d.271
+ 7fc61e4  7fc61e4       58     4         lto.tmp:(.text.app_suotar_stop)
+ 7fc61e4  7fc61e4        0     1                 $t.272
+ 7fc61e5  7fc61e5       58     1                 app_suotar_stop
+ 7fc622c  7fc622c        0     1                 $d.273
+ 7fc623c  7fc623c      1e8     4         lto.tmp:(.text.app_suotar_spi_config)
+ 7fc623c  7fc623c        0     1                 $t.274
+ 7fc623d  7fc623d      1e8     1                 app_suotar_spi_config
+ 7fc6414  7fc6414        0     1                 $d.275
+ 7fc6424  7fc6424        e     2         lto.tmp:(.text.app_spi_flash_init)
+ 7fc6424  7fc6424        0     1                 $t.276
+ 7fc6425  7fc6425        e     1                 app_spi_flash_init
+ 7fc6434  7fc6434       dc     4         lto.tmp:(.text.app_flash_write_data)
+ 7fc6434  7fc6434        0     1                 $t.277
+ 7fc6435  7fc6435       dc     1                 app_flash_write_data
+ 7fc6508  7fc6508        0     1                 $d.278
+ 7fc6510  7fc6510       98     4         lto.tmp:(.text.app_erase_flash_sectors)
+ 7fc6510  7fc6510        0     1                 $t.279
+ 7fc6511  7fc6511       98     1                 app_erase_flash_sectors
+ 7fc6594  7fc6594        0     1                 $d.280
+ 7fc65a8  7fc65a8       24     4         lto.tmp:(.text.suotar_send_mem_info_update_req)
+ 7fc65a8  7fc65a8        0     1                 $t.281
+ 7fc65a9  7fc65a9       24     1                 suotar_send_mem_info_update_req
+ 7fc65c8  7fc65c8        0     1                 $d.282
+ 7fc65cc  7fc65cc       70     4         lto.tmp:(.text.app_read_ext_mem)
+ 7fc65cc  7fc65cc        0     1                 $t.283
+ 7fc65cd  7fc65cd       70     1                 app_read_ext_mem
+ 7fc6634  7fc6634        0     1                 $d.284
+ 7fc663c  7fc663c       20     4         lto.tmp:(.text.app_suotar_process_handler)
+ 7fc663c  7fc663c        0     1                 $t.285
+ 7fc663d  7fc663d       20     1                 app_suotar_process_handler
+ 7fc6658  7fc6658        0     1                 $d.286
+ 7fc665c  7fc665c      138     4         lto.tmp:(.text.suotar_patch_mem_dev_ind_handler)
+ 7fc665c  7fc665c        0     1                 $t.287
+ 7fc665d  7fc665d      138     1                 suotar_patch_mem_dev_ind_handler
+ 7fc6784  7fc6784        0     1                 $d.288
+ 7fc6794  7fc6794       34     4         lto.tmp:(.text.suotar_gpio_map_ind_handler)
+ 7fc6794  7fc6794        0     1                 $t.289
+ 7fc6795  7fc6795       34     1                 suotar_gpio_map_ind_handler
+ 7fc67c4  7fc67c4        0     1                 $d.290
+ 7fc67c8  7fc67c8       44     4         lto.tmp:(.text.suotar_patch_len_ind_handler)
+ 7fc67c8  7fc67c8        0     1                 $t.291
+ 7fc67c9  7fc67c9       44     1                 suotar_patch_len_ind_handler
+ 7fc6800  7fc6800        0     1                 $d.292
+ 7fc680c  7fc680c      388     4         lto.tmp:(.text.suotar_patch_data_ind_handler)
+ 7fc680c  7fc680c        0     1                 $t.293
+ 7fc680d  7fc680d      388     1                 suotar_patch_data_ind_handler
+ 7fc6b88  7fc6b88        0     1                 $d.294
+ 7fc6b94  7fc6b94       20     4         lto.tmp:(.text.app_gap_process_handler)
+ 7fc6b94  7fc6b94        0     1                 $t.295
+ 7fc6b95  7fc6b95       20     1                 app_gap_process_handler
+ 7fc6bb0  7fc6bb0        0     1                 $d.296
+ 7fc6bb4  7fc6bb4       2c     4         lto.tmp:(.text.gapm_device_ready_ind_handler)
+ 7fc6bb4  7fc6bb4        0     1                 $t.297
+ 7fc6bb5  7fc6bb5       2c     1                 gapm_device_ready_ind_handler
+ 7fc6bdc  7fc6bdc        0     1                 $d.298
+ 7fc6be0  7fc6be0       f4     4         lto.tmp:(.text.gapm_cmp_evt_handler.177)
+ 7fc6be0  7fc6be0        0     1                 $t.299
+ 7fc6be1  7fc6be1       f4     1                 gapm_cmp_evt_handler.177
+ 7fc6bf4  7fc6bf4        0     1                 $d.300
+ 7fc6c0c  7fc6c0c        0     1                 $t.301
+ 7fc6cc0  7fc6cc0        0     1                 $d.302
+ 7fc6cd4  7fc6cd4       24     2         lto.tmp:(.text.gapc_cmp_evt_handler)
+ 7fc6cd4  7fc6cd4        0     1                 $t.303
+ 7fc6cd5  7fc6cd5       24     1                 gapc_cmp_evt_handler
+ 7fc6cf8  7fc6cf8       e0     4         lto.tmp:(.text.gapc_connection_req_ind_handler)
+ 7fc6cf8  7fc6cf8        0     1                 $t.304
+ 7fc6cf9  7fc6cf9       e0     1                 gapc_connection_req_ind_handler
+ 7fc6dc4  7fc6dc4        0     1                 $d.305
+ 7fc6dd8  7fc6dd8       58     4         lto.tmp:(.text.gapc_disconnect_ind_handler)
+ 7fc6dd8  7fc6dd8        0     1                 $t.306
+ 7fc6dd9  7fc6dd9       58     1                 gapc_disconnect_ind_handler
+ 7fc6e20  7fc6e20        0     1                 $d.307
+ 7fc6e30  7fc6e30       a8     4         lto.tmp:(.text.gapc_get_dev_info_req_ind_handler)
+ 7fc6e30  7fc6e30        0     1                 $t.308
+ 7fc6e31  7fc6e31       a8     1                 gapc_get_dev_info_req_ind_handler
+ 7fc6ed0  7fc6ed0        0     1                 $d.309
+ 7fc6ed8  7fc6ed8       5c     4         lto.tmp:(.text.gapc_set_dev_info_req_ind_handler)
+ 7fc6ed8  7fc6ed8        0     1                 $t.310
+ 7fc6ed9  7fc6ed9       5c     1                 gapc_set_dev_info_req_ind_handler
+ 7fc6f2c  7fc6f2c        0     1                 $d.311
+ 7fc6f34  7fc6f34       24     2         lto.tmp:(.text.gapm_profile_added_ind_handler)
+ 7fc6f34  7fc6f34        0     1                 $t.312
+ 7fc6f35  7fc6f35       24     1                 gapm_profile_added_ind_handler
+ 7fc6f58  7fc6f58        4     2         lto.tmp:(.text.gapm_adv_report_ind_handler)
+ 7fc6f58  7fc6f58        0     1                 $t.313
+ 7fc6f59  7fc6f59        4     1                 gapm_adv_report_ind_handler
+ 7fc6f5c  7fc6f5c       20     2         lto.tmp:(.text.gapc_param_update_req_ind_handler)
+ 7fc6f5c  7fc6f5c        0     1                 $t.314
+ 7fc6f5d  7fc6f5d       20     1                 gapc_param_update_req_ind_handler
+ 7fc6f7c  7fc6f7c        4     2         lto.tmp:(.text.gapc_le_pkt_size_ind_handler)
+ 7fc6f7c  7fc6f7c        0     1                 $t.315
+ 7fc6f7d  7fc6f7d        4     1                 gapc_le_pkt_size_ind_handler
+ 7fc6f80  7fc6f80        4     2         lto.tmp:(.text.gattc_svc_changed_cfg_ind_handler)
+ 7fc6f80  7fc6f80        0     1                 $t.316
+ 7fc6f81  7fc6f81        4     1                 gattc_svc_changed_cfg_ind_handler
+ 7fc6f84  7fc6f84        4     2         lto.tmp:(.text.gapc_peer_features_ind_handler)
+ 7fc6f84  7fc6f84        0     1                 $t.317
+ 7fc6f85  7fc6f85        4     1                 gapc_peer_features_ind_handler
+ 7fc6f88  7fc6f88        4     2         lto.tmp:(.text.gapc_security_ind_handler)
+ 7fc6f88  7fc6f88        0     1                 $t.318
+ 7fc6f89  7fc6f89        4     1                 gapc_security_ind_handler
+ 7fc6f8c  7fc6f8c       b2     2         lto.tmp:(.text.app_fill_random_byte_array)
+ 7fc6f8c  7fc6f8c        0     1                 $t.319
+ 7fc6f8d  7fc6f8d       b2     1                 app_fill_random_byte_array
+ 7fc703e  7fc703e        2     1         . = ALIGN ( 4 )
+ 7fc7040  7fc7040       30     4         <internal>:(.rodata.cst16)
+ 7fc7070  7fc7070       20     1         <internal>:(.rodata.cst32)
+ 7fc7090  7fc7090      240     4         ./sdk_arch/jump_table.o:(.rodata)
+ 7fc7090  7fc7090      184     1                 rom_func_addr_table_var
+ 7fc7214  7fc7214       bc     1                 rom_cfg_table_var
+ 7fc72d0  7fc72d0        c     4         lto.tmp:(.rodata.spi_flash_cfg)
+ 7fc72d0  7fc72d0        c     1                 spi_flash_cfg
+ 7fc72dc  7fc72dc       3c     4         lto.tmp:(.rodata.bas_att_db)
+ 7fc72dc  7fc72dc       3c     1                 bas_att_db
+ 7fc7318  7fc7318       10     4         lto.tmp:(.rodata.bass_itf)
+ 7fc7318  7fc7318       10     1                 bass_itf
+ 7fc7328  7fc7328       30     4         lto.tmp:(.rodata.bass_default_state)
+ 7fc7328  7fc7328       30     1                 bass_default_state
+ 7fc7358  7fc7358        8     4         lto.tmp:(.rodata.bass_default_handler)
+ 7fc7358  7fc7358        8     1                 bass_default_handler
+ 7fc7360  7fc7360        6     2         lto.tmp:(.rodata..Lswitch.table.gattc_read_req_ind_handler)
+ 7fc7368  7fc7368       e4     4         lto.tmp:(.rodata.diss_att_db)
+ 7fc7368  7fc7368       e4     1                 diss_att_db
+ 7fc744c  7fc744c       10     4         lto.tmp:(.rodata.diss_itf)
+ 7fc744c  7fc744c       10     1                 diss_itf
+ 7fc745c  7fc745c       18     4         lto.tmp:(.rodata.diss_default_state)
+ 7fc745c  7fc745c       18     1                 diss_default_state
+ 7fc7474  7fc7474        8     4         lto.tmp:(.rodata.diss_default_handler)
+ 7fc7474  7fc7474        8     1                 diss_default_handler
+ 7fc747c  7fc747c       24     4         lto.tmp:(.rodata.proxr_lls_att_db)
+ 7fc747c  7fc747c       24     1                 proxr_lls_att_db
+ 7fc74a0  7fc74a0       24     4         lto.tmp:(.rodata.proxr_ias_att_db)
+ 7fc74a0  7fc74a0       24     1                 proxr_ias_att_db
+ 7fc74c4  7fc74c4       24     4         lto.tmp:(.rodata.proxr_txps_att_db)
+ 7fc74c4  7fc74c4       24     1                 proxr_txps_att_db
+ 7fc74e8  7fc74e8       10     4         lto.tmp:(.rodata.proxr_itf)
+ 7fc74e8  7fc74e8       10     1                 proxr_itf
+ 7fc74f8  7fc74f8       20     4         lto.tmp:(.rodata.proxr_default_state)
+ 7fc74f8  7fc74f8       20     1                 proxr_default_state
+ 7fc7518  7fc7518        8     4         lto.tmp:(.rodata.proxr_default_handler)
+ 7fc7518  7fc7518        8     1                 proxr_default_handler
+ 7fc7520  7fc7520       10     4         lto.tmp:(.rodata.suotar_itf)
+ 7fc7520  7fc7520       10     1                 suotar_itf
+ 7fc7530  7fc7530       20     4         lto.tmp:(.rodata.suotar_default_state)
+ 7fc7530  7fc7530       20     1                 suotar_default_state
+ 7fc7550  7fc7550        8     4         lto.tmp:(.rodata.suotar_default_handler)
+ 7fc7550  7fc7550        8     1                 suotar_default_handler
+ 7fc7558  7fc7558       10     2         <internal>:(.rodata.cst8)
+ 7fc7568  7fc7568       e4     4         lto.tmp:(.rodata..L__const.spi_flash_auto_detect.known_spi_devs_list)
+ 7fc764c  7fc764c       5a     2         lto.tmp:(.rodata.gap_cfg_user_var_struct)
+ 7fc764c  7fc764c       5a     1                 gap_cfg_user_var_struct
+ 7fc76a6  7fc76a6        e     2         lto.tmp:(.rodata.nvds_data_storage)
+ 7fc76a6  7fc76a6        e     1                 nvds_data_storage
+ 7fc76b4  7fc76b4       40     4         lto.tmp:(.rodata.my_custom_msg_handlers)
+ 7fc76b4  7fc76b4       40     1                 my_custom_msg_handlers
+ 7fc76f4  7fc76f4       90     4         lto.tmp:(.rodata.patch_orig_table)
+ 7fc76f4  7fc76f4       90     1                 patch_orig_table
+ 7fc7784  7fc7784       48     4         lto.tmp:(.rodata.patch_new_table)
+ 7fc7784  7fc7784       48     1                 patch_new_table
+ 7fc77cc  7fc77cc       3c     4         lto.tmp:(.rodata.prf_funcs)
+ 7fc77cc  7fc77cc       3c     1                 prf_funcs
+ 7fc7808  7fc7808       2a     4         <internal>:(.rodata.str1.4)
+ 7fc7834  7fc7834       10     4         lto.tmp:(.rodata.TASK_DESC_APP)
+ 7fc7834  7fc7834       10     1                 TASK_DESC_APP
+ 7fc7844  7fc7844        c     4         lto.tmp:(.rodata..L.str.2)
+ 7fc7850  7fc7850       28     4         lto.tmp:(.rodata.app_bass_process_handlers)
+ 7fc7850  7fc7850       28     1                 app_bass_process_handlers
+ 7fc7878  7fc7878        8     4         lto.tmp:(.rodata.app_diss_process_handlers)
+ 7fc7878  7fc7878        8     1                 app_diss_process_handlers
+ 7fc7880  7fc7880       39     1         <internal>:(.rodata.str1.1)
+ 7fc78bc  7fc78bc       20     4         lto.tmp:(.rodata.app_process_handlers)
+ 7fc78bc  7fc78bc       20     1                 app_process_handlers
+ 7fc78dc  7fc78dc       10     4         lto.tmp:(.rodata.app_proxr_process_handlers)
+ 7fc78dc  7fc78dc       10     1                 app_proxr_process_handlers
+ 7fc78ec  7fc78ec       38     4         lto.tmp:(.rodata.app_sec_process_handlers)
+ 7fc78ec  7fc78ec       38     1                 app_sec_process_handlers
+ 7fc7924  7fc7924       20     4         lto.tmp:(.rodata.app_suotar_process_handlers)
+ 7fc7924  7fc7924       20     1                 app_suotar_process_handlers
+ 7fc7944  7fc7944        8     4         lto.tmp:(.rodata.app_default_state)
+ 7fc7944  7fc7944        8     1                 app_default_state
+ 7fc794c  7fc794c        8     4         lto.tmp:(.rodata.app_default_handler)
+ 7fc794c  7fc794c        8     1                 app_default_handler
+ 7fc7954  7fc7954       70     4         lto.tmp:(.rodata.app_gap_process_handlers)
+ 7fc7954  7fc7954       70     1                 app_gap_process_handlers
+ 7fc79c4  7fc79c4        0     1 __exidx_start = .
+ 7fc79c4  7fc79c4       1a     2 i.__ARM_common_switch8
+ 7fc79c4  7fc79c4       1a     2         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(patch.o):(i.__ARM_common_switch8)
+ 7fc79c4  7fc79c4        0     1                 $t
+ 7fc79e0  7fc79e0       10     4 .ARM.exidx
+ 7fc79e0  7fc79e0       10     4         <internal>:(.ARM.exidx)
+ 7fc79f0  7fc79f0        0     1 __exidx_end = .
+ 7fc79f0  7fc79f0        c     1 .copy.table
+ 7fc79f0  7fc79f0        0     1         . = ALIGN ( 4 )
+ 7fc79f0  7fc79f0        0     1         __copy_table_start__ = .
+ 7fc79f0  7fc79f0        4     1         LONG ( __etext )
+ 7fc79f4  7fc79f4        4     1         LONG ( __data_start__ )
+ 7fc79f8  7fc79f8        4     1         LONG ( __data_end__ - __data_start__ )
+ 7fc79fc  7fc79fc        0     1         __copy_table_end__ = .
+ 7fc79fc  7fc79fc       10     1 .zero.table
+ 7fc79fc  7fc79fc        0     1         . = ALIGN ( 4 )
+ 7fc79fc  7fc79fc        0     1         __zero_table_start__ = .
+ 7fc79fc  7fc79fc        4     1         LONG ( __bss_start__ )
+ 7fc7a00  7fc7a00        4     1         LONG ( __bss_end__ - __bss_start__ )
+ 7fc7a04  7fc7a04        4     1         LONG ( __ret_data_start__ )
+ 7fc7a08  7fc7a08        4     1         LONG ( __ret_data_end__ - __ret_data_start__ )
+ 7fc7a0c  7fc7a0c        0     1         __zero_table_end__ = .
+ 7fc7a0c  7fc7a0c        0     1 __etext = ALIGN ( 4 )
+ 7fc7a0c  7fc7a0c        8     4 .data
+ 7fc7a0c  7fc7a0c        0     1         __data_start__ = .
+ 7fc7a0c  7fc7a0c        4     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o):(.data)
+ 7fc7a0c  7fc7a0c        4     1                 __interrupt_reference
+ 7fc7a10  7fc7a10        4     4         lto.tmp:(.data.startup_sleep_delay)
+ 7fc7a10  7fc7a10        4     1                 startup_sleep_delay
+ 7fc7a14  7fc7a14        0     1         . = ALIGN ( 4 )
+ 7fc7a14  7fc7a14        0     1         PROVIDE_HIDDEN ( __preinit_array_start = . )
+ 7fc7a14  7fc7a14        0     1         PROVIDE_HIDDEN ( __preinit_array_end = . )
+ 7fc7a14  7fc7a14        0     1         . = ALIGN ( 4 )
+ 7fc7a14  7fc7a14        0     1         PROVIDE_HIDDEN ( __init_array_start = . )
+ 7fc7a14  7fc7a14        0     1         PROVIDE_HIDDEN ( __init_array_end = . )
+ 7fc7a14  7fc7a14        0     1         . = ALIGN ( 4 )
+ 7fc7a14  7fc7a14        0     1         . = ALIGN ( 4 )
+ 7fc7a14  7fc7a14        0     1         __data_end__ = .
+ 7fc7a14  7fc7a14        0     1 __data_start = ADDR ( .data )
+ 7fc7a14  7fc7a14        0     1 __data_size = SIZEOF ( .data )
+ 7fc7a14  7fc7a14        0     1 __data_source = LOADADDR ( .data )
+ 7fc7a14  7fc7a14        0     1 __tls_base = 0
+ 7fc7a14  7fc7a14        0     1 __arm32_tls_tcb_offset = 0
+ 7fc7a14  7fc7a14        0     1 __code_area_end__ = .
+ 7fc7a14  7fc7a14       24     4 .bss
+ 7fc7a14  7fc7a14        0     1         . = ALIGN ( 4 )
+ 7fc7a14  7fc7a14        0     1         __bss_start__ = .
+ 7fc7a14  7fc7a14        4     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_picolib_machine_arm_tls.c.o):(.bss)
+ 7fc7a14  7fc7a14        4     1                 __tls
+ 7fc7a18  7fc7a18        c     4         lto.tmp:(.bss.spi_flash_cfg_env)
+ 7fc7a18  7fc7a18        c     1                 spi_flash_cfg_env
+ 7fc7a24  7fc7a24       10     4         lto.tmp:(.bss.trng_bits)
+ 7fc7a24  7fc7a24       10     1                 trng_bits
+ 7fc7a34  7fc7a34        1     1         lto.tmp:(.bss.cal_failed)
+ 7fc7a34  7fc7a34        1     1                 cal_failed
+ 7fc7a35  7fc7a35        3     1         . = ALIGN ( 4 )
+ 7fc7a38  7fc7a38        0     1         __bss_end__ = .
+ 7fc7a38  7fc7a38        0     1 __bss_start = __bss_start__
+ 7fc7a38  7fc7a38        0     1 __bss_size = SIZEOF ( .bss )
+ 7fc7a38  7fc7a38        0     1 ER_PRODTEST
+ 7fc7a38  7fc7a38        0     1         . = ALIGN ( 4 )
+ 7fc7a38  7fc7a38      40c     4 ER_NZI
+ 7fc7a38  7fc7a38        0     1         . = ALIGN ( 4 )
+ 7fc7a38  7fc7a38        0     1         __heap_mem_area_not_ret_start__ = .
+ 7fc7a38  7fc7a38      40c     4         ./sdk_arch/jump_table.o:(heap_mem_area_not_ret)
+ 7fc7a38  7fc7a38      40c     1                 rwip_heap_non_ret
+ 7fc7e44  7fc7e44        0     1         __heap_mem_area_not_ret_end__ = .
+ 7fc7e44  7fc7e44        0     1 .heap
+ 7fc7e44  7fc7e44        0     1         __end__ = .
+ 7fc7e44  7fc7e44        0     1         __HeapLimit = .
+       0        0      700     1 .stack_dummy
+       0        0      700     1         lto.tmp:(.stack)
+       0        0      700     1                 stack
+ 7fc7e44  7fc7e44        0     1 __StackTop = ORIGIN ( LR_IROM3 ) + LENGTH ( LR_IROM3 )
+ 7fc7e44  7fc7e44        0     1 __StackLimit = __StackTop - SIZEOF ( .stack_dummy )
+       0        0     1938     4 .debug_frame
+       0        0       44     1         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(arch_asm.o):(.debug_frame)
+      44       44       30     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o):(.debug_frame)
+      74       74       ac     1         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(rf_calibration.o):(.debug_frame)
+      74       74        0     1                 __ARM_grp_.debug_frame$5
+     120      120      4d0     1         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(patch.o):(.debug_frame)
+     120      120        0     1                 __ARM_grp_.debug_frame$5
+     5f0      5f0       48     1         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(patch.o):(.debug_frame)
+     5f0      5f0        0     1                 __ARM_grp_.debug_frame$__ARM_common_switch8
+     638      638       70     1         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(smpc_util.o):(.debug_frame)
+     638      638        0     1                 __ARM_grp_.debug_frame$5
+     6a8      6a8       34     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_misc_init.c.o):(.debug_frame)
+     6dc      6dc       34     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_string_memcmp.c.o):(.debug_frame)
+     710      710       24     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_picolib_machine_arm_tls.c.o):(.debug_frame)
+     734      734       34     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memcpy.c.o):(.debug_frame)
+     768      768       24     4         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memset.c.o):(.debug_frame)
+     78c      78c     11ac     4         lto.tmp:(.debug_frame)
+       0        0     1ba4     1 .comment
+       0        0      150     1         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(arch_asm.o):(.comment)
+     150      150       29     1         <internal>:(.comment)
+     179      179      8c7     1         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(rf_calibration.o):(.comment)
+     a40      a40      8ac     1         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(patch.o):(.comment)
+    12ec     12ec      8b8     1         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(smpc_util.o):(.comment)
+       0        0       3a     1 .ARM.attributes
+       0        0       3a     1         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(arch_asm.o):(.ARM.attributes)
+       0        0      ff1     1 .debug_abbrev
+       0        0       92     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o):(.debug_abbrev)
+      92       92       54     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_misc_init.c.o):(.debug_abbrev)
+      e6       e6       94     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_string_memcmp.c.o):(.debug_abbrev)
+     17a      17a       76     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_picolib_machine_arm_tls.c.o):(.debug_abbrev)
+     1f0      1f0       a0     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memcpy.c.o):(.debug_abbrev)
+     290      290       85     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memset.c.o):(.debug_abbrev)
+     315      315      cdc     1         lto.tmp:(.debug_abbrev)
+       0        0     f543     1 .debug_info
+       0        0       73     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o):(.debug_info)
+      73       73       4c     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_misc_init.c.o):(.debug_info)
+      bf       bf       86     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_string_memcmp.c.o):(.debug_info)
+     145      145       6e     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_picolib_machine_arm_tls.c.o):(.debug_info)
+     1b3      1b3       97     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memcpy.c.o):(.debug_info)
+     24a      24a       78     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memset.c.o):(.debug_info)
+     2c2      2c2     f281     1         lto.tmp:(.debug_info)
+       0        0     3550     1 .debug_str_offsets
+       0        0       34     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o):(.debug_str_offsets)
+      34       34       28     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_misc_init.c.o):(.debug_str_offsets)
+      5c       5c       3c     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_string_memcmp.c.o):(.debug_str_offsets)
+      98       98       34     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_picolib_machine_arm_tls.c.o):(.debug_str_offsets)
+      cc       cc       3c     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memcpy.c.o):(.debug_str_offsets)
+     108      108       38     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memset.c.o):(.debug_str_offsets)
+     140      140     3410     1         lto.tmp:(.debug_str_offsets)
+       0        0    102db     1 .debug_str
+       0        0    102db     1         <internal>:(.debug_str)
+       0        0      924     1 .debug_addr
+       0        0       14     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o):(.debug_addr)
+      14       14        c     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_misc_init.c.o):(.debug_addr)
+      20       20        c     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_string_memcmp.c.o):(.debug_addr)
+      2c       2c       10     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_picolib_machine_arm_tls.c.o):(.debug_addr)
+      3c       3c        c     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memcpy.c.o):(.debug_addr)
+      48       48        c     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memset.c.o):(.debug_addr)
+      54       54      8d0     1         lto.tmp:(.debug_addr)
+       0        0     8307     1 .debug_line
+       0        0       b8     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o):(.debug_line)
+      b8       b8       95     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_misc_init.c.o):(.debug_line)
+     14d      14d       98     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_string_memcmp.c.o):(.debug_line)
+     1e5      1e5       b0     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_picolib_machine_arm_tls.c.o):(.debug_line)
+     295      295       9f     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memcpy.c.o):(.debug_line)
+     334      334       9a     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memset.c.o):(.debug_line)
+     3ce      3ce     7f39     1         lto.tmp:(.debug_line)
+       0        0     3968     1 .debug_line_str
+       0        0     3968     1         <internal>:(.debug_line_str)
+       0        0        c     4 .arm_vfe_header
+       0        0        4     4         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(rf_calibration.o):(.arm_vfe_header)
+       4        4        4     4         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(patch.o):(.arm_vfe_header)
+       8        8        4     4         ../../../../../../sdk/platform/system_library/output/Keil_5\da14585_586.lib(smpc_util.o):(.arm_vfe_header)
+       0        0     3d58     1 .debug_loclists
+       0        0       4f     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_string_memcmp.c.o):(.debug_loclists)
+      4f       4f       1e     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_picolib_machine_arm_tls.c.o):(.debug_loclists)
+      6d       6d       7a     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memcpy.c.o):(.debug_loclists)
+      e7       e7       4f     1         C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memset.c.o):(.debug_loclists)
+     136      136     3c22     1         lto.tmp:(.debug_loclists)
+       0        0      607     1 .debug_rnglists
+       0        0      607     1         lto.tmp:(.debug_rnglists)
+       0        0     6910     4 .symtab
+       0        0     6910     4         <internal>:(.symtab)
+       0        0      22d     1 .shstrtab
+       0        0      22d     1         <internal>:(.shstrtab)
+       0        0     6ca6     1 .strtab
+       0        0     6ca6     1         <internal>:(.strtab)
+ 7fc7e44  7fc7e44        0     1 
+       0        0        0     1 RET_DATA_UNINIT
+       0        0        0     1         . = ALIGN ( 4 )
+       0        0        0     1         __retention_mem_area_uninit_start__ = .
+       0        0        0     1         . = ALIGN ( 4 )
+       0        0        0     1         __retention_mem_area_uninit_end__ = .
+ 7fd4578  7fd4578      7ac     8 RET_DATA
+ 7fd4578  7fd4578        0     1         __ret_data_start__ = .
+ 7fd4578  7fd4578        0     1         . = ALIGN ( 4 )
+ 7fd4578  7fd4578      7ac     8         lto.tmp:(retention_mem_area0)
+ 7fd4578  7fd4578      300     1                 prf_env
+ 7fd4878  7fd4878        1     1                 app_db_init_next.i
+ 7fd487c  7fd487c       50     1                 app_prf_srv_perm
+ 7fd48cc  7fd48cc        4     1                 gapc_bond_cfm_tk_exch
+ 7fd48d0  7fd48d0       a0     1                 GPIO
+ 7fd4970  7fd4970      200     1                 suota_all_pd
+ 7fd4b70  7fd4b70        1     1                 app_state
+ 7fd4b74  7fd4b74       7c     1                 app_sec_env
+ 7fd4bf0  7fd4bf0        1     1                 sleep_ext_force
+ 7fd4bf1  7fd4bf1        1     1                 force_rf_cal
+ 7fd4bf2  7fd4bf2        1     1                 sys_startup_flag
+ 7fd4bf4  7fd4bf4        1     1                 twirq_set_min
+ 7fd4bf8  7fd4bf8        1     1                 twirq_set_max
+ 7fd4bf9  7fd4bf9        1     1                 adv_timer_id
+ 7fd4bfa  7fd4bfa        1     1                 cur_batt_level
+ 7fd4bfc  7fd4bfc        1     1                 bat_poll_timeout
+ 7fd4c00  7fd4c00        1     1                 alert_state.1
+ 7fd4c04  7fd4c04        1     1                 alert_state.2
+ 7fd4c08  7fd4c08        1     1                 alert_state.5
+ 7fd4c0c  7fd4c0c        1     1                 suota_state.0
+ 7fd4c10  7fd4c10        1     1                 suota_state.5
+ 7fd4c14  7fd4c14        1     1                 suota_state.8
+ 7fd4c18  7fd4c18        1     1                 suota_state.10
+ 7fd4c1a  7fd4c1a        2     1                 power_up.success_cnt
+ 7fd4c1c  7fd4c1c        2     1                 last_temp_count
+ 7fd4c1e  7fd4c1e        2     1                 clk_freq_trim_reg_value
+ 7fd4c20  7fd4c20        2     1                 iq_trim_bias_ctrl1_reg
+ 7fd4c22  7fd4c22        2     1                 iq_trim_rf_mixer_ctrl1_reg
+ 7fd4c24  7fd4c24        2     1                 wakeup_id
+ 7fd4c28  7fd4c28        4     1                 spi_env.0
+ 7fd4c2c  7fd4c2c        4     1                 spi_env.1
+ 7fd4c30  7fd4c30        4     1                 WKUPCT_callback
+ 7fd4c34  7fd4c34        4     1                 retained_BLE_EM_BASE_REG
+ 7fd4c38  7fd4c38        4     1                 set_boost_low_vbat1v_overhead
+ 7fd4c3c  7fd4c3c        4     1                 sleep_lp_cycles
+ 7fd4c40  7fd4c40        4     1                 ble_finetim_corr
+ 7fd4c44  7fd4c44        4     1                 arch_rwble_last_event
+ 7fd4c48  7fd4c48        4     1                 twirq_set
+ 7fd4c4c  7fd4c4c        4     1                 last_time
+ 7fd4c50  7fd4c50        4     1                 adv_cmd
+ 7fd4c54  7fd4c54        4     1                 set_dev_config_cmd
+ 7fd4c58  7fd4c58        4     1                 gapc_bond_cfm_pairing_rsp
+ 7fd4c5c  7fd4c5c        4     1                 gapc_bond_cfm_ltk_exch
+ 7fd4c60  7fd4c60        4     1                 alert_state.0
+ 7fd4c64  7fd4c64        4     1                 suota_state.1
+ 7fd4c68  7fd4c68        4     1                 suota_state.2
+ 7fd4c70  7fd4c70        4     1                 suota_state.3
+ 7fd4c74  7fd4c74        4     1                 suota_state.6
+ 7fd4c78  7fd4c78        4     1                 suota_state.7
+ 7fd4c7c  7fd4c7c        4     1                 suota_state.9
+ 7fd4c80  7fd4c80        6     1                 dev_bdaddr
+ 7fd4c88  7fd4c88        8     1                 GPIO_status
+ 7fd4c90  7fd4c90        c     1                 app_env
+ 7fd4c9c  7fd4c9c       14     1                 msg_util_callbacks
+ 7fd4cb0  7fd4cb0       24     1                 device_info
+ 7fd4cd4  7fd4cd4       28     1                 timer_callbacks
+ 7fd4cfc  7fd4cfc       28     1                 modified_timer_callbacks
+ 7fd4d24  7fd4d24        0     1         . = ALIGN ( 4 )
+ 7fd4d24  7fd4d24        0     1         __ret_data_end__ = .
+ 7fd4d24  7fd4d24        0     1 
+ 7fd4d24  7fd4d24      bfc     4 RET_HEAP
+ 7fd4d24  7fd4d24        0     1         . = ALIGN ( 4 )
+ 7fd4d24  7fd4d24        0     1         __db_heap_start__ = .
+ 7fd4d24  7fd4d24      274     4         ./sdk_arch/jump_table.o:(heap_env_area)
+ 7fd4d24  7fd4d24      274     1                 rwip_heap_env_ret
+ 7fd4f98  7fd4f98      40c     4         ./sdk_arch/jump_table.o:(heap_db_area)
+ 7fd4f98  7fd4f98      40c     1                 rwip_heap_db_ret
+ 7fd53a4  7fd53a4      57c     4         ./sdk_arch/jump_table.o:(heap_msg_area)
+ 7fd53a4  7fd53a4      57c     1                 rwip_heap_msg_ret
+ 7fd5920  7fd5920        0     1         . = ALIGN ( 4 )
+ 7fd5920  7fd5920        0     1         __db_heap_end__ = .
+ 7fd6650  7fd6650        0     1 ER_FREE_AREA_AT_TX_CNTL_BUFFER
+ 7fd6650  7fd6650        0     1         . = ALIGN ( 4 )
+ 7fd6650  7fd6650        0     1         __free_area_at_tx_cntl_buffer_start__ = .
+ 7fd6650  7fd6650        0     1         . = ALIGN ( 4 )
+ 7fd6650  7fd6650        0     1         __free_area_at_tx_cntl_buffer_end__ = .
+ 7fd6754  7fd6754        0     1 ER_FREE_AREA_AT_TX_ADV_1_BUFFER
+ 7fd6754  7fd6754        0     1         . = ALIGN ( 4 )
+ 7fd6754  7fd6754        0     1         __free_area_at_tx_adv_1_buffer_start__ = .
+ 7fd6754  7fd6754        0     1         . = ALIGN ( 4 )
+ 7fd6754  7fd6754        0     1         __free_area_at_tx_adv_1_buffer_end__ = .
+ 7fd685c  7fd685c        0     1 ER_FREE_AREA_AT_TX_ADV_2_BUFFER
+ 7fd685c  7fd685c        0     1         . = ALIGN ( 4 )
+ 7fd685c  7fd685c        0     1         __free_area_at_tx_adv_2_buffer_start__ = .
+ 7fd685c  7fd685c        0     1         . = ALIGN ( 4 )
+ 7fd685c  7fd685c        0     1         __free_area_at_tx_adv_2_buffer_end__ = .
+ 7fd6960  7fd6960        0     1 ER_FREE_AREA_AT_TX_ADV_3_BUFFER
+ 7fd6960  7fd6960        0     1         . = ALIGN ( 4 )
+ 7fd6960  7fd6960        0     1         __free_area_at_tx_adv_3_buffer_start__ = .
+ 7fd6960  7fd6960        0     1         . = ALIGN ( 4 )
+ 7fd6960  7fd6960        0     1         __free_area_at_tx_adv_3_buffer_end__ = .
+ 7fd7278  7fd7278        0     1 ER_FREE_AREA
+ 7fd7278  7fd7278        0     1         . = ALIGN ( 4 )
+ 7fd7278  7fd7278        0     1         __free_area_start__ = .
+ 7fd7278  7fd7278        0     1         __free_area_end__ = .
+ 7fd75a0  7fd75a0       60     8 RET_DATA_UNINIT_CHACHA_STATE
+ 7fd75a0  7fd75a0       60     8         ./sdk_arch/chacha20.o:(chacha20_state)
+ 7fd75a0  7fd75a0       60     1                 chacha20_state_val
+ 7fd7600  7fd7600        0     1 uECC_vli_add = 0x07f02001
+ 7fd7600  7fd7600        0     1 uECC_vli_sub = 0x07f02019
+ 7fd7600  7fd7600        0     1 uECC_vli_mult = 0x07f02035
+ 7fd7600  7fd7600        0     1 set_system_clocks = 0x07f02151
+ 7fd7600  7fd7600        0     1 set_peripheral_clocks = 0x07f0216d
+ 7fd7600  7fd7600        0     1 rf_workaround_init = 0x07f021ad
+ 7fd7600  7fd7600        0     1 get_stack_usage = 0x07f021af
+ 7fd7600  7fd7600        0     1 rwip_eif_get_func = 0x07f021ed
+ 7fd7600  7fd7600        0     1 rwip_set_em_base = 0x07f021fd
+ 7fd7600  7fd7600        0     1 platform_initialization = 0x07f02203
+ 7fd7600  7fd7600        0     1 ble_init = 0x07f022b5
+ 7fd7600  7fd7600        0     1 ble_regs_push = 0x07f02327
+ 7fd7600  7fd7600        0     1 ble_regs_pop = 0x07f0237f
+ 7fd7600  7fd7600        0     1 platform_sleep = 0x07f023d5
+ 7fd7600  7fd7600        0     1 rf_reinit = 0x07f026b9
+ 7fd7600  7fd7600        0     1 smpc_check_param = 0x07f026c1
+ 7fd7600  7fd7600        0     1 smpc_pdu_recv = 0x07f026cb
+ 7fd7600  7fd7600        0     1 lld_sleep_compensate = 0x07f026d5
+ 7fd7600  7fd7600        0     1 lld_sleep_init = 0x07f026df
+ 7fd7600  7fd7600        0     1 lld_sleep_us_2_lpcycles = 0x07f026e9
+ 7fd7600  7fd7600        0     1 lld_sleep_lpcycles_2_us = 0x07f026f3
+ 7fd7600  7fd7600        0     1 uart_flow_off = 0x07f026fd
+ 7fd7600  7fd7600        0     1 uart_finish_transfers = 0x07f02705
+ 7fd7600  7fd7600        0     1 uart_read = 0x07f0270d
+ 7fd7600  7fd7600        0     1 uart_write = 0x07f02715
+ 7fd7600  7fd7600        0     1 UART_Handler = 0x07f0271d
+ 7fd7600  7fd7600        0     1 uart_init = 0x07f02725
+ 7fd7600  7fd7600        0     1 uart_flow_on = 0x07f0272d
+ 7fd7600  7fd7600        0     1 gtl_init = 0x07f02735
+ 7fd7600  7fd7600        0     1 gtl_eif_init = 0x07f0273d
+ 7fd7600  7fd7600        0     1 gtl_eif_read_start = 0x07f02745
+ 7fd7600  7fd7600        0     1 gtl_eif_read_hdr = 0x07f0274d
+ 7fd7600  7fd7600        0     1 gtl_eif_read_payl = 0x07f02755
+ 7fd7600  7fd7600        0     1 gtl_eif_tx_done = 0x07f0275d
+ 7fd7600  7fd7600        0     1 gtl_eif_rx_done = 0x07f02765
+ 7fd7600  7fd7600        0     1 h4tl_init = 0x07f0276d
+ 7fd7600  7fd7600        0     1 h4tl_read_start = 0x07f02775
+ 7fd7600  7fd7600        0     1 h4tl_read_hdr = 0x07f0277d
+ 7fd7600  7fd7600        0     1 h4tl_read_payl = 0x07f02785
+ 7fd7600  7fd7600        0     1 h4tl_read_next_out_of_sync = 0x07f0278d
+ 7fd7600  7fd7600        0     1 h4tl_out_of_sync = 0x07f02795
+ 7fd7600  7fd7600        0     1 h4tl_tx_done = 0x07f0279d
+ 7fd7600  7fd7600        0     1 h4tl_rx_done = 0x07f027a5
+ 7fd7600  7fd7600        0     1 ke_task_init = 0x07f027ad
+ 7fd7600  7fd7600        0     1 ke_timer_init = 0x07f027b5
+ 7fd7600  7fd7600        0     1 llm_encryption_done = 0x07f027bd
+ 7fd7600  7fd7600        0     1 nvds_get = 0x07f027c5
+ 7fd7600  7fd7600        0     1 nvds_del = 0x07f027cd
+ 7fd7600  7fd7600        0     1 nvds_put = 0x07f027d5
+ 7fd7600  7fd7600        0     1 rwip_eif_get = 0x07f027dd
+ 7fd7600  7fd7600        0     1 platform_reset = 0x07f027e5
+ 7fd7600  7fd7600        0     1 lld_test_stop = 0x07f027ef
+ 7fd7600  7fd7600        0     1 lld_test_mode_tx = 0x07f027f9
+ 7fd7600  7fd7600        0     1 lld_test_mode_rx = 0x07f02803
+ 7fd7600  7fd7600        0     1 prf_init = 0x07f0280d
+ 7fd7600  7fd7600        0     1 prf_add_profile = 0x07f02817
+ 7fd7600  7fd7600        0     1 prf_create = 0x07f02821
+ 7fd7600  7fd7600        0     1 prf_cleanup = 0x07f0282b
+ 7fd7600  7fd7600        0     1 prf_get_id_from_task = 0x07f02835
+ 7fd7600  7fd7600        0     1 prf_get_task_from_id = 0x07f0283f
+ 7fd7600  7fd7600        0     1 nvds_init = 0x07f02849
+ 7fd7600  7fd7600        0     1 SetSystemVars = 0x07f02851
+ 7fd7600  7fd7600        0     1 dbg_init = 0x07f0285b
+ 7fd7600  7fd7600        0     1 dbg_platform_reset_complete = 0x07f02865
+ 7fd7600  7fd7600        0     1 hci_rd_local_supp_feats_cmd_handler = 0x07f0286f
+ 7fd7600  7fd7600        0     1 l2cc_pdu_pack = 0x07f0287f
+ 7fd7600  7fd7600        0     1 l2cc_pdu_unpack = 0x07f02895
+ 7fd7600  7fd7600        0     1 l2c_send_lecb_message = 0x07f028ad
+ 7fd7600  7fd7600        0     1 l2c_process_sdu = 0x07f028b7
+ 7fd7600  7fd7600        0     1 l2cc_pdu_recv_ind_handler = 0x07f028c1
+ 7fd7600  7fd7600        0     1 gapc_lecb_connect_cfm_handler = 0x07f028d1
+ 7fd7600  7fd7600        0     1 atts_l2cc_pdu_recv_handler = 0x07f028e1
+ 7fd7600  7fd7600        0     1 attc_l2cc_pdu_recv_handler = 0x07f028eb
+ 7fd7600  7fd7600        0     1 crypto_init = 0x07f028f5
+ 7fd7600  7fd7600        0     1 llm_le_adv_report_ind = 0x07f028ff
+ 7fd7600  7fd7600        0     1 PK_PointMult = 0x07f02909
+ 7fd7600  7fd7600        0     1 llm_p256_start = 0x07f02913
+ 7fd7600  7fd7600        0     1 llm_create_p256_key = 0x07f0291d
+ 7fd7600  7fd7600        0     1 llm_p256_req_handler = 0x07f02929
+ 7fd7600  7fd7600        0     1 llc_le_length_effective = 0x07f0293b
+ 7fd7600  7fd7600        0     1 llc_le_length_conn_init = 0x07f02947
+ 7fd7600  7fd7600        0     1 lld_data_tx_prog = 0x07f02953
+ 7fd7600  7fd7600        0     1 lld_data_tx_check = 0x07f0295f
+ 7fd7600  7fd7600        0     1 llc_pdu_send = 0x07f0296b
+ 7fd7600  7fd7600        0     1 dia_rand = 0x07f02977
+ 7fd7600  7fd7600        0     1 llc_data_notif = 0x07f0298f
+ 7fd7600  7fd7600        0     1 ba431_get_rand = 0x07f029a9
+ 7fd7600  7fd7600        0     1 co_buf_init = 0x07f02a01
+ 7fd7600  7fd7600        0     1 co_buf_rx_free = 0x07f02ac7
+ 7fd7600  7fd7600        0     1 co_buf_rx_buffer_get = 0x07f02ae1
+ 7fd7600  7fd7600        0     1 co_buf_tx_buffer_get = 0x07f02aeb
+ 7fd7600  7fd7600        0     1 co_list_init = 0x07f02b15
+ 7fd7600  7fd7600        0     1 co_list_pop_front = 0x07f02b25
+ 7fd7600  7fd7600        0     1 co_list_flush = 0x07f02b47
+ 7fd7600  7fd7600        0     1 co_list_push_back = 0x07f02b5d
+ 7fd7600  7fd7600        0     1 co_list_pool_init = 0x07f02b81
+ 7fd7600  7fd7600        0     1 co_list_push_front = 0x07f02be9
+ 7fd7600  7fd7600        0     1 co_list_extract = 0x07f02c05
+ 7fd7600  7fd7600        0     1 co_list_find = 0x07f02c55
+ 7fd7600  7fd7600        0     1 co_list_merge = 0x07f02c6b
+ 7fd7600  7fd7600        0     1 co_list_insert_before = 0x07f02c87
+ 7fd7600  7fd7600        0     1 co_list_insert_after = 0x07f02cbf
+ 7fd7600  7fd7600        0     1 co_list_size = 0x07f02cfb
+ 7fd7600  7fd7600        0     1 co_bdaddr_compare = 0x07f02d0f
+ 7fd7600  7fd7600        0     1 llc_init = 0x07f02d2d
+ 7fd7600  7fd7600        0     1 llc_stop = 0x07f02d57
+ 7fd7600  7fd7600        0     1 llc_reset = 0x07f02d9d
+ 7fd7600  7fd7600        0     1 llc_le_length_effective_func = 0x07f02dbf
+ 7fd7600  7fd7600        0     1 llc_le_length_conn_init_func = 0x07f02e53
+ 7fd7600  7fd7600        0     1 llc_le_enh_con_cmp_evt_send = 0x07f02eaf
+ 7fd7600  7fd7600        0     1 llc_le_con_cmp_evt_send = 0x07f02fc9
+ 7fd7600  7fd7600        0     1 llc_start = 0x07f03075
+ 7fd7600  7fd7600        0     1 llc_discon_event_complete_send = 0x07f031e7
+ 7fd7600  7fd7600        0     1 llc_con_update_complete_send = 0x07f03207
+ 7fd7600  7fd7600        0     1 llc_ltk_req_send = 0x07f03241
+ 7fd7600  7fd7600        0     1 llc_feats_rd_event_send = 0x07f03279
+ 7fd7600  7fd7600        0     1 llc_version_rd_event_send = 0x07f032b5
+ 7fd7600  7fd7600        0     1 llc_common_cmd_complete_send = 0x07f032e5
+ 7fd7600  7fd7600        0     1 llc_common_cmd_status_send = 0x07f03303
+ 7fd7600  7fd7600        0     1 llc_common_flush_occurred_send = 0x07f0331f
+ 7fd7600  7fd7600        0     1 llc_common_enc_key_ref_comp_evt_send = 0x07f03337
+ 7fd7600  7fd7600        0     1 llc_common_enc_change_evt_send = 0x07f03353
+ 7fd7600  7fd7600        0     1 llc_common_nb_of_pkt_comp_evt_send = 0x07f033b9
+ 7fd7600  7fd7600        0     1 llc_con_update_ind = 0x07f033d9
+ 7fd7600  7fd7600        0     1 llc_lsto_con_update = 0x07f03453
+ 7fd7600  7fd7600        0     1 llc_map_update_ind = 0x07f03485
+ 7fd7600  7fd7600        0     1 llc_chnl_map_req_send = 0x07f03537
+ 7fd7600  7fd7600        0     1 llc_add_bad_chnl = 0x07f03553
+ 7fd7600  7fd7600        0     1 llc_pdu_send_func = 0x07f035f5
+ 7fd7600  7fd7600        0     1 llc_version_ind_pdu_send = 0x07f03665
+ 7fd7600  7fd7600        0     1 llc_ch_map_update_pdu_send = 0x07f036b5
+ 7fd7600  7fd7600        0     1 llc_pause_enc_req_pdu_send = 0x07f03705
+ 7fd7600  7fd7600        0     1 llc_pause_enc_rsp_pdu_send = 0x07f03751
+ 7fd7600  7fd7600        0     1 llc_enc_req_pdu_send = 0x07f037b5
+ 7fd7600  7fd7600        0     1 llc_enc_rsp_pdu_send = 0x07f0387f
+ 7fd7600  7fd7600        0     1 llc_start_enc_rsp_pdu_send = 0x07f0391b
+ 7fd7600  7fd7600        0     1 llc_reject_ind_pdu_send = 0x07f03971
+ 7fd7600  7fd7600        0     1 llc_con_update_pdu_send = 0x07f03a13
+ 7fd7600  7fd7600        0     1 llc_con_param_req_pdu_send = 0x07f03a69
+ 7fd7600  7fd7600        0     1 llc_con_param_rsp_pdu_send = 0x07f03af7
+ 7fd7600  7fd7600        0     1 llc_feats_req_pdu_send = 0x07f03b85
+ 7fd7600  7fd7600        0     1 llc_start_enc_req_pdu_send = 0x07f03be5
+ 7fd7600  7fd7600        0     1 llc_terminate_ind_pdu_send = 0x07f03c8b
+ 7fd7600  7fd7600        0     1 llc_unknown_rsp_send_pdu = 0x07f03cff
+ 7fd7600  7fd7600        0     1 llc_length_req_pdu_send = 0x07f03d33
+ 7fd7600  7fd7600        0     1 llc_length_rsp_pdu_send = 0x07f03de9
+ 7fd7600  7fd7600        0     1 llc_length_ind = 0x07f03e6f
+ 7fd7600  7fd7600        0     1 llc_ping_req_pdu_send = 0x07f03efb
+ 7fd7600  7fd7600        0     1 llc_ping_rsp_pdu_send = 0x07f03f2b
+ 7fd7600  7fd7600        0     1 llc_feats_req_ind = 0x07f03f5b
+ 7fd7600  7fd7600        0     1 llc_feats_rsp_ind = 0x07f03fbd
+ 7fd7600  7fd7600        0     1 llc_vers_ind_ind = 0x07f04015
+ 7fd7600  7fd7600        0     1 llc_terminate_ind = 0x07f04099
+ 7fd7600  7fd7600        0     1 llc_pause_enc_req_ind = 0x07f040d5
+ 7fd7600  7fd7600        0     1 llc_pause_enc_rsp_ind = 0x07f04105
+ 7fd7600  7fd7600        0     1 llc_enc_req_ind = 0x07f04179
+ 7fd7600  7fd7600        0     1 llc_enc_rsp_ind = 0x07f0421d
+ 7fd7600  7fd7600        0     1 llc_start_enc_req_ind = 0x07f042e1
+ 7fd7600  7fd7600        0     1 llc_start_enc_rsp_ind = 0x07f04343
+ 7fd7600  7fd7600        0     1 llc_cntl_rcv = 0x07f043cb
+ 7fd7600  7fd7600        0     1 llcp_con_param_req_pdu_unpk = 0x07f04457
+ 7fd7600  7fd7600        0     1 llcp_con_param_rsp_pdu_unpk = 0x07f044cf
+ 7fd7600  7fd7600        0     1 llc_con_update_req_ind = 0x07f04547
+ 7fd7600  7fd7600        0     1 llc_ch_map_req_ind = 0x07f045a1
+ 7fd7600  7fd7600        0     1 llc_data_rcv = 0x07f04615
+ 7fd7600  7fd7600        0     1 llc_util_get_free_conhdl = 0x07f063c5
+ 7fd7600  7fd7600        0     1 llc_util_dicon_procedure = 0x07f063f5
+ 7fd7600  7fd7600        0     1 llc_util_gen_skdx = 0x07f06457
+ 7fd7600  7fd7600        0     1 llc_util_update_channel_map = 0x07f0646b
+ 7fd7600  7fd7600        0     1 llc_util_set_llcp_discard_enable = 0x07f0647d
+ 7fd7600  7fd7600        0     1 llc_util_set_auth_payl_to_margin = 0x07f06495
+ 7fd7600  7fd7600        0     1 llc_data_notif_func = 0x07f064bd
+ 7fd7600  7fd7600        0     1 lld_init = 0x07f065c9
+ 7fd7600  7fd7600        0     1 lld_reset = 0x07f06717
+ 7fd7600  7fd7600        0     1 lld_adv_start = 0x07f06765
+ 7fd7600  7fd7600        0     1 lld_adv_stop = 0x07f068b3
+ 7fd7600  7fd7600        0     1 lld_scan_start = 0x07f068d9
+ 7fd7600  7fd7600        0     1 lld_scan_stop = 0x07f06a33
+ 7fd7600  7fd7600        0     1 lld_con_start = 0x07f06a6b
+ 7fd7600  7fd7600        0     1 lld_move_to_master = 0x07f06de3
+ 7fd7600  7fd7600        0     1 lld_con_update_req = 0x07f06e79
+ 7fd7600  7fd7600        0     1 lld_con_update_after_param_req = 0x07f06ef3
+ 7fd7600  7fd7600        0     1 lld_con_param_rsp = 0x07f070d9
+ 7fd7600  7fd7600        0     1 lld_con_param_req = 0x07f071d3
+ 7fd7600  7fd7600        0     1 lld_con_stop = 0x07f072a5
+ 7fd7600  7fd7600        0     1 lld_get_mode = 0x07f072fb
+ 7fd7600  7fd7600        0     1 lld_move_to_slave = 0x07f0731f
+ 7fd7600  7fd7600        0     1 lld_ch_map_ind = 0x07f0749f
+ 7fd7600  7fd7600        0     1 lld_con_update_ind = 0x07f074b1
+ 7fd7600  7fd7600        0     1 lld_crypt_isr = 0x07f074bf
+ 7fd7600  7fd7600        0     1 lld_test_mode_tx_func = 0x07f074c9
+ 7fd7600  7fd7600        0     1 lld_test_mode_rx_func = 0x07f0756b
+ 7fd7600  7fd7600        0     1 lld_test_stop_func = 0x07f075ff
+ 7fd7600  7fd7600        0     1 lld_data_rx_check = 0x07f076bd
+ 7fd7600  7fd7600        0     1 lld_data_rx_flush = 0x07f07701
+ 7fd7600  7fd7600        0     1 lld_data_tx_check_func = 0x07f07725
+ 7fd7600  7fd7600        0     1 lld_data_tx_loop = 0x07f077cb
+ 7fd7600  7fd7600        0     1 lld_data_tx_push = 0x07f077f9
+ 7fd7600  7fd7600        0     1 lld_data_tx_prog_func = 0x07f0785b
+ 7fd7600  7fd7600        0     1 lld_data_tx_flush = 0x07f07991
+ 7fd7600  7fd7600        0     1 lld_evt_drift_compute = 0x07f07aa9
+ 7fd7600  7fd7600        0     1 lld_evt_elt_delete = 0x07f07b87
+ 7fd7600  7fd7600        0     1 lld_evt_deffered_elt_handler = 0x07f08181
+ 7fd7600  7fd7600        0     1 lld_evt_init = 0x07f08253
+ 7fd7600  7fd7600        0     1 lld_evt_init_evt = 0x07f082c9
+ 7fd7600  7fd7600        0     1 lld_evt_elt_insert = 0x07f082e7
+ 7fd7600  7fd7600        0     1 lld_evt_conhdl2elt = 0x07f08311
+ 7fd7600  7fd7600        0     1 lld_evt_schedule_next = 0x07f0832d
+ 7fd7600  7fd7600        0     1 lld_evt_schedule = 0x07f08425
+ 7fd7600  7fd7600        0     1 lld_evt_prevent_stop = 0x07f08461
+ 7fd7600  7fd7600        0     1 lld_evt_canceled = 0x07f08463
+ 7fd7600  7fd7600        0     1 lld_evt_scan_create = 0x07f08487
+ 7fd7600  7fd7600        0     1 lld_evt_move_to_master = 0x07f08579
+ 7fd7600  7fd7600        0     1 lld_evt_update_create = 0x07f08673
+ 7fd7600  7fd7600        0     1 lld_evt_ch_map_update_req = 0x07f087a9
+ 7fd7600  7fd7600        0     1 lld_evt_move_to_slave = 0x07f087c1
+ 7fd7600  7fd7600        0     1 lld_evt_slave_update = 0x07f089f1
+ 7fd7600  7fd7600        0     1 lld_evt_adv_create = 0x07f08a87
+ 7fd7600  7fd7600        0     1 lld_evt_end = 0x07f08b0b
+ 7fd7600  7fd7600        0     1 lld_evt_rx = 0x07f08c19
+ 7fd7600  7fd7600        0     1 lld_evt_timer_isr = 0x07f08c49
+ 7fd7600  7fd7600        0     1 lld_evt_end_isr = 0x07f08c53
+ 7fd7600  7fd7600        0     1 lld_evt_rx_isr = 0x07f08cd3
+ 7fd7600  7fd7600        0     1 lld_sleep_us_2_lpcycles_func = 0x07f08e81
+ 7fd7600  7fd7600        0     1 lld_sleep_lpcycles_2_us_func = 0x07f08e9f
+ 7fd7600  7fd7600        0     1 lld_sleep_enter = 0x07f08f9f
+ 7fd7600  7fd7600        0     1 lld_sleep_wakeup = 0x07f08fdf
+ 7fd7600  7fd7600        0     1 lld_sleep_wakeup_end = 0x07f08ff9
+ 7fd7600  7fd7600        0     1 lld_wlcoex_connection_complete = 0x07f0901d
+ 7fd7600  7fd7600        0     1 lld_wlcoex_remove_connection = 0x07f09035
+ 7fd7600  7fd7600        0     1 lld_wlcoex_set = 0x07f09049
+ 7fd7600  7fd7600        0     1 lld_util_get_bd_address = 0x07f0905d
+ 7fd7600  7fd7600        0     1 lld_util_set_bd_address = 0x07f0907d
+ 7fd7600  7fd7600        0     1 lld_util_freq2chnl = 0x07f090b9
+ 7fd7600  7fd7600        0     1 lld_util_get_local_offset = 0x07f090db
+ 7fd7600  7fd7600        0     1 lld_util_get_peer_offset = 0x07f090f5
+ 7fd7600  7fd7600        0     1 lld_util_connection_param_set = 0x07f09111
+ 7fd7600  7fd7600        0     1 llm_wl_clr = 0x07f09161
+ 7fd7600  7fd7600        0     1 llm_init = 0x07f09189
+ 7fd7600  7fd7600        0     1 llm_common_cmd_complete_send = 0x07f0938d
+ 7fd7600  7fd7600        0     1 llm_ble_ready = 0x07f093a5
+ 7fd7600  7fd7600        0     1 llm_wl_from_rl_restore = 0x07f093ab
+ 7fd7600  7fd7600        0     1 llm_con_req_ind = 0x07f0942d
+ 7fd7600  7fd7600        0     1 llm_resolv_addr = 0x07f096a3
+ 7fd7600  7fd7600        0     1 llm_util_rl_wl_update = 0x07f096e5
+ 7fd7600  7fd7600        0     1 llm_alter_conn = 0x07f0971f
+ 7fd7600  7fd7600        0     1 llm_adv_report_set = 0x07f097c3
+ 7fd7600  7fd7600        0     1 llm_direct_adv_report_set = 0x07f0983d
+ 7fd7600  7fd7600        0     1 llm_encryption_start = 0x07f0987f
+ 7fd7600  7fd7600        0     1 llm_resolv_addr_inplace = 0x07f09903
+ 7fd7600  7fd7600        0     1 llm_le_adv_report_ind_func = 0x07f099d5
+ 7fd7600  7fd7600        0     1 llm_con_req_tx_cfm = 0x07f09ee3
+ 7fd7600  7fd7600        0     1 llm_common_cmd_status_send = 0x07f0a003
+ 7fd7600  7fd7600        0     1 llm_test_mode_start_tx = 0x07f0a01b
+ 7fd7600  7fd7600        0     1 llm_test_mode_start_rx = 0x07f0a10f
+ 7fd7600  7fd7600        0     1 llm_gen_rand_addr = 0x07f0a2e5
+ 7fd7600  7fd7600        0     1 llm_set_adv_param = 0x07f0a151
+ 7fd7600  7fd7600        0     1 llm_set_adv_en = 0x07f0a4d3
+ 7fd7600  7fd7600        0     1 llm_set_adv_data = 0x07f0a7cf
+ 7fd7600  7fd7600        0     1 llm_set_scan_rsp_data = 0x07f0a883
+ 7fd7600  7fd7600        0     1 llm_set_scan_param = 0x07f0a94d
+ 7fd7600  7fd7600        0     1 llm_set_scan_en = 0x07f0a9d3
+ 7fd7600  7fd7600        0     1 llm_wl_dev_add = 0x07f0ab47
+ 7fd7600  7fd7600        0     1 llm_wl_dev_rem = 0x07f0ac21
+ 7fd7600  7fd7600        0     1 llm_wl_from_rl = 0x07f0a3a1
+ 7fd7600  7fd7600        0     1 llm_create_con = 0x07f0ac75
+ 7fd7600  7fd7600        0     1 llm_encryption_done_func = 0x07f0af73
+ 7fd7600  7fd7600        0     1 llm_get_chnl_assess_nb_pkt = 0x07f0b215
+ 7fd7600  7fd7600        0     1 llm_get_chnl_assess_nb_bad_pkt = 0x07f0b21b
+ 7fd7600  7fd7600        0     1 llm_get_min_rssi = 0x07f0b221
+ 7fd7600  7fd7600        0     1 llm_le_scan_report_ind = 0x07f0b22b
+ 7fd7600  7fd7600        0     1 llm_set_tx_oct_time = 0x07f0b2c3
+ 7fd7600  7fd7600        0     1 llm_p256_start_func = 0x07f0b2eb
+ 7fd7600  7fd7600        0     1 llm_create_p256_key_func = 0x07f0b323
+ 7fd7600  7fd7600        0     1 llm_p256_req_handler_func = 0x07f0b3cd
+ 7fd7600  7fd7600        0     1 hci_rd_local_supp_feats_cmd_handler_func = 0x07f0bb57
+ 7fd7600  7fd7600        0     1 llm_util_bd_addr_in_wl = 0x07f0c405
+ 7fd7600  7fd7600        0     1 llm_util_check_address_validity = 0x07f0c47d
+ 7fd7600  7fd7600        0     1 llm_util_check_map_validity = 0x07f0c48d
+ 7fd7600  7fd7600        0     1 llm_util_apply_bd_addr = 0x07f0c4d3
+ 7fd7600  7fd7600        0     1 llm_util_set_public_addr = 0x07f0c4eb
+ 7fd7600  7fd7600        0     1 llm_util_check_evt_mask = 0x07f0c4f9
+ 7fd7600  7fd7600        0     1 llm_util_get_channel_map = 0x07f0c51b
+ 7fd7600  7fd7600        0     1 llm_util_get_supp_features = 0x07f0c529
+ 7fd7600  7fd7600        0     1 llm_util_adv_data_update = 0x07f0c535
+ 7fd7600  7fd7600        0     1 llm_util_bl_check = 0x07f0c559
+ 7fd7600  7fd7600        0     1 llm_util_bl_add = 0x07f0c59b
+ 7fd7600  7fd7600        0     1 llm_util_bl_rem = 0x07f0c5f1
+ 7fd7600  7fd7600        0     1 llm_util_rl_check = 0x07f0c641
+ 7fd7600  7fd7600        0     1 llm_util_rl_add = 0x07f0c677
+ 7fd7600  7fd7600        0     1 llm_util_rl_rem = 0x07f0c6f5
+ 7fd7600  7fd7600        0     1 llm_util_rl_peer_find = 0x07f0c71b
+ 7fd7600  7fd7600        0     1 llm_util_rl_peer_resolv = 0x07f0c747
+ 7fd7600  7fd7600        0     1 llm_util_rl_rpa_find = 0x07f0c799
+ 7fd7600  7fd7600        0     1 PK_PointMult_func = 0x07f0c7c3
+ 7fd7600  7fd7600        0     1 ea_time_get_slot_rounded = 0x07f0c8b9
+ 7fd7600  7fd7600        0     1 ea_init = 0x07f0c985
+ 7fd7600  7fd7600        0     1 ea_elt_create = 0x07f0c9d9
+ 7fd7600  7fd7600        0     1 ea_time_get_halfslot_rounded = 0x07f0c9f3
+ 7fd7600  7fd7600        0     1 ea_elt_insert = 0x07f0ca23
+ 7fd7600  7fd7600        0     1 ea_elt_remove = 0x07f0cc67
+ 7fd7600  7fd7600        0     1 ea_elt_delete = 0x07f0ccef
+ 7fd7600  7fd7600        0     1 ea_interval_create = 0x07f0cd09
+ 7fd7600  7fd7600        0     1 ea_interval_insert = 0x07f0cd1f
+ 7fd7600  7fd7600        0     1 ea_interval_delete = 0x07f0cd2d
+ 7fd7600  7fd7600        0     1 ea_finetimer_isr = 0x07f0cd47
+ 7fd7600  7fd7600        0     1 ea_sw_isr = 0x07f0ce19
+ 7fd7600  7fd7600        0     1 ea_offset_req = 0x07f0ce37
+ 7fd7600  7fd7600        0     1 ea_sleep_check = 0x07f0cff5
+ 7fd7600  7fd7600        0     1 ea_interval_duration_req = 0x07f0d04b
+ 7fd7600  7fd7600        0     1 flash_identify = 0x07f0d16b
+ 7fd7600  7fd7600        0     1 flash_init = 0x07f0d1b9
+ 7fd7600  7fd7600        0     1 flash_erase = 0x07f0d1f5
+ 7fd7600  7fd7600        0     1 flash_write = 0x07f0d259
+ 7fd7600  7fd7600        0     1 flash_read = 0x07f0d2bd
+ 7fd7600  7fd7600        0     1 uart_init_func = 0x07f0d34b
+ 7fd7600  7fd7600        0     1 uart_flow_on_func = 0x07f0d3a9
+ 7fd7600  7fd7600        0     1 uart_flow_off_func = 0x07f0d3b1
+ 7fd7600  7fd7600        0     1 uart_finish_transfers_func = 0x07f0d401
+ 7fd7600  7fd7600        0     1 uart_read_func = 0x07f0d419
+ 7fd7600  7fd7600        0     1 uart_write_func = 0x07f0d42f
+ 7fd7600  7fd7600        0     1 UART_Handler_func = 0x07f0d451
+ 7fd7600  7fd7600        0     1 uart_set_flow_off_retries_limit = 0x07f0d4a3
+ 7fd7600  7fd7600        0     1 gtl_init_func = 0x07f0d7e1
+ 7fd7600  7fd7600        0     1 gtl_enter_sleep = 0x07f0d809
+ 7fd7600  7fd7600        0     1 gtl_exit_sleep = 0x07f0d833
+ 7fd7600  7fd7600        0     1 gtl_send_msg = 0x07f0d83b
+ 7fd7600  7fd7600        0     1 gtl_eif_read_start_func = 0x07f0d8c1
+ 7fd7600  7fd7600        0     1 gtl_eif_read_hdr_func = 0x07f0d8e1
+ 7fd7600  7fd7600        0     1 gtl_eif_read_payl_func = 0x07f0d901
+ 7fd7600  7fd7600        0     1 gtl_eif_tx_done_func = 0x07f0d93f
+ 7fd7600  7fd7600        0     1 gtl_eif_rx_done_func = 0x07f0d94f
+ 7fd7600  7fd7600        0     1 gtl_eif_init_func = 0x07f0da81
+ 7fd7600  7fd7600        0     1 gtl_eif_write = 0x07f0da9b
+ 7fd7600  7fd7600        0     1 gtl_eif_start = 0x07f0dabd
+ 7fd7600  7fd7600        0     1 gtl_eif_stop = 0x07f0dac7
+ 7fd7600  7fd7600        0     1 gtl_env_curr_msg_type_set = 0x07f0dae3
+ 7fd7600  7fd7600        0     1 hci_tl_send = 0x07f0ddc5
+ 7fd7600  7fd7600        0     1 hci_tl_init = 0x07f0de0d
+ 7fd7600  7fd7600        0     1 hci_cmd_get_max_param_size = 0x07f0de31
+ 7fd7600  7fd7600        0     1 hci_cmd_received = 0x07f0de7b
+ 7fd7600  7fd7600        0     1 hci_acl_tx_data_alloc = 0x07f0dfb7
+ 7fd7600  7fd7600        0     1 hci_acl_tx_data_received = 0x07f0e03d
+ 7fd7600  7fd7600        0     1 hci_acl_rx_data_alloc = 0x07f0e105
+ 7fd7600  7fd7600        0     1 hci_acl_rx_data_received = 0x07f0e111
+ 7fd7600  7fd7600        0     1 hci_evt_received = 0x07f0e147
+ 7fd7600  7fd7600        0     1 hci_tl_env_tx_queue_cnt_get = 0x07f0e2f3
+ 7fd7600  7fd7600        0     1 hci_util_pack = 0x07f0e411
+ 7fd7600  7fd7600        0     1 hci_util_unpack = 0x07f0e511
+ 7fd7600  7fd7600        0     1 hci_look_for_cmd_desc = 0x07f0e9f5
+ 7fd7600  7fd7600        0     1 hci_look_for_evt_desc = 0x07f0ea41
+ 7fd7600  7fd7600        0     1 hci_look_for_le_evt_desc = 0x07f0ea63
+ 7fd7600  7fd7600        0     1 hci_evt_mask_set = 0x07f0ea95
+ 7fd7600  7fd7600        0     1 hci_init = 0x07f0eadd
+ 7fd7600  7fd7600        0     1 hci_reset = 0x07f0eaf9
+ 7fd7600  7fd7600        0     1 hci_send_2_host = 0x07f0eb11
+ 7fd7600  7fd7600        0     1 hci_send_2_controller = 0x07f0ebfb
+ 7fd7600  7fd7600        0     1 h4tl_read_start_func = 0x07f0ecd5
+ 7fd7600  7fd7600        0     1 h4tl_read_hdr_func = 0x07f0ecf3
+ 7fd7600  7fd7600        0     1 h4tl_read_payl_func = 0x07f0ed0f
+ 7fd7600  7fd7600        0     1 h4tl_read_next_out_of_sync_func = 0x07f0ed29
+ 7fd7600  7fd7600        0     1 h4tl_out_of_sync_func = 0x07f0ed3d
+ 7fd7600  7fd7600        0     1 h4tl_out_of_sync_check = 0x07f0ed63
+ 7fd7600  7fd7600        0     1 h4tl_tx_done_func = 0x07f0edbf
+ 7fd7600  7fd7600        0     1 h4tl_rx_done_func = 0x07f0edd7
+ 7fd7600  7fd7600        0     1 h4tl_init_func = 0x07f0eefb
+ 7fd7600  7fd7600        0     1 h4tl_write = 0x07f0ef17
+ 7fd7600  7fd7600        0     1 h4tl_start = 0x07f0ef3f
+ 7fd7600  7fd7600        0     1 h4tl_stop = 0x07f0ef47
+ 7fd7600  7fd7600        0     1 h4tl_env_rx_type_set = 0x07f0ef5b
+ 7fd7600  7fd7600        0     1 h4tl_env_hdr_set = 0x07f0ef67
+ 7fd7600  7fd7600        0     1 attc_send_att_req = 0x07f0efa5
+ 7fd7600  7fd7600        0     1 attc_allocate_att_req = 0x07f0efe1
+ 7fd7600  7fd7600        0     1 attc_send_hdl_cfm = 0x07f0f003
+ 7fd7600  7fd7600        0     1 attc_send_execute = 0x07f0f019
+ 7fd7600  7fd7600        0     1 attc_send_read_ind = 0x07f0f033
+ 7fd7600  7fd7600        0     1 attc_l2cc_pdu_recv_handler_func = 0x07f0f973
+ 7fd7600  7fd7600        0     1 attm_convert_to128 = 0x07f0f9cd
+ 7fd7600  7fd7600        0     1 attm_uuid_comp = 0x07f0f9fd
+ 7fd7600  7fd7600        0     1 attm_uuid16_comp = 0x07f0fa55
+ 7fd7600  7fd7600        0     1 attm_is_bt16_uuid = 0x07f0fa61
+ 7fd7600  7fd7600        0     1 attm_is_bt32_uuid = 0x07f0fa87
+ 7fd7600  7fd7600        0     1 attmdb_add_service = 0x07f0fe87
+ 7fd7600  7fd7600        0     1 attmdb_destroy = 0x07f0ff0f
+ 7fd7600  7fd7600        0     1 attmdb_get_service = 0x07f0ff29
+ 7fd7600  7fd7600        0     1 attmdb_get_attribute = 0x07f0ff67
+ 7fd7600  7fd7600        0     1 attmdb_get_next_att = 0x07f0ff9b
+ 7fd7600  7fd7600        0     1 attmdb_uuid16_comp = 0x07f0ffff
+ 7fd7600  7fd7600        0     1 attmdb_att_set_value = 0x07f1003b
+ 7fd7600  7fd7600        0     1 attmdb_get_max_len = 0x07f100e7
+ 7fd7600  7fd7600        0     1 attmdb_get_uuid = 0x07f1014d
+ 7fd7600  7fd7600        0     1 attmdb_get_value = 0x07f10223
+ 7fd7600  7fd7600        0     1 attmdb_att_set_permission = 0x07f10373
+ 7fd7600  7fd7600        0     1 attmdb_att_update_perm = 0x07f103e7
+ 7fd7600  7fd7600        0     1 attmdb_svc_get_permission = 0x07f10455
+ 7fd7600  7fd7600        0     1 attmdb_att_get_permission = 0x07f10473
+ 7fd7600  7fd7600        0     1 attmdb_svc_set_permission = 0x07f10575
+ 7fd7600  7fd7600        0     1 attmdb_init = 0x07f10599
+ 7fd7600  7fd7600        0     1 attmdb_get_nb_svc = 0x07f105af
+ 7fd7600  7fd7600        0     1 attmdb_get_svc_info = 0x07f105c3
+ 7fd7600  7fd7600        0     1 attm_svc_create_db = 0x07f105f7
+ 7fd7600  7fd7600        0     1 attmdb_reserve_handle_range = 0x07f10705
+ 7fd7600  7fd7600        0     1 atts_clear_read_cache = 0x07f10895
+ 7fd7600  7fd7600        0     1 atts_send_error = 0x07f109fd
+ 7fd7600  7fd7600        0     1 atts_write_signed_cfm = 0x07f10a19
+ 7fd7600  7fd7600        0     1 atts_send_event = 0x07f10a59
+ 7fd7600  7fd7600        0     1 atts_clear_prep_data = 0x07f10ae1
+ 7fd7600  7fd7600        0     1 atts_clear_rsp_data = 0x07f10b05
+ 7fd7600  7fd7600        0     1 atts_write_rsp_send = 0x07f10b55
+ 7fd7600  7fd7600        0     1 atts_l2cc_pdu_recv_handler_func = 0x07f1177f
+ 7fd7600  7fd7600        0     1 gattc_cleanup = 0x07f119e7
+ 7fd7600  7fd7600        0     1 gattc_init = 0x07f11a6b
+ 7fd7600  7fd7600        0     1 gattc_update_state = 0x07f11a9d
+ 7fd7600  7fd7600        0     1 gattc_create = 0x07f11ac1
+ 7fd7600  7fd7600        0     1 gattc_con_enable = 0x07f11b35
+ 7fd7600  7fd7600        0     1 gattc_get_mtu = 0x07f11b3b
+ 7fd7600  7fd7600        0     1 gattc_set_mtu = 0x07f11b47
+ 7fd7600  7fd7600        0     1 gattc_get_requester = 0x07f11b8d
+ 7fd7600  7fd7600        0     1 gattc_send_complete_evt = 0x07f11ba9
+ 7fd7600  7fd7600        0     1 gattc_send_error_evt = 0x07f11c05
+ 7fd7600  7fd7600        0     1 gattc_get_operation = 0x07f11c2b
+ 7fd7600  7fd7600        0     1 gattc_get_op_seq_num = 0x07f11c41
+ 7fd7600  7fd7600        0     1 gattc_get_operation_ptr = 0x07f11c57
+ 7fd7600  7fd7600        0     1 gattc_set_operation_ptr = 0x07f11c63
+ 7fd7600  7fd7600        0     1 gattc_reschedule_operation = 0x07f11c6f
+ 7fd7600  7fd7600        0     1 gattc_reallocate_svc = 0x07f11cb5
+ 7fd7600  7fd7600        0     1 gattm_svc_get_start_hdl = 0x07f12c6d
+ 7fd7600  7fd7600        0     1 gattm_init = 0x07f12c73
+ 7fd7600  7fd7600        0     1 gattm_init_attr = 0x07f12c91
+ 7fd7600  7fd7600        0     1 gattm_create = 0x07f12ce5
+ 7fd7600  7fd7600        0     1 gattm_cleanup = 0x07f12ced
+ 7fd7600  7fd7600        0     1 gattm_get_max_mtu = 0x07f12cf5
+ 7fd7600  7fd7600        0     1 gattm_set_max_mtu = 0x07f12cfb
+ 7fd7600  7fd7600        0     1 gattm_get_max_mps = 0x07f12d17
+ 7fd7600  7fd7600        0     1 gattm_set_max_mps = 0x07f12d1d
+ 7fd7600  7fd7600        0     1 l2cc_cleanup = 0x07f12f85
+ 7fd7600  7fd7600        0     1 l2cc_init = 0x07f12fc9
+ 7fd7600  7fd7600        0     1 l2cc_create = 0x07f12ffb
+ 7fd7600  7fd7600        0     1 l2cc_update_state = 0x07f13033
+ 7fd7600  7fd7600        0     1 l2cm_init = 0x07f13405
+ 7fd7600  7fd7600        0     1 l2cm_create = 0x07f13419
+ 7fd7600  7fd7600        0     1 l2cm_cleanup = 0x07f13421
+ 7fd7600  7fd7600        0     1 l2cm_set_link_layer_buff_size = 0x07f13429
+ 7fd7600  7fd7600        0     1 smpc_send_use_enc_block_cmd = 0x07f13439
+ 7fd7600  7fd7600        0     1 smpc_send_start_enc_cmd = 0x07f13471
+ 7fd7600  7fd7600        0     1 smpc_send_ltk_req_rsp = 0x07f134eb
+ 7fd7600  7fd7600        0     1 smpc_send_pairing_req_ind = 0x07f13547
+ 7fd7600  7fd7600        0     1 smpc_send_pairing_ind = 0x07f1362b
+ 7fd7600  7fd7600        0     1 smpc_check_pairing_feat = 0x07f13747
+ 7fd7600  7fd7600        0     1 smpc_launch_rep_att_timer = 0x07f13761
+ 7fd7600  7fd7600        0     1 smpc_check_repeated_attempts = 0x07f1379d
+ 7fd7600  7fd7600        0     1 smpc_check_max_key_size = 0x07f137ff
+ 7fd7600  7fd7600        0     1 smpc_check_key_distrib = 0x07f13845
+ 7fd7600  7fd7600        0     1 smpc_xor = 0x07f13885
+ 7fd7600  7fd7600        0     1 smpc_generate_l = 0x07f1389b
+ 7fd7600  7fd7600        0     1 smpc_generate_ci = 0x07f138e9
+ 7fd7600  7fd7600        0     1 smpc_generate_rand = 0x07f1394d
+ 7fd7600  7fd7600        0     1 smpc_generate_e1 = 0x07f13973
+ 7fd7600  7fd7600        0     1 smpc_generate_cfm = 0x07f13a2d
+ 7fd7600  7fd7600        0     1 smpc_generate_stk = 0x07f13aa7
+ 7fd7600  7fd7600        0     1 smpc_calc_subkeys = 0x07f13afd
+ 7fd7600  7fd7600        0     1 smpc_clear_timeout_timer = 0x07f13b73
+ 7fd7600  7fd7600        0     1 smpc_pairing_end = 0x07f13b9d
+ 7fd7600  7fd7600        0     1 smpc_tkdp_rcp_continue = 0x07f13bfb
+ 7fd7600  7fd7600        0     1 smpc_tkdp_rcp_start = 0x07f13c75
+ 7fd7600  7fd7600        0     1 smpc_pdu_send = 0x07f13cc9
+ 7fd7600  7fd7600        0     1 smpc_tkdp_send_start = 0x07f13d67
+ 7fd7600  7fd7600        0     1 smpc_tkdp_send_continue = 0x07f13df3
+ 7fd7600  7fd7600        0     1 smpc_get_key_sec_prop = 0x07f13e6f
+ 7fd7600  7fd7600        0     1 smpc_is_sec_mode_reached = 0x07f13f3b
+ 7fd7600  7fd7600        0     1 smpc_handle_enc_change_evt = 0x07f13f65
+ 7fd7600  7fd7600        0     1 smpc_pdu_recv_func = 0x07f1401f
+ 7fd7600  7fd7600        0     1 smpc_generate_subkey = 0x07f14089
+ 7fd7600  7fd7600        0     1 leftshift_onebit = 0x07f140bd
+ 7fd7600  7fd7600        0     1 padding = 0x07f140d5
+ 7fd7600  7fd7600        0     1 smpc_generate_subkey_P2 = 0x07f140f9
+ 7fd7600  7fd7600        0     1 AES_CMAC_block = 0x07f1419d
+ 7fd7600  7fd7600        0     1 smpc_generate_f4 = 0x07f1425d
+ 7fd7600  7fd7600        0     1 smpc_generate_g2 = 0x07f14371
+ 7fd7600  7fd7600        0     1 smpc_generate_f5 = 0x07f1441b
+ 7fd7600  7fd7600        0     1 smpc_generate_f5_T = 0x07f1442d
+ 7fd7600  7fd7600        0     1 smpc_generate_f5_P2 = 0x07f1449d
+ 7fd7600  7fd7600        0     1 smpc_generate_f6 = 0x07f1466f
+ 7fd7600  7fd7600        0     1 smpm_send_encrypt_req = 0x07f14809
+ 7fd7600  7fd7600        0     1 smpm_send_gen_rand_nb_req = 0x07f14837
+ 7fd7600  7fd7600        0     1 smpm_check_addr_type = 0x07f1484d
+ 7fd7600  7fd7600        0     1 gapc_update_state = 0x07f148b9
+ 7fd7600  7fd7600        0     1 gapc_get_requester = 0x07f148e9
+ 7fd7600  7fd7600        0     1 gapc_send_complete_evt = 0x07f14905
+ 7fd7600  7fd7600        0     1 gapc_init = 0x07f14a2f
+ 7fd7600  7fd7600        0     1 gapc_con_create = 0x07f14a61
+ 7fd7600  7fd7600        0     1 gapc_con_create_enh = 0x07f14b1b
+ 7fd7600  7fd7600        0     1 gapc_con_cleanup = 0x07f14c15
+ 7fd7600  7fd7600        0     1 gapc_send_disconect_ind = 0x07f14c25
+ 7fd7600  7fd7600        0     1 gapc_get_conidx = 0x07f14c47
+ 7fd7600  7fd7600        0     1 gapc_get_conhdl = 0x07f14c81
+ 7fd7600  7fd7600        0     1 gapc_get_role = 0x07f14c99
+ 7fd7600  7fd7600        0     1 gapc_get_bdaddr = 0x07f14cb5
+ 7fd7600  7fd7600        0     1 gapc_get_csrk = 0x07f14cd5
+ 7fd7600  7fd7600        0     1 gapc_get_sign_counter = 0x07f14cf3
+ 7fd7600  7fd7600        0     1 gapc_send_error_evt = 0x07f14d11
+ 7fd7600  7fd7600        0     1 gapc_get_operation = 0x07f14d33
+ 7fd7600  7fd7600        0     1 gapc_get_operation_ptr = 0x07f14d49
+ 7fd7600  7fd7600        0     1 gapc_set_operation_ptr = 0x07f14d55
+ 7fd7600  7fd7600        0     1 gapc_reschedule_operation = 0x07f14d61
+ 7fd7600  7fd7600        0     1 gapc_get_enc_keysize = 0x07f14d91
+ 7fd7600  7fd7600        0     1 gapc_is_sec_set = 0x07f14da9
+ 7fd7600  7fd7600        0     1 gapc_set_enc_keysize = 0x07f14e35
+ 7fd7600  7fd7600        0     1 gapc_link_encrypted = 0x07f14e49
+ 7fd7600  7fd7600        0     1 gapc_auth_set = 0x07f14e63
+ 7fd7600  7fd7600        0     1 gapc_svc_chg_ccc_get = 0x07f14e83
+ 7fd7600  7fd7600        0     1 gapc_svc_chg_ccc_set = 0x07f14e93
+ 7fd7600  7fd7600        0     1 gapc_check_lecb_sec_perm = 0x07f14ea9
+ 7fd7600  7fd7600        0     1 gapc_search_lecb_channel = 0x07f14f11
+ 7fd7600  7fd7600        0     1 gapc_lecnx_check_tx = 0x07f14f4b
+ 7fd7600  7fd7600        0     1 gapc_lecnx_check_rx = 0x07f14f93
+ 7fd7600  7fd7600        0     1 gapc_lecnx_get_field = 0x07f14fd7
+ 7fd7600  7fd7600        0     1 gapc_process_op = 0x07f1504d
+ 7fd7600  7fd7600        0     1 gapc_param_update_sanity = 0x07f151c7
+ 7fd7600  7fd7600        0     1 gapc_param_cb_con_sanity = 0x07f151ef
+ 7fd7600  7fd7600        0     1 l2cc_pdu_recv_ind_handler_func = 0x07f156ab
+ 7fd7600  7fd7600        0     1 gapc_lecb_connect_cfm_handler_func = 0x07f16653
+ 7fd7600  7fd7600        0     1 gapm_init = 0x07f16a27
+ 7fd7600  7fd7600        0     1 gapm_init_attr = 0x07f16a83
+ 7fd7600  7fd7600        0     1 gapm_get_operation = 0x07f16aaf
+ 7fd7600  7fd7600        0     1 gapm_get_requester = 0x07f16ac1
+ 7fd7600  7fd7600        0     1 gapm_reschedule_operation = 0x07f16ad9
+ 7fd7600  7fd7600        0     1 gapm_send_complete_evt = 0x07f16afb
+ 7fd7600  7fd7600        0     1 gapm_send_error_evt = 0x07f16b31
+ 7fd7600  7fd7600        0     1 gapm_con_create = 0x07f16b51
+ 7fd7600  7fd7600        0     1 gapm_con_enable = 0x07f16bd5
+ 7fd7600  7fd7600        0     1 gapm_con_cleanup = 0x07f16be1
+ 7fd7600  7fd7600        0     1 gapm_get_id_from_task = 0x07f16c11
+ 7fd7600  7fd7600        0     1 gapm_get_task_from_id = 0x07f16c51
+ 7fd7600  7fd7600        0     1 gapm_is_disc_connection = 0x07f16c8d
+ 7fd7600  7fd7600        0     1 gapm_adv_sanity = 0x07f17ab9
+ 7fd7600  7fd7600        0     1 gapm_adv_op_sanity = 0x07f17bad
+ 7fd7600  7fd7600        0     1 gapm_set_adv_mode = 0x07f17d2b
+ 7fd7600  7fd7600        0     1 gapm_set_adv_data = 0x07f17d45
+ 7fd7600  7fd7600        0     1 gapm_execute_adv_op = 0x07f17dd1
+ 7fd7600  7fd7600        0     1 gapm_scan_op_sanity = 0x07f17ef7
+ 7fd7600  7fd7600        0     1 gapm_set_scan_mode = 0x07f17fff
+ 7fd7600  7fd7600        0     1 gapm_execute_scan_op = 0x07f1801d
+ 7fd7600  7fd7600        0     1 gapm_connect_op_sanity = 0x07f180d7
+ 7fd7600  7fd7600        0     1 gapm_basic_hci_cmd_send = 0x07f18257
+ 7fd7600  7fd7600        0     1 gapm_execute_connect_op = 0x07f1826b
+ 7fd7600  7fd7600        0     1 gapm_get_role = 0x07f1840d
+ 7fd7600  7fd7600        0     1 gapm_get_ad_type_flag = 0x07f18415
+ 7fd7600  7fd7600        0     1 gapm_add_to_filter = 0x07f1843b
+ 7fd7600  7fd7600        0     1 gapm_is_filtered = 0x07f184bb
+ 7fd7600  7fd7600        0     1 gapm_update_air_op_state = 0x07f1851f
+ 7fd7600  7fd7600        0     1 gapm_get_irk = 0x07f185e7
+ 7fd7600  7fd7600        0     1 gapm_get_bdaddr = 0x07f185ed
+ 7fd7600  7fd7600        0     1 l2cc_pdu_pack_func = 0x07f18609
+ 7fd7600  7fd7600        0     1 l2cc_pdu_unpack_func = 0x07f18b01
+ 7fd7600  7fd7600        0     1 l2cc_detect_dest = 0x07f18e03
+ 7fd7600  7fd7600        0     1 l2c_process_sdu_func = 0x07f18e5f
+ 7fd7600  7fd7600        0     1 l2c_send_lecb_message_func = 0x07f18f77
+ 7fd7600  7fd7600        0     1 smpc_check_param_func = 0x07f19071
+ 7fd7600  7fd7600        0     1 gapc_hci_handler = 0x07f19c73
+ 7fd7600  7fd7600        0     1 gapm_hci_handler = 0x07f1a8c1
+ 7fd7600  7fd7600        0     1 smpc_pairing_start = 0x07f1a951
+ 7fd7600  7fd7600        0     1 smpc_pairing_tk_exch = 0x07f1a9d7
+ 7fd7600  7fd7600        0     1 smpc_pairing_ltk_exch = 0x07f1aa95
+ 7fd7600  7fd7600        0     1 smpc_pairing_csrk_exch = 0x07f1aae9
+ 7fd7600  7fd7600        0     1 smpc_public_key_exchange_start = 0x07f029d9
+ 7fd7600  7fd7600        0     1 smpc_pairing_rsp = 0x07f1ab3f
+ 7fd7600  7fd7600        0     1 smpc_pairing_req_handler = 0x07f1ac23
+ 7fd7600  7fd7600        0     1 smpc_security_req_send = 0x07f1ac5b
+ 7fd7600  7fd7600        0     1 smpc_encrypt_start = 0x07f1ac85
+ 7fd7600  7fd7600        0     1 smpc_encrypt_start_handler = 0x07f1acab
+ 7fd7600  7fd7600        0     1 smpc_encrypt_cfm = 0x07f1acdd
+ 7fd7600  7fd7600        0     1 smpc_sign_command = 0x07f1ad09
+ 7fd7600  7fd7600        0     1 smpc_sign_cont = 0x07f1ade1
+ 7fd7600  7fd7600        0     1 smpc_calc_confirm_cont = 0x07f1af87
+ 7fd7600  7fd7600        0     1 smpc_confirm_gen_rand = 0x07f1b4c9
+ 7fd7600  7fd7600        0     1 smpc_dhkey_calc_start = 0x07f1b5b3
+ 7fd7600  7fd7600        0     1 smpc_sec_authentication_start = 0x07f1b601
+ 7fd7600  7fd7600        0     1 smpc_dhkey_calc_ind = 0x07f029e5
+ 7fd7600  7fd7600        0     1 smpm_gen_rand_addr = 0x07f1b675
+ 7fd7600  7fd7600        0     1 smpm_resolv_addr = 0x07f1b68d
+ 7fd7600  7fd7600        0     1 smpm_use_enc_block = 0x07f1b6af
+ 7fd7600  7fd7600        0     1 smpm_gen_rand_nb = 0x07f1b6b7
+ 7fd7600  7fd7600        0     1 smpm_ecdh_key_create = 0x07f029f1
+ 7fd7600  7fd7600        0     1 ke_init = 0x07f1b6dd
+ 7fd7600  7fd7600        0     1 ke_flush = 0x07f1b70f
+ 7fd7600  7fd7600        0     1 ke_sleep_check = 0x07f1b74f
+ 7fd7600  7fd7600        0     1 ke_stats_get = 0x07f1b761
+ 7fd7600  7fd7600        0     1 ke_event_init = 0x07f1b77d
+ 7fd7600  7fd7600        0     1 ke_event_callback_set = 0x07f1b789
+ 7fd7600  7fd7600        0     1 ke_event_set = 0x07f1b79d
+ 7fd7600  7fd7600        0     1 ke_event_clear = 0x07f1b7c9
+ 7fd7600  7fd7600        0     1 ke_event_get = 0x07f1b7f5
+ 7fd7600  7fd7600        0     1 ke_event_get_all = 0x07f1b81b
+ 7fd7600  7fd7600        0     1 ke_event_flush = 0x07f1b821
+ 7fd7600  7fd7600        0     1 ke_event_schedule = 0x07f1b829
+ 7fd7600  7fd7600        0     1 ke_mem_init = 0x07f1b879
+ 7fd7600  7fd7600        0     1 ke_mem_is_empty = 0x07f1b8c5
+ 7fd7600  7fd7600        0     1 ke_check_malloc = 0x07f1b905
+ 7fd7600  7fd7600        0     1 ke_malloc = 0x07f1b995
+ 7fd7600  7fd7600        0     1 ke_free = 0x07f1ba8b
+ 7fd7600  7fd7600        0     1 ke_is_free = 0x07f1bb6d
+ 7fd7600  7fd7600        0     1 ke_get_mem_usage = 0x07f1bb7f
+ 7fd7600  7fd7600        0     1 ke_get_max_mem_usage = 0x07f1bb8b
+ 7fd7600  7fd7600        0     1 ke_msg_alloc = 0x07f1bbb1
+ 7fd7600  7fd7600        0     1 ke_msg_send = 0x07f1bbe3
+ 7fd7600  7fd7600        0     1 ke_msg_send_basic = 0x07f1bc0f
+ 7fd7600  7fd7600        0     1 ke_msg_forward = 0x07f1bc1d
+ 7fd7600  7fd7600        0     1 ke_msg_forward_new_id = 0x07f1bc27
+ 7fd7600  7fd7600        0     1 ke_msg_free = 0x07f1bc37
+ 7fd7600  7fd7600        0     1 ke_msg_dest_id_get = 0x07f1bc3f
+ 7fd7600  7fd7600        0     1 ke_msg_src_id_get = 0x07f1bc45
+ 7fd7600  7fd7600        0     1 ke_msg_in_queue = 0x07f1bc4b
+ 7fd7600  7fd7600        0     1 ke_queue_extract = 0x07f1bc5d
+ 7fd7600  7fd7600        0     1 ke_queue_insert = 0x07f1bcad
+ 7fd7600  7fd7600        0     1 ke_task_init_func = 0x07f1be3f
+ 7fd7600  7fd7600        0     1 ke_task_create = 0x07f1be53
+ 7fd7600  7fd7600        0     1 ke_task_delete = 0x07f1be8b
+ 7fd7600  7fd7600        0     1 ke_state_set = 0x07f1beb7
+ 7fd7600  7fd7600        0     1 ke_state_get = 0x07f1bf1b
+ 7fd7600  7fd7600        0     1 ke_msg_discard = 0x07f1bf39
+ 7fd7600  7fd7600        0     1 ke_msg_save = 0x07f1bf3d
+ 7fd7600  7fd7600        0     1 ke_task_msg_flush = 0x07f1bf41
+ 7fd7600  7fd7600        0     1 ke_timer_init_func = 0x07f1c049
+ 7fd7600  7fd7600        0     1 ke_timer_set = 0x07f1c055
+ 7fd7600  7fd7600        0     1 ke_timer_clear = 0x07f1c0e9
+ 7fd7600  7fd7600        0     1 ke_timer_active = 0x07f1c13f
+ 7fd7600  7fd7600        0     1 ke_timer_sleep_check = 0x07f1c165
+ 7fd7600  7fd7600        0     1 rwble_hl_reset = 0x07f1c28b
+ 7fd7600  7fd7600        0     1 rwble_hl_send_message = 0x07f1c2ad
+ 7fd7600  7fd7600        0     1 rwip_check_wakeup_boundary = 0x07f1c2b1
+ 7fd7600  7fd7600        0     1 rwip_init = 0x07f1c2d7
+ 7fd7600  7fd7600        0     1 rwip_reset = 0x07f1c39b
+ 7fd7600  7fd7600        0     1 rwip_version = 0x07f1c3d3
+ 7fd7600  7fd7600        0     1 rwip_schedule = 0x07f1c3db
+ 7fd7600  7fd7600        0     1 rwip_prevent_sleep_set = 0x07f1c47f
+ 7fd7600  7fd7600        0     1 rwip_wakeup = 0x07f1c4a1
+ 7fd7600  7fd7600        0     1 rwip_prevent_sleep_clear = 0x07f1c4b7
+ 7fd7600  7fd7600        0     1 rwip_wakeup_end = 0x07f1c4d9
+ 7fd7600  7fd7600        0     1 rwip_wakeup_delay_set = 0x07f1c4f5
+ 7fd7600  7fd7600        0     1 rwip_sleep_enable = 0x07f1c503
+ 7fd7600  7fd7600        0     1 rwip_ext_wakeup_enable = 0x07f1c509
+ 7fd7600  7fd7600        0     1 rwble_init = 0x07f1c52d
+ 7fd7600  7fd7600        0     1 rwble_reset = 0x07f1c593
+ 7fd7600  7fd7600        0     1 rwble_version = 0x07f1c5c7
+ 7fd7600  7fd7600        0     1 rwble_send_message = 0x07f1c5f3
+ 7fd7600  7fd7600        0     1 YieldToScheduler = 0x07f1c6d9
+ 7fd7600  7fd7600        0     1 xorshift64star = 0x07f1c6e1
+ 7fd7600  7fd7600        0     1 uECC_set_rng = 0x07f1c747
+ 7fd7600  7fd7600        0     1 uECC_get_rng = 0x07f1c74d
+ 7fd7600  7fd7600        0     1 uECC_curve_private_key_size = 0x07f1c753
+ 7fd7600  7fd7600        0     1 uECC_curve_public_key_size = 0x07f1c763
+ 7fd7600  7fd7600        0     1 uECC_vli_clear = 0x07f1c76b
+ 7fd7600  7fd7600        0     1 uECC_vli_isZero = 0x07f1c781
+ 7fd7600  7fd7600        0     1 uECC_vli_testBit = 0x07f1c7a3
+ 7fd7600  7fd7600        0     1 uECC_vli_numBits = 0x07f1c7b5
+ 7fd7600  7fd7600        0     1 uECC_vli_set = 0x07f1c7ef
+ 7fd7600  7fd7600        0     1 uECC_vli_equal = 0x07f1c82d
+ 7fd7600  7fd7600        0     1 uECC_vli_cmp = 0x07f1c851
+ 7fd7600  7fd7600        0     1 uECC_vli_rshift1 = 0x07f1c887
+ 7fd7600  7fd7600        0     1 uECC_vli_square = 0x07f1c8a5
+ 7fd7600  7fd7600        0     1 uECC_vli_modAdd = 0x07f1c8b1
+ 7fd7600  7fd7600        0     1 uECC_vli_modSub = 0x07f1c8df
+ 7fd7600  7fd7600        0     1 uECC_vli_mmod = 0x07f1c8ff
+ 7fd7600  7fd7600        0     1 uECC_vli_modMult = 0x07f1ca09
+ 7fd7600  7fd7600        0     1 uECC_vli_modMult_fast = 0x07f1ca2b
+ 7fd7600  7fd7600        0     1 uECC_vli_modSquare = 0x07f1ca4b
+ 7fd7600  7fd7600        0     1 uECC_vli_modSquare_fast = 0x07f1ca59
+ 7fd7600  7fd7600        0     1 uECC_vli_modInv = 0x07f1ca99
+ 7fd7600  7fd7600        0     1 uECC_secp256r1 = 0x07f1cdd5
+ 7fd7600  7fd7600        0     1 uECC_vli_nativeToBytes = 0x07f1d3d3
+ 7fd7600  7fd7600        0     1 uECC_vli_bytesToNative = 0x07f1d3f5
+ 7fd7600  7fd7600        0     1 uECC_generate_random_int = 0x07f1d433
+ 7fd7600  7fd7600        0     1 uECC_make_key = 0x07f1d495
+ 7fd7600  7fd7600        0     1 uECC_shared_secret = 0x07f1d513
+ 7fd7600  7fd7600        0     1 uECC_compress = 0x07f1d5cf
+ 7fd7600  7fd7600        0     1 uECC_decompress = 0x07f1d5fd
+ 7fd7600  7fd7600        0     1 uECC_valid_point = 0x07f1d66d
+ 7fd7600  7fd7600        0     1 uECC_valid_public_key = 0x07f1d6cf
+ 7fd7600  7fd7600        0     1 uECC_compute_public_key = 0x07f1d703
+ 7fd7600  7fd7600        0     1 uECC_sign = 0x07f1d989
+ 7fd7600  7fd7600        0     1 uECC_sign_deterministic = 0x07f1da6f
+ 7fd7600  7fd7600        0     1 uECC_verify = 0x07f1dbdd
+ 7fd7600  7fd7600        0     1 uECC_curve_num_words = 0x07f1de89
+ 7fd7600  7fd7600        0     1 uECC_curve_num_bytes = 0x07f1de91
+ 7fd7600  7fd7600        0     1 uECC_curve_num_bits = 0x07f1de99
+ 7fd7600  7fd7600        0     1 uECC_curve_num_n_words = 0x07f1dea1
+ 7fd7600  7fd7600        0     1 uECC_curve_num_n_bytes = 0x07f1deb1
+ 7fd7600  7fd7600        0     1 uECC_curve_num_n_bits = 0x07f1dec1
+ 7fd7600  7fd7600        0     1 uECC_curve_p = 0x07f1dec9
+ 7fd7600  7fd7600        0     1 uECC_curve_n = 0x07f1decd
+ 7fd7600  7fd7600        0     1 uECC_curve_G = 0x07f1ded1
+ 7fd7600  7fd7600        0     1 uECC_curve_b = 0x07f1ded5
+ 7fd7600  7fd7600        0     1 uECC_vli_mod_sqrt = 0x07f1ded9
+ 7fd7600  7fd7600        0     1 uECC_vli_mmod_fast = 0x07f1dedf
+ 7fd7600  7fd7600        0     1 uECC_point_mult = 0x07f1dee5
+ 7fd7600  7fd7600        0     1 __aeabi_uidiv = 0x07f1dfb9
+ 7fd7600  7fd7600        0     1 __aeabi_uidivmod = 0x07f1dfb9
+ 7fd7600  7fd7600        0     1 __aeabi_idiv = 0x07f1dfe5
+ 7fd7600  7fd7600        0     1 __aeabi_idivmod = 0x07f1dfe5
+ 7fd7600  7fd7600        0     1 __aeabi_lmul = 0x07f1e00d
+ 7fd7600  7fd7600        0     1 _ll_mul = 0x07f1e00d
+ 7fd7600  7fd7600        0     1 rand = 0x07f1e089
+ 7fd7600  7fd7600        0     1 srand = 0x07f1e09b
+ 7fd7600  7fd7600        0     1 __aeabi_memcpy = 0x07f1e0ad
+ 7fd7600  7fd7600        0     1 __aeabi_memcpy4 = 0x07f1e0ad
+ 7fd7600  7fd7600        0     1 __aeabi_memcpy8 = 0x07f1e0ad
+ 7fd7600  7fd7600        0     1 __aeabi_memset = 0x07f1e0d1
+ 7fd7600  7fd7600        0     1 __aeabi_memset4 = 0x07f1e0d1
+ 7fd7600  7fd7600        0     1 __aeabi_memset8 = 0x07f1e0d1
+ 7fd7600  7fd7600        0     1 __aeabi_memclr = 0x07f1e0df
+ 7fd7600  7fd7600        0     1 __aeabi_memclr4 = 0x07f1e0df
+ 7fd7600  7fd7600        0     1 __aeabi_memclr8 = 0x07f1e0df
+ 7fd7600  7fd7600        0     1 _memset$wrapper = 0x07f1e0e3
+ 7fd7600  7fd7600        0     1 memcmp = 0x07f1e0f5
+ 7fd7600  7fd7600        0     1 __aeabi_uread4 = 0x07f1e10f
+ 7fd7600  7fd7600        0     1 __rt_uread4 = 0x07f1e10f
+ 7fd7600  7fd7600        0     1 _uread4 = 0x07f1e10f
+ 7fd7600  7fd7600        0     1 __aeabi_uwrite4 = 0x07f1e123
+ 7fd7600  7fd7600        0     1 __rt_uwrite4 = 0x07f1e123
+ 7fd7600  7fd7600        0     1 _uwrite4 = 0x07f1e123
+ 7fd7600  7fd7600        0     1 __aeabi_llsl = 0x07f1e135
+ 7fd7600  7fd7600        0     1 _ll_shift_l = 0x07f1e135
+ 7fd7600  7fd7600        0     1 __ARM_common_switch8 = 0x07f1e155
+ 7fd7600  7fd7600        0     1 uart_api = 0x07f1e170
+ 7fd7600  7fd7600        0     1 co_sca2ppm = 0x07f1e180
+ 7fd7600  7fd7600        0     1 co_null_bdaddr = 0x07f1e190
+ 7fd7600  7fd7600        0     1 co_default_bdaddr = 0x07f1e196
+ 7fd7600  7fd7600        0     1 llc_state_handler = 0x07f1e41c
+ 7fd7600  7fd7600        0     1 llc_default_handler = 0x07f1e4ec
+ 7fd7600  7fd7600        0     1 llm_local_cmds = 0x07f1e51c
+ 7fd7600  7fd7600        0     1 llm_local_le_feats = 0x07f1e55c
+ 7fd7600  7fd7600        0     1 llm_local_le_states = 0x07f1e564
+ 7fd7600  7fd7600        0     1 llm_state_handler = 0x07f1e74c
+ 7fd7600  7fd7600        0     1 llm_default_handler = 0x07f1e77c
+ 7fd7600  7fd7600        0     1 LLM_AA_CT1 = 0x07f1e784
+ 7fd7600  7fd7600        0     1 LLM_AA_CT2 = 0x07f1e787
+ 7fd7600  7fd7600        0     1 ecc_p256_G = 0x07f1e789
+ 7fd7600  7fd7600        0     1 gtl_default_state = 0x07f1e7dc
+ 7fd7600  7fd7600        0     1 gtl_default_handler = 0x07f1e7e4
+ 7fd7600  7fd7600        0     1 hci_cmd_desc_tab_lk_ctrl = 0x07f1e7f0
+ 7fd7600  7fd7600        0     1 hci_cmd_desc_tab_ctrl_bb = 0x07f1e814
+ 7fd7600  7fd7600        0     1 hci_cmd_desc_tab_info_par = 0x07f1e88c
+ 7fd7600  7fd7600        0     1 hci_cmd_desc_tab_stat_par = 0x07f1e8c8
+ 7fd7600  7fd7600        0     1 hci_cmd_desc_tab_le = 0x07f1e8d4
+ 7fd7600  7fd7600        0     1 hci_cmd_desc_tab_vs = 0x07f1eb14
+ 7fd7600  7fd7600        0     1 hci_evt_desc_tab = 0x07f1ec88
+ 7fd7600  7fd7600        0     1 hci_evt_le_desc_tab = 0x07f1ecd0
+ 7fd7600  7fd7600        0     1 attc_handlers = 0x07f1ed40
+ 7fd7600  7fd7600        0     1 atts_handlers = 0x07f1edb0
+ 7fd7600  7fd7600        0     1 gattc_default_state = 0x07f1ee30
+ 7fd7600  7fd7600        0     1 gattc_default_handler = 0x07f1ef10
+ 7fd7600  7fd7600        0     1 gattm_default_state = 0x07f1ef5c
+ 7fd7600  7fd7600        0     1 gattm_default_handler = 0x07f1efb4
+ 7fd7600  7fd7600        0     1 l2cc_default_state = 0x07f1efcc
+ 7fd7600  7fd7600        0     1 l2cc_default_handler = 0x07f1efe4
+ 7fd7600  7fd7600        0     1 const_Rb = 0x07f1f005
+ 7fd7600  7fd7600        0     1 const_Zero = 0x07f1f015
+ 7fd7600  7fd7600        0     1 gapc_default_state = 0x07f1f038
+ 7fd7600  7fd7600        0     1 gapc_default_handler = 0x07f1f188
+ 7fd7600  7fd7600        0     1 gapm_default_state = 0x07f1f224
+ 7fd7600  7fd7600        0     1 gapm_default_handler = 0x07f1f30c
+ 7fd7600  7fd7600        0     1 smpc_construct_pdu = 0x07f1f430
+ 7fd7600  7fd7600        0     1 ble_wakeup_executed = 0x07fd7600
+ 7fd7600  7fd7600        0     1 rf_in_sleep = 0x07fd7601
+ 7fd7600  7fd7600        0     1 custom_preinit = 0x07fd7604
+ 7fd7600  7fd7600        0     1 custom_postinit = 0x07fd7608
+ 7fd7600  7fd7600        0     1 custom_appinit = 0x07fd760c
+ 7fd7600  7fd7600        0     1 custom_preloop = 0x07fd7610
+ 7fd7600  7fd7600        0     1 custom_preschedule = 0x07fd7614
+ 7fd7600  7fd7600        0     1 custom_postschedule = 0x07fd7618
+ 7fd7600  7fd7600        0     1 custom_postschedule_async = 0x07fd761c
+ 7fd7600  7fd7600        0     1 custom_presleepcheck = 0x07fd7620
+ 7fd7600  7fd7600        0     1 custom_appsleepset = 0x07fd7624
+ 7fd7600  7fd7600        0     1 custom_postsleepcheck = 0x07fd7628
+ 7fd7600  7fd7600        0     1 custom_presleepenter = 0x07fd762c
+ 7fd7600  7fd7600        0     1 custom_postsleepexit = 0x07fd7630
+ 7fd7600  7fd7600        0     1 custom_prewakeup = 0x07fd7634
+ 7fd7600  7fd7600        0     1 custom_postwakeup = 0x07fd7638
+ 7fd7600  7fd7600        0     1 custom_preidlecheck = 0x07fd763c
+ 7fd7600  7fd7600        0     1 custom_pti_set = 0x07fd7640
+ 7fd7600  7fd7600        0     1 REG_BLE_EM_TX_BUFFER_SIZE = 0x07fd7644
+ 7fd7600  7fd7600        0     1 REG_BLE_EM_RX_BUFFER_SIZE = 0x07fd7648
+ 7fd7600  7fd7600        0     1 _ble_base = 0x07fd764c
+ 7fd7600  7fd7600        0     1 gap_cfg_user = 0x07fd7650
+ 7fd7600  7fd7600        0     1 rom_func_addr_table = 0x07fd7654
+ 7fd7600  7fd7600        0     1 rom_cfg_table = 0x07fd7658
+ 7fd7600  7fd7600        0     1 length_exchange_needed = 0x07fd7674
+ 7fd7600  7fd7600        0     1 enh_con_cmp_cnt = 0x07fd7678
+ 7fd7600  7fd7600        0     1 rx_pkt_cnt = 0x07fd7680
+ 7fd7600  7fd7600        0     1 rx_pkt_cnt_bad = 0x07fd7684
+ 7fd7600  7fd7600        0     1 rx_pkt_cnt_bad_adv = 0x07fd7688
+ 7fd7600  7fd7600        0     1 rx_pkt_cnt_bad_scn = 0x07fd768c
+ 7fd7600  7fd7600        0     1 rx_pkt_cnt_bad_oth = 0x07fd7690
+ 7fd7600  7fd7600        0     1 rx_pkt_cnt_bad_wo_sync_err = 0x07fd7694
+ 7fd7600  7fd7600        0     1 rx_pkt_cnt_bad_con = 0x07fd7698
+ 7fd7600  7fd7600        0     1 connect_req_cnt = 0x07fd769c
+ 7fd7600  7fd7600        0     1 last_status = 0x07fd76a0
+ 7fd7600  7fd7600        0     1 llc_state = 0x07fd76a4
+ 7fd7600  7fd7600        0     1 lld_wlcoex_enable = 0x07fd76b0
+ 7fd7600  7fd7600        0     1 ble_duplicate_filter_max = 0x07fd76b4
+ 7fd7600  7fd7600        0     1 ble_duplicate_filter_found = 0x07fd76b5
+ 7fd7600  7fd7600        0     1 alter_conn_adv_all_cnt = 0x07fd76b8
+ 7fd7600  7fd7600        0     1 alter_conn_adv_dir_cnt = 0x07fd76bc
+ 7fd7600  7fd7600        0     1 alter_conn_adv_cnt = 0x07fd76c0
+ 7fd7600  7fd7600        0     1 create_conn_cnt = 0x07fd76c4
+ 7fd7600  7fd7600        0     1 alter_conn_cnt = 0x07fd76c8
+ 7fd7600  7fd7600        0     1 alter_conn_restart_cnt = 0x07fd76cc
+ 7fd7600  7fd7600        0     1 alter_conn_peer_addr = 0x07fd76d0
+ 7fd7600  7fd7600        0     1 alter_conn_local_addr = 0x07fd76d6
+ 7fd7600  7fd7600        0     1 set_adv_data_discard_old = 0x07fd76dc
+ 7fd7600  7fd7600        0     1 llm_resolving_list_max = 0x07fd76dd
+ 7fd7600  7fd7600        0     1 llm_bt_env = 0x07fd76de
+ 7fd7600  7fd7600        0     1 init_tx_cnt_cntl_cnt1 = 0x07fd76e8
+ 7fd7600  7fd7600        0     1 init_tx_cnt_cntl_cnt = 0x07fd76ec
+ 7fd7600  7fd7600        0     1 tx_cnt_cntl_cnt = 0x07fd76f0
+ 7fd7600  7fd7600        0     1 llm_state = 0x07fd76f4
+ 7fd7600  7fd7600        0     1 gtl_state = 0x07fd76f8
+ 7fd7600  7fd7600        0     1 use_h4tl = 0x07fd76f9
+ 7fd7600  7fd7600        0     1 hci_cmd_desc_root_tab = 0x07fd76fc
+ 7fd7600  7fd7600        0     1 gattc_state = 0x07fd772c
+ 7fd7600  7fd7600        0     1 gattm_state = 0x07fd7734
+ 7fd7600  7fd7600        0     1 l2cc_state = 0x07fd7735
+ 7fd7600  7fd7600        0     1 l2cm_env = 0x07fd773e
+ 7fd7600  7fd7600        0     1 gapc_state = 0x07fd7744
+ 7fd7600  7fd7600        0     1 gapm_state = 0x07fd774c
+ 7fd7600  7fd7600        0     1 ke_free_bad = 0x07fd7754
+ 7fd7600  7fd7600        0     1 rwip_env = 0x07fd7758
+ 7fd7600  7fd7600        0     1 ble_reg_save = 0x07fd7764
+ 7fd7600  7fd7600        0     1 sleep_env = 0x07fd77b4
+ 7fd7600  7fd7600        0     1 uart_env = 0x07fd77b8
+ 7fd7600  7fd7600        0     1 ke_mem_heaps_used = 0x07fd77dc
+ 7fd7600  7fd7600        0     1 co_buf_env = 0x07fd77e0
+ 7fd7600  7fd7600        0     1 llc_env = 0x07fd7918
+ 7fd7600  7fd7600        0     1 lld_evt_env = 0x07fd7938
+ 7fd7600  7fd7600        0     1 llm_le_env = 0x07fd7964
+ 7fd7600  7fd7600        0     1 llm_resolving_list = 0x07fd7a60
+ 7fd7600  7fd7600        0     1 gtl_env = 0x07fd7cf8
+ 7fd7600  7fd7600        0     1 hci_env = 0x07fd7d40
+ 7fd7600  7fd7600        0     1 gattc_env = 0x07fd7d68
+ 7fd7600  7fd7600        0     1 gattm_env = 0x07fd7d88
+ 7fd7600  7fd7600        0     1 l2cc_env = 0x07fd7dac
+ 7fd7600  7fd7600        0     1 ecdh_key = 0x07fd7dcc
+ 7fd7600  7fd7600        0     1 gapc_env = 0x07fd7e2c
+ 7fd7600  7fd7600        0     1 gapm_env = 0x07fd7e4c
+ 7fd7600  7fd7600        0     1 ke_env = 0x07fd7e78
+ 7fd7600  7fd7600        0     1 rwip_rf = 0x07fd7fb4
+ 7fd7600  7fd7600        0     1 dia_srand = 0x07f02983
+ 7fd7600  7fd7600        0     1 rom_hci_cmd_desc_root_tab = 0x07f1ec58
+ 7fd7600  7fd7600        0     1 modulationGainCalibration_func = 0x07f0d595
+ 7fd7600  7fd7600        0     1 DCoffsetCalibration_func = 0x07f0d68b
+ 7fd7600  7fd7600        0     1 PllLF_IFF_MIX_CapCalibration_func = 0x07f0d6d7
+ 7fd7600  7fd7600        0     1 BLE_TX_DESC_DATA_USER = 0x07fd765c
+ 7fd7600  7fd7600        0     1 BLE_TX_DESC_CNTL_USER = 0x07fd7660
+ 7fd7600  7fd7600        0     1 LLM_LE_ADV_DUMMY_IDX = 0x07fd7664
+ 7fd7600  7fd7600        0     1 LLM_LE_SCAN_CON_REQ_ADV_DIR_IDX = 0x07fd7668
+ 7fd7600  7fd7600        0     1 LLM_LE_SCAN_RSP_IDX = 0x07fd766c
+ 7fd7600  7fd7600        0     1 LLM_LE_ADV_IDX = 0x07fd7670
+ 7fd7600  7fd7600        0     1 smpc_public_key_exchange_start_func = 0x07f1b58f
+ 7fd7600  7fd7600        0     1 smpc_dhkey_calc_ind_func = 0x07f1b62f
+ 7fd7600  7fd7600        0     1 smpm_ecdh_key_create_func = 0x07f1b6bf
+ 7fd7600  7fd7600        0     1 ecdh_key_creation_in_progress = 0x07fd7750
+ 7fd7600  7fd7600        0     1 lld_sleep_env = 0x07fd76ac
+ 7fd7600  7fd7600        0     1 h4tl_env = 0x07fd7d50
+ 7fd7600  7fd7600        0     1 ea_env = 0x07fd7cb8
+ 7fd7600  7fd7600        0     1 modulationGainCalibration = 0x07f029b5
+ 7fd7600  7fd7600        0     1 DCoffsetCalibration = 0x07f029c1
+ 7fd7600  7fd7600        0     1 PllLF_IFF_MIX_CapCalibration = 0x07f029cd
+ 7fd7600  7fd7600        0     1 atts_mtu_exc_req = 0x07f10b75
+ 7fd7600  7fd7600        0     1 atts_allocate_pdu = 0x07f11957
+ 7fd7600  7fd7600        0     1 atts_send_pdu = 0x07f11979
+ 7fd7600  7fd7600        0     1 llcp_length_req_handler = 0x07f05fe3
+ 7fd7600  7fd7600        0     1 smpc_construct_id_addr_info_pdu = 0x07f19157
+ 7fd7600  7fd7600        0     1 smpc_recv_pair_rand_pdu = 0x07f193e3
+ 7fd7600  7fd7600        0     1 smpc_recv_public_key_exchange_pdu = 0x07f19647
+ 7fd7600  7fd7600        0     1 lld_evt_channel_next = 0x07f07cc9
+ 7fd7600  7fd7600        0     1 l2cc_connor_pkt_format = 0x07f1f314
+ 7fd7600  7fd7600        0     1 l2cc_signaling_pkt_format = 0x07f1f31c
+ 7fd7600  7fd7600        0     1 l2cc_security_pkt_format = 0x07f1f378
+ 7fd7600  7fd7600        0     1 l2cc_attribute_pkt_format = 0x07f1f3b4
+ 7fd7600  7fd7600        0     1 llm_dflt_bdaddr = 0x07f1e504
+ 7fd7600  7fd7600        0     1 llm_wlpub_addr_set = 0x07f0b369
+ 7fd7600  7fd7600        0     1 llm_wlpriv_addr_set = 0x07f0b395
+ 7fd7600  7fd7600        0     1 lld_evt_slave_finetime_correction = 0x07f07a11
+ 7fd7600  7fd7600        0     1 lld_evt_rxwin_compute = 0x07f07ac9
+ 7fd7600  7fd7600        0     1 lld_evt_slave_time_compute = 0x07f07aff
+ 7fd7600  7fd7600        0     1 gapc_param_update_cmd_handler = 0x07f15565
+ 7fd7600  7fd7600        0     1 hci_le_ltk_request_evt_handler = 0x07f19bbf
+ 7fd7600  7fd7600        0     1 smpc_recv_pair_fail_pdu = 0x07f194af
+ 7fd7600  7fd7600        0     1 smpc_recv_pair_req_pdu = 0x07f1919f
+ 7fd7600  7fd7600        0     1 smpc_recv_pdu = 0x07f1f46c
+
+Cross Reference Table
+
+Symbol                                            File
+_start                                            C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o)
+                                                  lto.tmp
+__interrupt_vector                                lto.tmp
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o)
+memcpy                                            C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memcpy.c.o)
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o)
+memset                                            C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memset.c.o)
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o)
+_set_tls                                          C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_picolib_machine_arm_tls.c.o)
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o)
+__libc_init_array                                 C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_misc_init.c.o)
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o)
+main                                              lto.tmp
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o)
+__data_start                                      <internal>
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o)
+__data_source                                     <internal>
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o)
+__data_size                                       <internal>
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o)
+__bss_start                                       <internal>
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o)
+__bss_size                                        <internal>
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o)
+__tls_base                                        <internal>
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o)
+__interrupt_reference                             C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libcrt0.a(machine_arm_crt0.c.o)
+csprng_seed                                       ./sdk_arch/chacha20.o
+                                                  ./sdk_arch/jump_table.o
+                                                  lto.tmp
+csprng_get_next_uint32                            ./sdk_arch/chacha20.o
+                                                  ./sdk_arch/jump_table.o
+dummyf                                            ./sdk_arch/jump_table.o
+crypto_init_func                                  ./sdk_arch/jump_table.o
+ba431_get_rand_func                               ./sdk_arch/jump_table.o
+dia_rand_func                                     ./sdk_arch/jump_table.o
+dia_srand_func                                    ./sdk_arch/jump_table.o
+dbg_init_func_empty                               ./sdk_arch/jump_table.o
+dbg_platform_reset_complete_func_empty            ./sdk_arch/jump_table.o
+platform_reset_func                               ./sdk_arch/jump_table.o
+rom_func_addr_table_var                           ./sdk_arch/jump_table.o
+                                                  lto.tmp
+rf_init_func                                      lto.tmp
+                                                  ./sdk_arch/jump_table.o
+rf_reinit_func                                    lto.tmp
+                                                  ./sdk_arch/jump_table.o
+uart_init_func                                    <internal>
+                                                  ./sdk_arch/jump_table.o
+uart_flow_on_func                                 <internal>
+                                                  ./sdk_arch/jump_table.o
+uart_flow_off_func                                <internal>
+                                                  ./sdk_arch/jump_table.o
+uart_finish_transfers_func                        <internal>
+                                                  ./sdk_arch/jump_table.o
+uart_read_func                                    <internal>
+                                                  ./sdk_arch/jump_table.o
+uart_write_func                                   <internal>
+                                                  ./sdk_arch/jump_table.o
+UART_Handler_func                                 <internal>
+                                                  ./sdk_arch/jump_table.o
+gtl_init_func                                     <internal>
+                                                  ./sdk_arch/jump_table.o
+gtl_eif_init_func                                 <internal>
+                                                  ./sdk_arch/jump_table.o
+gtl_eif_read_start_func                           <internal>
+                                                  ./sdk_arch/jump_table.o
+gtl_eif_read_hdr_func                             <internal>
+                                                  ./sdk_arch/jump_table.o
+gtl_eif_read_payl_func                            <internal>
+                                                  ./sdk_arch/jump_table.o
+gtl_eif_tx_done_func                              <internal>
+                                                  ./sdk_arch/jump_table.o
+gtl_eif_rx_done_func                              <internal>
+                                                  ./sdk_arch/jump_table.o
+h4tl_init_func                                    <internal>
+                                                  ./sdk_arch/jump_table.o
+h4tl_read_start_func                              <internal>
+                                                  ./sdk_arch/jump_table.o
+h4tl_read_hdr_func                                <internal>
+                                                  ./sdk_arch/jump_table.o
+h4tl_read_payl_func                               <internal>
+                                                  ./sdk_arch/jump_table.o
+h4tl_read_next_out_of_sync_func                   <internal>
+                                                  ./sdk_arch/jump_table.o
+h4tl_out_of_sync_func                             <internal>
+                                                  ./sdk_arch/jump_table.o
+h4tl_tx_done_func                                 <internal>
+                                                  ./sdk_arch/jump_table.o
+h4tl_rx_done_func                                 <internal>
+                                                  ./sdk_arch/jump_table.o
+ke_task_init_func                                 <internal>
+                                                  ./sdk_arch/jump_table.o
+ke_timer_init_func                                <internal>
+                                                  ./sdk_arch/jump_table.o
+llm_encryption_done_func                          <internal>
+                                                  ./sdk_arch/jump_table.o
+nvds_get_func                                     lto.tmp
+                                                  ./sdk_arch/jump_table.o
+nvds_put_func                                     lto.tmp
+                                                  ./sdk_arch/jump_table.o
+nvds_del_func                                     lto.tmp
+                                                  ./sdk_arch/jump_table.o
+nvds_init_func                                    lto.tmp
+                                                  ./sdk_arch/jump_table.o
+rwip_eif_get_func                                 <internal>
+                                                  ./sdk_arch/jump_table.o
+lld_sleep_compensate_func                         lto.tmp
+                                                  ./sdk_arch/jump_table.o
+lld_sleep_init_func                               lto.tmp
+                                                  ./sdk_arch/jump_table.o
+lld_sleep_us_2_lpcycles_sel_func                  lto.tmp
+                                                  ./sdk_arch/jump_table.o
+lld_sleep_lpcycles_2_us_sel_func                  lto.tmp
+                                                  ./sdk_arch/jump_table.o
+lld_test_stop_func                                <internal>
+                                                  ./sdk_arch/jump_table.o
+lld_test_mode_tx_func                             <internal>
+                                                  ./sdk_arch/jump_table.o
+lld_test_mode_rx_func                             <internal>
+                                                  ./sdk_arch/jump_table.o
+smpc_check_param_func                             <internal>
+                                                  ./sdk_arch/jump_table.o
+smpc_pdu_recv_func                                <internal>
+                                                  ./sdk_arch/jump_table.o
+prf_init_func                                     lto.tmp
+                                                  ./sdk_arch/jump_table.o
+prf_add_profile_func                              lto.tmp
+                                                  ./sdk_arch/jump_table.o
+prf_create_func                                   lto.tmp
+                                                  ./sdk_arch/jump_table.o
+prf_cleanup_func                                  lto.tmp
+                                                  ./sdk_arch/jump_table.o
+prf_get_id_from_task_func                         lto.tmp
+                                                  ./sdk_arch/jump_table.o
+prf_get_task_from_id_func                         lto.tmp
+                                                  ./sdk_arch/jump_table.o
+hci_rd_local_supp_feats_cmd_handler_func          <internal>
+                                                  ./sdk_arch/jump_table.o
+l2cc_pdu_pack_func                                <internal>
+                                                  ./sdk_arch/jump_table.o
+l2c_send_lecb_message_func                        <internal>
+                                                  ./sdk_arch/jump_table.o
+l2c_process_sdu_func                              <internal>
+                                                  ./sdk_arch/jump_table.o
+gapc_lecb_connect_cfm_handler_func                <internal>
+                                                  ./sdk_arch/jump_table.o
+atts_l2cc_pdu_recv_handler_func                   <internal>
+                                                  ./sdk_arch/jump_table.o
+attc_l2cc_pdu_recv_handler_func                   <internal>
+                                                  ./sdk_arch/jump_table.o
+llm_le_adv_report_ind_func                        <internal>
+                                                  ./sdk_arch/jump_table.o
+llc_le_length_conn_init_func                      <internal>
+                                                  ./sdk_arch/jump_table.o
+lld_data_tx_prog_func                             <internal>
+                                                  ./sdk_arch/jump_table.o
+lld_data_tx_check_func                            <internal>
+                                                  ./sdk_arch/jump_table.o
+llc_pdu_send_func                                 <internal>
+                                                  ./sdk_arch/jump_table.o
+modulationGainCalibration_func                    <internal>
+                                                  ./sdk_arch/jump_table.o
+DCoffsetCalibration_func                          <internal>
+                                                  ./sdk_arch/jump_table.o
+PllLF_IFF_MIX_CapCalibration_func                 <internal>
+                                                  ./sdk_arch/jump_table.o
+smpc_public_key_exchange_start_func               <internal>
+                                                  ./sdk_arch/jump_table.o
+smpc_dhkey_calc_ind_func                          <internal>
+                                                  ./sdk_arch/jump_table.o
+smpm_ecdh_key_create_func                         <internal>
+                                                  ./sdk_arch/jump_table.o
+rwip_heap_non_ret                                 ./sdk_arch/jump_table.o
+rwip_heap_env_ret                                 ./sdk_arch/jump_table.o
+rwip_heap_db_ret                                  ./sdk_arch/jump_table.o
+rwip_heap_msg_ret                                 ./sdk_arch/jump_table.o
+rom_cfg_table_var                                 ./sdk_arch/jump_table.o
+                                                  lto.tmp
+__arm32_tls_tcb_offset                            <internal>
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_picolib_machine_arm_tls.c.o)
+__tls                                             C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(libc_picolib_machine_arm_tls.c.o)
+__aeabi_memcpy4                                   <internal>
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memcpy.c.o)
+                                                  lto.tmp
+__aeabi_memcpy8                                   <internal>
+                                                  C:\Renesas\e2_studio\toolchains\llvm_arm\LLVMEmbeddedToolchainForArm-17.0.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp\lib\libc.a(memcpy.c.o)
+ke_msg_send_basic                                 <internal>
+                                                  lto.tmp
+rwip_env                                          <internal>
+                                                  lto.tmp
+sleep_env                                         <internal>
+                                                  lto.tmp
+__aeabi_memclr4                                   <internal>
+                                                  lto.tmp
+attm_svc_create_db                                <internal>
+                                                  lto.tmp
+attmdb_att_set_permission                         <internal>
+                                                  lto.tmp
+gapc_get_conhdl                                   <internal>
+                                                  lto.tmp
+co_list_init                                      <internal>
+                                                  lto.tmp
+co_list_extract                                   <internal>
+                                                  lto.tmp
+ke_task_msg_flush                                 <internal>
+                                                  lto.tmp
+ke_task_create                                    <internal>
+                                                  lto.tmp
+__aeabi_memclr                                    <internal>
+                                                  lto.tmp
+attmdb_add_service                                <internal>
+                                                  lto.tmp
+attmdb_att_set_value                              <internal>
+                                                  lto.tmp
+gattc_get_mtu                                     <internal>
+                                                  lto.tmp
+attmdb_get_value                                  <internal>
+                                                  lto.tmp
+__aeabi_llsl                                      <internal>
+                                                  lto.tmp
+HardFault_HandlerC                                lto.tmp
+NMI_HandlerC                                      lto.tmp
+Reset_Handler                                     lto.tmp
+__StackTop                                        <internal>
+                                                  lto.tmp
+__copy_table_start__                              <internal>
+                                                  lto.tmp
+__copy_table_end__                                <internal>
+                                                  lto.tmp
+__zero_table_start__                              <internal>
+                                                  lto.tmp
+__zero_table_end__                                <internal>
+                                                  lto.tmp
+lld_sleep_lpcycles_2_us_func                      <internal>
+                                                  lto.tmp
+ble_regs_pop                                      <internal>
+                                                  lto.tmp
+ea_finetimer_isr                                  <internal>
+                                                  lto.tmp
+lld_evt_rx_isr                                    <internal>
+                                                  lto.tmp
+lld_evt_end_isr                                   <internal>
+                                                  lto.tmp
+ea_sw_isr                                         <internal>
+                                                  lto.tmp
+lld_evt_timer_isr                                 <internal>
+                                                  lto.tmp
+lld_crypt_isr                                     <internal>
+                                                  lto.tmp
+rwip_wakeup_end                                   <internal>
+                                                  lto.tmp
+rwip_wakeup                                       <internal>
+                                                  lto.tmp
+rf_reinit                                         <internal>
+                                                  lto.tmp
+__aeabi_memclr8                                   <internal>
+                                                  lto.tmp
+hci_cmd_desc_root_tab                             <internal>
+                                                  lto.tmp
+rom_hci_cmd_desc_root_tab                         <internal>
+                                                  lto.tmp
+use_h4tl                                          <internal>
+                                                  lto.tmp
+gap_cfg_user                                      <internal>
+                                                  lto.tmp
+rom_func_addr_table                               <internal>
+                                                  lto.tmp
+ble_duplicate_filter_max                          <internal>
+                                                  lto.tmp
+ble_duplicate_filter_found                        <internal>
+                                                  lto.tmp
+llm_resolving_list_max                            <internal>
+                                                  lto.tmp
+BLE_TX_DESC_DATA_USER                             <internal>
+                                                  lto.tmp
+BLE_TX_DESC_CNTL_USER                             <internal>
+                                                  lto.tmp
+LLM_LE_ADV_DUMMY_IDX                              <internal>
+                                                  lto.tmp
+LLM_LE_SCAN_CON_REQ_ADV_DIR_IDX                   <internal>
+                                                  lto.tmp
+LLM_LE_SCAN_RSP_IDX                               <internal>
+                                                  lto.tmp
+LLM_LE_ADV_IDX                                    <internal>
+                                                  lto.tmp
+REG_BLE_EM_RX_BUFFER_SIZE                         <internal>
+                                                  lto.tmp
+REG_BLE_EM_TX_BUFFER_SIZE                         <internal>
+                                                  lto.tmp
+ble_init                                          <internal>
+                                                  lto.tmp
+rwip_schedule                                     <internal>
+                                                  lto.tmp
+ea_sleep_check                                    <internal>
+                                                  lto.tmp
+ke_sleep_check                                    <internal>
+                                                  lto.tmp
+ke_timer_sleep_check                              <internal>
+                                                  lto.tmp
+lld_sleep_enter                                   <internal>
+                                                  lto.tmp
+ble_regs_push                                     <internal>
+                                                  lto.tmp
+ke_env                                            <internal>
+                                                  lto.tmp
+__code_area_end__                                 <internal>
+                                                  lto.tmp
+rwip_wakeup_delay_set                             <internal>
+                                                  lto.tmp
+lld_sleep_us_2_lpcycles_func                      <internal>
+                                                  lto.tmp
+lld_sleep_env                                     <internal>
+                                                  lto.tmp
+co_null_bdaddr                                    <internal>
+                                                  lto.tmp
+prf_get_task_from_id                              <internal>
+                                                  lto.tmp
+__aeabi_memset                                    <internal>
+                                                  lto.tmp
+UART_Handler                                      <internal>
+                                                  lto.tmp
+stack                                             lto.tmp
+patch_table                                       lto.tmp
+atts_mtu_exc_req                                  <internal>
+                                                  lto.tmp
+smpc_is_sec_mode_reached                          <internal>
+                                                  lto.tmp
+smpc_check_key_distrib                            <internal>
+                                                  lto.tmp
+smpc_construct_id_addr_info_pdu                   <internal>
+                                                  lto.tmp
+gapm_get_ad_type_flag                             <internal>
+                                                  lto.tmp
+llc_util_gen_skdx                                 <internal>
+                                                  lto.tmp
+lld_evt_move_to_master                            <internal>
+                                                  lto.tmp
+llm_adv_report_set                                <internal>
+                                                  lto.tmp
+gapm_adv_sanity                                   <internal>
+                                                  lto.tmp
+llc_ch_map_req_ind                                <internal>
+                                                  lto.tmp
+llm_con_req_ind                                   <internal>
+                                                  lto.tmp
+smpc_recv_pair_rand_pdu                           <internal>
+                                                  lto.tmp
+smpc_recv_public_key_exchange_pdu                 <internal>
+                                                  lto.tmp
+hci_le_ltk_request_evt_handler                    <internal>
+                                                  lto.tmp
+smpc_recv_pair_req_pdu                            <internal>
+                                                  lto.tmp
+smpc_recv_pair_fail_pdu                           <internal>
+                                                  lto.tmp
