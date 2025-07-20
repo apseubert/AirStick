@@ -71,7 +71,7 @@
 // Define UART2 Tx Pad
 #if defined (__DA14531__)
     #define LED_PORT                GPIO_PORT_0
-    #define LED_PIN                 GPIO_PIN_9
+    #define LED_PIN                 GPIO_PIN_3
 #else
     #define LED_PORT                GPIO_PORT_1
     #define LED_PIN                 GPIO_PIN_0

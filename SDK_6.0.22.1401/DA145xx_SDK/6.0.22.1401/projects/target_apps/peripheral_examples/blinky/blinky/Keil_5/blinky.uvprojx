@@ -16,8 +16,8 @@
         <TargetCommonOption>
           <Device>ARMCM0</Device>
           <Vendor>ARM</Vendor>
-          <PackID>ARM.CMSIS.5.9.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
+          <PackID>ARM.Cortex_DFP.1.1.0</PackID>
+          <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IROM(0x0,0x0) IRAM(0x0,0x0) CPUTYPE("Cortex-M0") CLOCK(12000000) ESEL ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -861,6 +861,11 @@
                 </FileArmAds>
               </FileOption>
             </File>
+            <File>
+              <FileName>aled.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\aled.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -876,6 +881,11 @@
               <FileType>1</FileType>
               <FilePath>..\src\user_periph_setup.c</FilePath>
             </File>
+            <File>
+              <FileName>ALED.H</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\include\ALED.H</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
@@ -890,8 +900,8 @@
         <TargetCommonOption>
           <Device>ARMCM0</Device>
           <Vendor>ARM</Vendor>
-          <PackID>ARM.CMSIS.5.9.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
+          <PackID>ARM.Cortex_DFP.1.1.0</PackID>
+          <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IROM(0x0,0x0) IRAM(0x0,0x0) CPUTYPE("Cortex-M0") CLOCK(12000000) ESEL ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -1633,6 +1643,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\..\sdk\platform\driver\spi\spi_58x.c</FilePath>
             </File>
+            <File>
+              <FileName>aled.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\aled.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1648,6 +1663,11 @@
               <FileType>1</FileType>
               <FilePath>..\src\user_periph_setup.c</FilePath>
             </File>
+            <File>
+              <FileName>ALED.H</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\include\ALED.H</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
@@ -1656,20 +1676,20 @@
       <TargetName>DA14531</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6180000::V6.18::ARMCLANG</pCCUsed>
+      <pCCUsed>6230000::V6.23::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>ARMCM0P</Device>
           <Vendor>ARM</Vendor>
-          <PackID>ARM.CMSIS.5.9.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
+          <PackID>ARM.Cortex_DFP.1.1.0</PackID>
+          <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00020000) IROM(0x00000000,0x00040000) CPUTYPE("Cortex-M0+") CLOCK(12000000) ESEL ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
           <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000)</FlashDriverDll>
           <DeviceId>0</DeviceId>
-          <RegisterFile>$$Device:ARMCM0P$Device\ARM\ARMCM0plus\Include\ARMCM0plus.h</RegisterFile>
+          <RegisterFile>$$Device:ARMCM0P$Device\ARMCM0plus\Include\ARMCM0plus.h</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
           <Asm></Asm>
@@ -1756,11 +1776,11 @@
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
-          <SimDllArguments>  </SimDllArguments>
+          <SimDllArguments> -MPU </SimDllArguments>
           <SimDlgDll>DARMCM1.DLL</SimDlgDll>
           <SimDlgDllArguments>-pCM0+</SimDlgDllArguments>
           <TargetDllName>SARMCM3.DLL</TargetDllName>
-          <TargetDllArguments> </TargetDllArguments>
+          <TargetDllArguments>-MPU </TargetDllArguments>
           <TargetDlgDll>TARMCM1.DLL</TargetDlgDll>
           <TargetDlgDllArguments>-pCM0+</TargetDlgDllArguments>
         </DllOption>
@@ -1852,12 +1872,12 @@
             <Ro1Chk>0</Ro1Chk>
             <Ro2Chk>0</Ro2Chk>
             <Ro3Chk>0</Ro3Chk>
-            <Ir1Chk>0</Ir1Chk>
+            <Ir1Chk>1</Ir1Chk>
             <Ir2Chk>0</Ir2Chk>
             <Ra1Chk>0</Ra1Chk>
             <Ra2Chk>0</Ra2Chk>
             <Ra3Chk>0</Ra3Chk>
-            <Im1Chk>0</Im1Chk>
+            <Im1Chk>1</Im1Chk>
             <Im2Chk>0</Im2Chk>
             <OnChipMemories>
               <Ocm1>
@@ -1979,7 +1999,7 @@
             <v6LangP>5</v6LangP>
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
-            <v6Lto>1</v6Lto>
+            <v6Lto>0</v6Lto>
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
@@ -2457,6 +2477,11 @@
                 </FileArmAds>
               </FileOption>
             </File>
+            <File>
+              <FileName>aled.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\aled.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -2472,6 +2497,11 @@
               <FileType>1</FileType>
               <FilePath>..\src\user_periph_setup.c</FilePath>
             </File>
+            <File>
+              <FileName>ALED.H</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\include\ALED.H</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
@@ -2486,8 +2516,8 @@
         <TargetCommonOption>
           <Device>ARMCM0P</Device>
           <Vendor>ARM</Vendor>
-          <PackID>ARM.CMSIS.5.9.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
+          <PackID>ARM.Cortex_DFP.1.1.0</PackID>
+          <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00020000) IROM(0x00000000,0x00040000) CPUTYPE("Cortex-M0+") CLOCK(12000000) ESEL ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -3282,6 +3312,11 @@
                 </FileArmAds>
               </FileOption>
             </File>
+            <File>
+              <FileName>aled.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\aled.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -3297,6 +3332,11 @@
               <FileType>1</FileType>
               <FilePath>..\src\user_periph_setup.c</FilePath>
             </File>
+            <File>
+              <FileName>ALED.H</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\include\ALED.H</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
@@ -3311,8 +3351,8 @@
         <TargetCommonOption>
           <Device>ARMCM0</Device>
           <Vendor>ARM</Vendor>
-          <PackID>ARM.CMSIS.5.9.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
+          <PackID>ARM.Cortex_DFP.1.1.0</PackID>
+          <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IROM(0x0,0x0) IRAM(0x0,0x0) CPUTYPE("Cortex-M0") CLOCK(12000000) ESEL ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -4106,6 +4146,11 @@
                 </FileArmAds>
               </FileOption>
             </File>
+            <File>
+              <FileName>aled.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\aled.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -4120,6 +4165,11 @@
               <FileName>user_periph_setup.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\src\user_periph_setup.c</FilePath>
+            </File>
+            <File>
+              <FileName>ALED.H</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\include\ALED.H</FilePath>
             </File>
           </Files>
         </Group>

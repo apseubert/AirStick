@@ -57,7 +57,7 @@
 /* UART2 configuration to use with arch_console print messages                          */
 /****************************************************************************************/
 // Define UART2 Pads
-#if defined (__DA14531__)
+/*#if defined (__DA14531__)
     #define UART2_TX_PORT           GPIO_PORT_0
     #define UART2_TX_PIN            GPIO_PIN_6
 #else
@@ -82,29 +82,29 @@
 // Define SPI Pads
 #if defined (__DA14531__)
     #define SPI_EN_PORT             GPIO_PORT_0
-    #define SPI_EN_PIN              GPIO_PIN_1
+    #define SPI_EN_PIN              GPIO_PIN_9
 
     #define SPI_CLK_PORT            GPIO_PORT_0
-    #define SPI_CLK_PIN             GPIO_PIN_4
+    #define SPI_CLK_PIN             GPIO_PIN_6
 
     #define SPI_DO_PORT             GPIO_PORT_0
-    #define SPI_DO_PIN              GPIO_PIN_0
+    #define SPI_DO_PIN              GPIO_PIN_7
 
     #define SPI_DI_PORT             GPIO_PORT_0
-    #define SPI_DI_PIN              GPIO_PIN_3
+    #define SPI_DI_PIN              GPIO_PIN_8
 
 #elif !defined (__DA14586__)
     #define SPI_EN_PORT             GPIO_PORT_0
-    #define SPI_EN_PIN              GPIO_PIN_3
+    #define SPI_EN_PIN              GPIO_PIN_9
 
     #define SPI_CLK_PORT            GPIO_PORT_0
-    #define SPI_CLK_PIN             GPIO_PIN_0
+    #define SPI_CLK_PIN             GPIO_PIN_6
 
     #define SPI_DO_PORT             GPIO_PORT_0
-    #define SPI_DO_PIN              GPIO_PIN_6
+    #define SPI_DO_PIN              GPIO_PIN_7
 
     #define SPI_DI_PORT             GPIO_PORT_0
-    #define SPI_DI_PIN              GPIO_PIN_5
+    #define SPI_DI_PIN              GPIO_PIN_8
 #endif
 
 // Define SPI Configuration
@@ -134,10 +134,10 @@
 /****************************************************************************************/
 // Define I2C Pads
 #define I2C_SCL_PORT                GPIO_PORT_0
-#define I2C_SCL_PIN                 GPIO_PIN_2
+#define I2C_SCL_PIN                 GPIO_PIN_11
 
 #define I2C_SDA_PORT                GPIO_PORT_0
-#define I2C_SDA_PIN                 GPIO_PIN_1
+#define I2C_SDA_PIN                 GPIO_PIN_10
 
 // Define I2C Configuration
 #define I2C_SLAVE_ADDRESS           (0x50)
@@ -156,11 +156,11 @@
 /****************************************************************************************/
 /* LED configuration                                                                    */
 /****************************************************************************************/
-#if defined (__DA14531__)
+/*#if defined (__DA14531__)
     #define GPIO_LED_PORT               GPIO_PORT_0
     #define GPIO_LED_PIN                GPIO_PIN_9
 #else   
-    #define GPIO_LED_PORT               GPIO_PORT_1
+    #define GPIO_LED_PORT               GPIO_PORT_0
     #define GPIO_LED_PIN                GPIO_PIN_0
 #endif
 
@@ -170,9 +170,9 @@
 /****************************************************************************************/
 #if defined (__DA14531__)
     #define GPIO_PWM_PORT               GPIO_PORT_0
-    #define GPIO_PWM_PIN                GPIO_PIN_8
+    #define GPIO_PWM_PIN                GPIO_PIN_4
 #else 
-    #define GPIO_PWM_PORT               GPIO_PORT_2
+    #define GPIO_PWM_PORT               GPIO_PORT_0
     #define GPIO_PWM_PIN                GPIO_PIN_1
 #endif
 
@@ -181,7 +181,7 @@
 /* Button configuration                                                                 */
 /****************************************************************************************/
 #if defined (__DA14531__)
-    #define GPIO_BUTTON_PORT            GPIO_PORT_0
+    #define GPIO_BUTTON_PORT            GPIO_PORT_1
     #define GPIO_BUTTON_PIN             GPIO_PIN_7
 #else
     #define GPIO_BUTTON_PORT            GPIO_PORT_1
